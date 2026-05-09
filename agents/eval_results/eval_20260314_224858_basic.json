@@ -1,0 +1,1693 @@
+{
+  "mode": "basic",
+  "model": "openai/gpt-5-mini",
+  "total_submitted": 100,
+  "completed": 100,
+  "correct": 64,
+  "accuracy": 0.64,
+  "avg_latency_seconds": 18.082,
+  "avg_cost": 0.0007713275,
+  "per_label": {
+    "supported": {
+      "total": 41,
+      "correct": 33
+    },
+    "refuted": {
+      "total": 29,
+      "correct": 28
+    },
+    "NEI": {
+      "total": 30,
+      "correct": 3
+    }
+  },
+  "records": [
+    {
+      "post_id": "4d76be68-0bd7-4235-b371-3913cb2fcc66",
+      "dataset_claim_id": "8033",
+      "claim_text": "People without permanent homes who do not normally file taxes can submit information to the IRS in order to receive stimulus payments as part of the March 2021 COVID-19 relief bill.",
+      "snopes_url": "https://www.snopes.com/fact-check/homeless-stimulus-payment/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "The IRS and guidance around the March 2021 American Rescue Plan allowed individuals experiencing homelessness who do not normally file taxes to submit information (by filing a basic 2020 tax return or claiming the Recovery Rebate Credit) to receive the $1,400 Economic Impact Payment; the IRS stated a permanent address was not required and alternative mailing options (shelters, friend\u2019s address, General Delivery) and payment methods (direct deposit, check, prepaid debit card) were available.",
+      "correct": true,
+      "latency_seconds": 17.8,
+      "costs": {
+        "basic_agent": 0.000802
+      },
+      "images_submitted": [
+        "08033-546600-03-6757835075_cf5e1c9b5a_b.jpg"
+      ]
+    },
+    {
+      "post_id": "22942f6b-f557-400c-a10a-c1914dd700ff",
+      "dataset_claim_id": "104601",
+      "claim_text": "'A Black man invented the light bulb, not a white guy named Edison.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/sep/04/joe-biden/making-point-overlooked-black-history-biden-misses/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "The claim is false: the incandescent light bulb was developed through contributions by many inventors. Thomas Edison received a patent for the first commercially practical incandescent lamp in 1880, while Lewis Howard Latimer \u2014 a Black inventor \u2014 made important filament and manufacturing improvements but did not solely invent the light bulb.",
+      "correct": true,
+      "latency_seconds": 19.2,
+      "costs": {
+        "basic_agent": 0.00081275
+      },
+      "images_submitted": [
+        "104601-547194-33-dd744aab3e806c4891533c2cefd724c2.jpg"
+      ]
+    },
+    {
+      "post_id": "93cfd3bd-33e6-45d3-8524-cd0c66b16b02",
+      "dataset_claim_id": "107875",
+      "claim_text": "Says gubernatorial candidate Rebecca Kleefisch 'worked with Scott Walker to sign five abortion restrictions into law that took away services and threatened doctors with prison time for providing safe and legal abortions.",
+      "snopes_url": "https://www.politifact.com/factchecks/2021/nov/02/kelda-helen-roys/yes-five-abortion-restrictions-took-away-services-/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "PolitiFact and contemporaneous reports say Kleefisch, as lieutenant governor, helped advance five abortion restrictions under Governor Scott Walker \u2014 including a 20-week ban making post\u201120\u2011week abortions a felony (up to 3.5 years), limits on medication abortion, barring exchange coverage, requiring admitting privileges, and excluding providers from family\u2011planning grants \u2014 which removed services and exposed providers to criminal penalties; she did not personally sign the bills but is credited with helping enact them.",
+      "correct": true,
+      "latency_seconds": 18.1,
+      "costs": {
+        "basic_agent": 0.00061825
+      },
+      "images_submitted": [
+        "107875-547390-29-4f17be61a2774a0946faa84088b62182.jpg"
+      ]
+    },
+    {
+      "post_id": "9ed15da2-1afd-47e4-aaa2-b07bdcca37a2",
+      "dataset_claim_id": "9484",
+      "claim_text": "Congress voted to give Apache land to an environmentally exploitative foreign corporation.",
+      "snopes_url": "https://www.snopes.com/fact-check/congress-votes-to-sell-apache-land-to-foreign-corporation/",
+      "truth_label": "NEI",
+      "system_verdict": "VERIFIED",
+      "justification": "In December 2014 Congress included the Southeast Arizona Land Exchange in the NDAA, authorizing transfer of ~2,400\u20132,500 acres of Oak Flat (sacred to the San Carlos Apache) to Resolution Copper, a joint venture owned by foreign mining giants Rio Tinto and BHP; opponents have cited serious environmental concerns (e.g., block-caving, water use) about the proposed mine.",
+      "correct": false,
+      "latency_seconds": 18.5,
+      "costs": {
+        "basic_agent": 0.000781
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "bbd4baba-d17e-4756-98a2-a86b8a5ce616",
+      "dataset_claim_id": "116234",
+      "claim_text": "No U.S. presidents elected before Donald Trump were racist.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/jul/27/joe-biden/long-history-racism-us-presidency/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "This is false: numerous presidents before Trump held racist beliefs or enacted racist policies \u2014 many early presidents owned enslaved people (e.g., Washington, Jefferson, Jackson, Polk, Taylor), Woodrow Wilson re-segregated the federal government and screened The Birth of a Nation, FDR authorized Japanese American internment, and presidents like Nixon and Reagan made racist remarks or pursued racially discriminatory policies.",
+      "correct": true,
+      "latency_seconds": 25.5,
+      "costs": {
+        "basic_agent": 0.0009647499999999999
+      },
+      "images_submitted": [
+        "116234-2298122-01-JQA-article-slave-jail_191231_153051.jpg",
+        "116234-2298177-42-tom-false.jpg",
+        "116234-548097-37-f08cd6f700bd1265dcee552b1d4cfa23.jpg"
+      ]
+    },
+    {
+      "post_id": "b7fc7531-976b-493e-ae60-8dc7d8c71739",
+      "dataset_claim_id": "101932",
+      "claim_text": "'Bill Gates told us about the coronavirus in 2015.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/mar/25/facebook-posts/bill-gates-warned-2015-we-were-unprepared-infectio/",
+      "truth_label": "supported",
+      "system_verdict": "REFUTED",
+      "justification": "In his 2015 TED Talk Gates warned about the high probability of a future pandemic from a highly infectious microbe and urged preparedness, but he did not mention 'coronavirus' or 'COVID-19' specifically; the visuals were a generic 'giant microbe.' Therefore the claim that he \"told us about the coronavirus\" in 2015 is false.",
+      "correct": false,
+      "latency_seconds": 13.3,
+      "costs": {
+        "basic_agent": 0.00058
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "e437d393-4f09-4a50-81ee-87fb82c3e578",
+      "dataset_claim_id": "5562",
+      "claim_text": "Rape would be designated a pre-existing condition under the American Health Care Act.",
+      "snopes_url": "https://www.snopes.com/fact-check/sexual-assault-pre-existing/",
+      "truth_label": "NEI",
+      "system_verdict": "REFUTED",
+      "justification": "The AHCA did not explicitly list \u201crape\u201d or sexual assault as a pre-existing condition; multiple fact\u2011checks (Washington Post, FactCheck.org, Snopes, CBS News) found the bill did not classify rape that way, though critics warned waivers in the bill could let insurers treat medical consequences of past assault as pre-existing in some states.",
+      "correct": false,
+      "latency_seconds": 15.1,
+      "costs": {
+        "basic_agent": 0.0008112499999999999
+      },
+      "images_submitted": [
+        "05562-546363-06-doctor_patient_discussion_fb.jpg"
+      ]
+    },
+    {
+      "post_id": "cb0dcebf-8811-4085-b1de-a6c688009eb6",
+      "dataset_claim_id": "14886",
+      "claim_text": "Kevin McCallister's airline ticket was thrown in the trash by accident in the 1990 film 'Home Alone.",
+      "snopes_url": "https://www.snopes.com/fact-check/home-alone-ticket-thrown-away/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "In Home Alone (1990), during the chaotic pre-flight scene when milk is spilled on passports and tickets, Kevin\u2019s father inadvertently discards Kevin\u2019s boarding pass while cleaning up, which explains why his absence wasn\u2019t noticed at the airport; this confirms the ticket was accidentally thrown in the trash.",
+      "correct": true,
+      "latency_seconds": 13.5,
+      "costs": {
+        "basic_agent": 0.00058725
+      },
+      "images_submitted": [
+        "14886-548712-02-tickets-dry-home-alone.jpg",
+        "14886-548713-03-ticket-cups-home-alone.jpg",
+        "14886-548714-05-GettyImages-150679405-scaled-e1608412263900.jpg"
+      ]
+    },
+    {
+      "post_id": "b05ff46a-e03d-48e5-80eb-eca119412daf",
+      "dataset_claim_id": "4326",
+      "claim_text": "Following the Taliban takeover of Afghanistan in August 2021, Republican U.S. Representative for Colorado Lauren Boebert praised the extremist group for 'building back better.",
+      "snopes_url": "https://www.snopes.com/fact-check/boebert-taliban-building-back-better/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Contemporaneous news reports show Rep. Lauren Boebert tweeted \"The Taliban are the only people building back better\" after the Taliban takeover in August 2021, a remark widely reported as praising the group and met with broad criticism. Multiple outlets noted she also shared a video of Afghans clinging to a U.S. military plane and defended the comment amid backlash.",
+      "correct": true,
+      "latency_seconds": 12.0,
+      "costs": {
+        "basic_agent": 0.000588
+      },
+      "images_submitted": [
+        "04326-546273-03-boebert-taliban-build-back-better.jpg"
+      ]
+    },
+    {
+      "post_id": "24f33431-496f-465b-a472-5d425e57923f",
+      "dataset_claim_id": "8405",
+      "claim_text": "A photograph shows a bride and groom during a 'Handmaid's Tale'-themed wedding.",
+      "snopes_url": "https://www.snopes.com/fact-check/handmaid-tale-themed-wedding/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "Contemporary reporting and the photographers state the wedding was not Handmaid's Tale\u2013themed: the couple had a regular wedding at Cambridge Mill and the photographers digitally added figures dressed as handmaids to a single photo rather than the wedding being themed.",
+      "correct": true,
+      "latency_seconds": 15.2,
+      "costs": {
+        "basic_agent": 0.0006707499999999999
+      },
+      "images_submitted": [
+        "08405-549710-01-handmaid-themed-wedding.jpg",
+        "08405-549711-03-handmaids-tale-wedding-snopes.jpg"
+      ]
+    },
+    {
+      "post_id": "43b4c186-be96-44a9-9612-d22de9768dc5",
+      "dataset_claim_id": "12419",
+      "claim_text": "A photograph captured by a team of scientists aboard the deep-sea research vessel Okeanos Explorer showed a 'real life' Spongebob Squarepants and Patrick Star.",
+      "snopes_url": "https://www.snopes.com/fact-check/real-life-spongebob-and-patrick/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "NOAA\u02bcs Okeanos Explorer ROV captured an image on July 27, 2021 (Retriever Seamount, 6,184 ft) showing a yellow sponge (genus Hertwigia) beside a pink sea star (Chondraster); NOAA scientists and marine biologist Christopher Mah noted the striking resemblance to SpongeBob SquarePants and Patrick Star.",
+      "correct": true,
+      "latency_seconds": 16.4,
+      "costs": {
+        "basic_agent": 0.00067275
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "e0af8eda-db47-4e02-9c45-f08d3a99e26c",
+      "dataset_claim_id": "10846",
+      "claim_text": "Officials say the October 2017 California wildfires were started by Mexican drug cartels in order to gain a strategic advantage over the legal marijuana industry.",
+      "snopes_url": "https://www.snopes.com/fact-check/california-fires-drug-cartels-marijuana-farms/",
+      "truth_label": "NEI",
+      "system_verdict": "REFUTED",
+      "justification": "Credible reporting and official investigations found no evidence that Mexican drug cartels started the October 2017 California wildfires; the cartel allegation originated from an unverified GotNews piece and reputable outlets cited causes like wind-damaged power equipment and severe fire weather rather than arson by cartels.",
+      "correct": false,
+      "latency_seconds": 15.8,
+      "costs": {
+        "basic_agent": 0.00070425
+      },
+      "images_submitted": [
+        "10846-526395-10-california_wildfire_fb.jpg"
+      ]
+    },
+    {
+      "post_id": "24924622-5865-4cd4-8a89-3ec26cd5594c",
+      "dataset_claim_id": "116540",
+      "claim_text": "'Joe Biden wants to raise taxes on 82% of all Americans.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/sep/04/donald-trump-jr/donald-trump-jr-misrepresents-joe-bidens-tax-plan/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "Independent analyses and fact-checkers refute the \"82%\" claim: Biden pledged not to raise taxes on households earning under $400,000, and a comprehensive Penn Wharton analysis (and FactCheck.org/PolitiFact reporting) found most Americans would not see a tax increase and that the earlier \"82%\" figure was misleading.",
+      "correct": true,
+      "latency_seconds": 22.4,
+      "costs": {
+        "basic_agent": 0.00129
+      },
+      "images_submitted": [
+        "116540-548118-28-37bc2dc633d73e6b034ef5e435afd881.jpg"
+      ]
+    },
+    {
+      "post_id": "c51d1ffa-1124-406b-aa43-635daf43d174",
+      "dataset_claim_id": "4701",
+      "claim_text": "Ellen DeGeneres has decided to end her long-running daytime talk show in 2022.",
+      "snopes_url": "https://www.snopes.com/fact-check/ellen-degeneres-end-show-2022/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Ellen DeGeneres announced in May 2021 that the 19th season of The Ellen DeGeneres Show would be its last, and the final episode aired on May 26, 2022; reports cite her desire for new creative challenges amid declining viewership and workplace controversy.",
+      "correct": true,
+      "latency_seconds": 12.2,
+      "costs": {
+        "basic_agent": 0.00049625
+      },
+      "images_submitted": [
+        "04701-527647-05-1620px-Obama-DeGeneres-dance-20120201-e1620852862778.jpeg"
+      ]
+    },
+    {
+      "post_id": "3ccea62e-eb7a-4dad-add9-80643e1a72bd",
+      "dataset_claim_id": "12733",
+      "claim_text": "Conspiracy theorist Alex Jones said President-elect Joe Biden will be 'removed' from office 'one way or another.",
+      "snopes_url": "https://www.snopes.com/fact-check/alex-jones-biden-removed/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "On Dec. 12, 2020, at a pro-Trump \"Million MAGA March\" in Washington, D.C., Alex Jones told the crowd that then-President-elect Joe Biden \"will be removed one way or another,\" a statement widely reported and later echoed by Jones in 2024 when he again speculated about Biden\u2019s removal.",
+      "correct": true,
+      "latency_seconds": 13.6,
+      "costs": {
+        "basic_agent": 0.0006005
+      },
+      "images_submitted": [
+        "12733-548515-04-GettyImages-1229672718.jpg"
+      ]
+    },
+    {
+      "post_id": "6ba5f0dc-478f-417e-a928-5bfbedadf94c",
+      "dataset_claim_id": "119514",
+      "claim_text": "Pennsylvania rejected 372,000 mail-in ballots",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/oct/19/facebook-posts/pennsylvania-rejected-372000-ballot-applications-n/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "The figure of ~372,000 refers to rejected mail\u2011in ballot requests/applications in 2020 (mostly duplicate applications, ~336,000), not actual mailed ballots; actual mail\u2011in ballots rejected in the 2020 general election were about 21,800, far fewer than 372,000.",
+      "correct": true,
+      "latency_seconds": 16.5,
+      "costs": {
+        "basic_agent": 0.00070475
+      },
+      "images_submitted": [
+        "119514-548352-13-fca23e7c7865658e82fd025cde9088e7.jpg"
+      ]
+    },
+    {
+      "post_id": "14e5e3ce-aaa4-4048-9841-27916b74800f",
+      "dataset_claim_id": "112110",
+      "claim_text": "In more than 60 cases, judges 'looked at the allegations that Trump was making and determined they were without any merit.",
+      "snopes_url": "https://www.politifact.com/factchecks/2021/jan/08/joe-biden/joe-biden-right-more-60-trumps-election-lawsuits-l/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Court records show Trump and allies filed roughly 62 post-2020 lawsuits, and the overwhelming majority were dismissed or dropped for lack of evidence or standing; judges frequently described the suits as \u201cfrivolous\u201d or \u201cwithout merit\u201d (e.g., a federal judge in Pennsylvania called the claims \u201cstrained legal arguments without merit,\u201d and a federal appeals court unanimously dismissed a challenge as \u201cwithout merit\u201d).",
+      "correct": true,
+      "latency_seconds": 14.3,
+      "costs": {
+        "basic_agent": 0.00066375
+      },
+      "images_submitted": [
+        "112110-547765-25-e33f4682c62e118ce73baeab7e4c6d65.jpg"
+      ]
+    },
+    {
+      "post_id": "6ca80aad-8bc0-4bd8-9c38-b83df86bc735",
+      "dataset_claim_id": "11648",
+      "claim_text": "The Oregon Department of Education (ODE) told teachers that asking students to 'show their work' in math class is a form of white supremacy.",
+      "snopes_url": "https://www.snopes.com/fact-check/education-oregon/",
+      "truth_label": "NEI",
+      "system_verdict": "REFUTED",
+      "justification": "The ODE promoted an independent \u201cPathway to Equitable Math Instruction\u201d resource that included the line that white supremacy culture can show up when students are required to \u201cshow their work,\u201d but the department did not itself issue a directive labeling asking students to show work as white supremacy and framed the materials as one external resource encouraging diverse ways for students to explain problem-solving.",
+      "correct": false,
+      "latency_seconds": 18.8,
+      "costs": {
+        "basic_agent": 0.0006915000000000001
+      },
+      "images_submitted": [
+        "11648-548116-02-GettyImages-1208197951-scaled-e1614039930421.jpg"
+      ]
+    },
+    {
+      "post_id": "52cef5d2-bb0a-49cf-8781-92361d53f328",
+      "dataset_claim_id": "103235",
+      "claim_text": "Timothy Simpkins, a Black teen shooter, got 1 day in jail and $75,000 bail, while Kyle Rittenhouse, a white teen, got 2 months in jail and $2 million bail. 'I think it's pretty evident ... that white privilege is a myth.",
+      "snopes_url": "https://www.politifact.com/factchecks/2021/nov/17/viral-image/comparison-shootings-omits-key-difference-2-were-k/",
+      "truth_label": "NEI",
+      "system_verdict": "REFUTED",
+      "justification": "The Rittenhouse details are largely accurate\u2014he was jailed for nearly three months and released on a $2 million bond\u2014but the Simpkins claim is contradicted by records showing he was convicted of attempted capital murder and in July 2023 was sentenced to 12 years in prison (and fined $6,000); there is no reliable evidence he received only 1 day in jail or a $75,000 bail amount.",
+      "correct": false,
+      "latency_seconds": 22.3,
+      "costs": {
+        "basic_agent": 0.00081175
+      },
+      "images_submitted": [
+        "103235-125791-23-1222a4f38dc1dca98e528776eb05a131.jpg"
+      ]
+    },
+    {
+      "post_id": "c31de136-9cb5-4a40-b693-e19e865cb489",
+      "dataset_claim_id": "105344",
+      "claim_text": "'It's not that there's a virus shield between Canada (4,500 deaths) and the U.S. (80,000 deaths). What exists is a difference in leadership.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/may/15/facebook-posts/fact-checking-why-us-has-more-covid-19-deaths-cana/",
+      "truth_label": "NEI",
+      "system_verdict": "VERIFIED",
+      "justification": "Reported death totals (roughly 4\u20134.5k in Canada vs ~71\u201380k in the U.S. in early May 2020) are accurate, and multiple expert analyses attribute the large disparity to differences in leadership and public\u2011health response rather than any biological \u201cshield.\u201d",
+      "correct": false,
+      "latency_seconds": 19.4,
+      "costs": {
+        "basic_agent": 0.00085275
+      },
+      "images_submitted": [
+        "105344-547210-18-57d1b54f2268486a4d5fe0869f4c8869.jpg"
+      ]
+    },
+    {
+      "post_id": "dfbb2436-b07f-4e8c-b3f8-6a717c545399",
+      "dataset_claim_id": "116811",
+      "claim_text": "The White House was dark for 10 nights in a row.",
+      "snopes_url": "https://www.politifact.com/factchecks/2021/feb/03/viral-image/no-photo-doesnt-show-white-house-dark-after-biden-/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "Contemporaneous reporting and White House statements indicate the White House exterior lights routinely go off around 11 p.m., and viral photos claiming extended darkness during 2020 protests were old or edited; while it was dark on some individual nights (e.g., May 31, 2020; Jan 7, 2021), there is no evidence it was dark for 10 consecutive nights.",
+      "correct": true,
+      "latency_seconds": 15.6,
+      "costs": {
+        "basic_agent": 0.000659
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "228271e8-963f-41e4-98eb-e56b0642cf48",
+      "dataset_claim_id": "108944",
+      "claim_text": "'In West Virginia alone, overdoses have increased by 50% during the #COVID-19 pandemic.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/aug/19/carol-miller/have-overdoses-wva-increased-50-during-pandemic/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "West Virginia state and CDC preliminary data show overdose deaths rose roughly 40\u201345% during the pandemic period (WV DHHR reported 1,275 deaths in 2020, a 45% increase vs 878 in 2019; CDC showed >40% increase Aug 2019\u2013Aug 2020), so the claim of about a 50% rise is broadly accurate though slightly higher than some estimates.",
+      "correct": true,
+      "latency_seconds": 18.4,
+      "costs": {
+        "basic_agent": 0.0010512499999999999
+      },
+      "images_submitted": [
+        "108944-547486-23-178b24cba7a5173a6f68e2c2c3d85268.jpg"
+      ]
+    },
+    {
+      "post_id": "f22c6221-4011-4984-ae3c-1add61e26955",
+      "dataset_claim_id": "101915",
+      "claim_text": "'The retail market we participate in is extraordinarily large and competitive. Amazon accounts for less than 1% of the $25 trillion global retail market, and less than 4% of U.S. retail.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/aug/06/jeff-bezos/bezos-statistics-ignore-amazons-monopoly-us-e-comm/",
+      "truth_label": "NEI",
+      "system_verdict": "REFUTED",
+      "justification": "Amazon\u2019s 2024 worldwide retail sales (~$391B) equal about 1.3\u20131.5% of recent $25.8\u201330.2T global retail estimates (not <1%). In the U.S., Amazon accounted for about 10% of total retail sales (Q4 2023) and roughly 37.6% of e\u2011commerce (with e\u2011commerce \u224816.1% of U.S. retail), implying ~6% of U.S. retail \u2014 well above 4%.",
+      "correct": false,
+      "latency_seconds": 27.1,
+      "costs": {
+        "basic_agent": 0.0012935
+      },
+      "images_submitted": [
+        "101915-546968-25-3e70afac46d8c6e667d734e096c72d15.jpg"
+      ]
+    },
+    {
+      "post_id": "b19fdfe6-8fed-44d5-8458-08888d6166ed",
+      "dataset_claim_id": "109809",
+      "claim_text": "'We've also seen in the time that he's (Donald Trump) been president, an increase in carbon emissions going absolutely in the wrong way.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/feb/16/jan-schakowsky/have-carbon-emissions-increased-under-trump/",
+      "truth_label": "supported",
+      "system_verdict": "NEI",
+      "justification": "U.S. emissions did rise in 2018 (about +3%, the first annual increase under Trump), but CO2 fell in 2019 (about -0.5%) and by Oct 2020 the U.S. was described as marginally less polluting than when he took office; the record therefore shows mixed year-to-year changes rather than a consistent, sustained increase.",
+      "correct": false,
+      "latency_seconds": 34.9,
+      "costs": {
+        "basic_agent": 0.00064675
+      },
+      "images_submitted": [
+        "109809-547582-31-e7d4d6509657e70fbc2006659e09ce55.jpg"
+      ]
+    },
+    {
+      "post_id": "00451d25-47e3-4a9e-89c7-80b0b3621557",
+      "dataset_claim_id": "1954",
+      "claim_text": "Donald Trump tweeted that his 'grandparents didn't come to America' to see the country taken over by immigrants.",
+      "snopes_url": "https://www.snopes.com/fact-check/donald-trump-fake-tweet/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "False \u2014 the tweet did not come from Donald Trump\u2019s official account but from a parody Twitter account (@McDonaldJTrump) in September 2015, and Trump\u2019s grandparents were themselves immigrants (his paternal grandparents from Germany and his mother from Scotland), contradicting the claim.",
+      "correct": true,
+      "latency_seconds": 12.6,
+      "costs": {
+        "basic_agent": 0.0005905
+      },
+      "images_submitted": [
+        "01954-547826-06-donald-trump.jpg"
+      ]
+    },
+    {
+      "post_id": "4b0bffaf-aecd-4c56-8f3e-c099331a90ac",
+      "dataset_claim_id": "12711",
+      "claim_text": "A video shows an augmented reality (AR) dragon flying over a baseball stadium.",
+      "snopes_url": "https://www.snopes.com/fact-check/dragon-over-baseball-stadium/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Contemporary reports confirm SK Telecom created the AR dragon for the 2019 KBO opening at Incheon's SK Happy Dream Park; the CGI dragon was shown on the stadium LED screens and on viewers\u2019 phones via an AR app (it was not visible to the naked eye).",
+      "correct": true,
+      "latency_seconds": 13.0,
+      "costs": {
+        "basic_agent": 0.0005985
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "364718d8-15e2-468d-989d-75c414b48b58",
+      "dataset_claim_id": "105878",
+      "claim_text": "'With retail, people are moving around and you don't have as much a chance to spread the virus (as you do) when people are sitting or standing indoors' for long periods of time.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/jun/01/roy-cooper/nc-governor-mostly-right-about-indoor-worship-and-/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Evidence shows prolonged indoor exposure and static close-contact settings (e.g., offices) carry higher transmission risk than brief, moving interactions; systematic reviews report much higher secondary attack rates in offices versus retail (21.2% vs 3.1%), and experts note fleeting encounters are far less risky\u2014though ventilation, crowding, and visit duration still affect risk.",
+      "correct": true,
+      "latency_seconds": 25.6,
+      "costs": {
+        "basic_agent": 0.0010317500000000001
+      },
+      "images_submitted": [
+        "105878-547264-42-2ec6a039ae7d5a5f3f1955d3ed72d97f.jpg"
+      ]
+    },
+    {
+      "post_id": "27a2812c-fe95-4575-a744-2cc0cebbd9e1",
+      "dataset_claim_id": "118678",
+      "claim_text": "'You people hate on Trump but he put on a child protective force that found over 300 missing kids in less than 30 days.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/sep/16/facebook-posts/no-trump-doesnt-have-child-protective-force-search/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "There is no evidence that the Trump administration created a \"child protective force\" that found over 300 missing children in under 30 days; documented recoveries during Trump (e.g., 39 children in a two\u2011week 2020 USMS operation) were far smaller, while larger recoveries of 200+ children occurred in 2023\u20132024 under the Biden administration or used different definitions of \"missing\" (released unaccompanied minors), not a single 30\u2011day operation under Trump.",
+      "correct": true,
+      "latency_seconds": 26.5,
+      "costs": {
+        "basic_agent": 0.0008579999999999999
+      },
+      "images_submitted": [
+        "118678-548295-24-39599427dce2d8b3642f9aed78e425e0.jpg"
+      ]
+    },
+    {
+      "post_id": "93464b59-9335-44d8-bf55-53acbd37f1e1",
+      "dataset_claim_id": "8335",
+      "claim_text": "Justice Anthony Kennedy suddenly resigned from the Supreme Court as part of a deal to shield his son from ongoing Russian investigations.",
+      "snopes_url": "https://www.snopes.com/fact-check/anthony-kennedy-resignation-trump/",
+      "truth_label": "NEI",
+      "system_verdict": "REFUTED",
+      "justification": "Justice Kennedy announced his retirement in June 2018 saying he wanted to spend more time with family; there is no evidence he resigned to shield his son. Justin Kennedy left Deutsche Bank in 2009 (before the Russia-linked laundering activity beginning in 2011), has not been accused or investigated for such conduct, and fact-checkers (PolitiFact, Snopes) have rated the claim false/unproven.",
+      "correct": false,
+      "latency_seconds": 16.1,
+      "costs": {
+        "basic_agent": 0.00069
+      },
+      "images_submitted": [
+        "08335-546636-04-kennedy2.jpg",
+        "08335-43501-01-28dc-kennedy-letter-articleLarge-v7.jpg",
+        "08335-43501-02-28-resignation-doc-facebookJumbo-v5.jpg"
+      ]
+    },
+    {
+      "post_id": "caefc57d-bcdb-40ff-a7e3-b26b39b61db9",
+      "dataset_claim_id": "102953",
+      "claim_text": "'Coronavirus Hoax: Fake Virus Pandemic Fabricated to Cover-Up Global Outbreak of 5G Syndrome.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/mar/09/facebook-posts/no-evidence-coronavirus-was-faked-cover-5g-syndrom/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "REFUTED \u2014 Multiple authoritative sources (WHO, ITU, ARPANSA and national health agencies) state there is no scientific or technical basis linking 5G radio frequencies to COVID-19; viruses are biological and cannot be transmitted by electromagnetic radio waves, and COVID-19 is spread via respiratory droplets. The 5G\u2013COVID conspiracy has been widely debunked and has led to real-world harms (vandalism/arson) but no supporting evidence.",
+      "correct": true,
+      "latency_seconds": 14.8,
+      "costs": {
+        "basic_agent": 0.0008309999999999999
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "0f8efb49-4ea8-43e2-8080-29c6da579f59",
+      "dataset_claim_id": "9471",
+      "claim_text": "Aerial photographs captured by NASA's Ingenuity Mars helicopter showed mushrooms growing on the red planet.",
+      "snopes_url": "https://www.snopes.com/fact-check/mushrooms-on-mars/",
+      "truth_label": "NEI",
+      "system_verdict": "REFUTED",
+      "justification": "There is no credible evidence that Ingenuity photos show mushrooms; the claim stems from a non\u2013peer\u2011reviewed 2021 preprint (using images mostly from Curiosity and HiRISE, not Ingenuity) that has been widely dismissed by scientists as speculative and methodologically flawed.",
+      "correct": false,
+      "latency_seconds": 15.5,
+      "costs": {
+        "basic_agent": 0.0007275000000000001
+      },
+      "images_submitted": [
+        "09471-49342-01-press2-scaled.jpg"
+      ]
+    },
+    {
+      "post_id": "abff84a3-ee6f-424d-b436-2791c9348ac1",
+      "dataset_claim_id": "112843",
+      "claim_text": "Says President Donald Trump 'took more than a month to allocate Congress' emergency funding to tribes - and only did so after tribes sued.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/jun/01/joe-biden/fact-checking-joe-bidens-claim-trump-delayed-8-bil/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "The CARES Act was signed March 27, 2020 and required tribal relief to be disbursed within 30 days, but the Treasury did not begin major distributions until May 5, 2020 (more than a month later). Tribal governments sued over the Treasury\u2019s allocation plan (leading to an April 27 preliminary injunction and a June court order), and courts\u2019 rulings prompted the Treasury to begin releasing the funds.",
+      "correct": true,
+      "latency_seconds": 24.0,
+      "costs": {
+        "basic_agent": 0.00075625
+      },
+      "images_submitted": [
+        "112843-547844-08-ceb87e472ea96ecb327883d057228ec9.jpg"
+      ]
+    },
+    {
+      "post_id": "eb587776-12d1-4a05-bbf3-ac5ee85b414c",
+      "dataset_claim_id": "116962",
+      "claim_text": "Says George Soros was arrested in Philadelphia for election interference.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/nov/23/blog-posting/no-george-soros-wasnt-arrested-philadelphia-electi/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "Multiple reliable fact-checks found the claim false: it originated on misinformation sites in Nov 2020, the purported indictment was a forged document digitally altered from a real Russian indictment, Open Society Foundations called the report \"entirely false,\" and court records show no arrest or indictment.",
+      "correct": true,
+      "latency_seconds": 12.5,
+      "costs": {
+        "basic_agent": 0.00060425
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "d2e70dc8-f3e2-40be-aab4-be10cb9f2439",
+      "dataset_claim_id": "12676",
+      "claim_text": "Derek Chauvin 'under-reported half a million dollars in income.",
+      "snopes_url": "https://www.snopes.com/fact-check/chauvin-income-underreport/",
+      "truth_label": "NEI",
+      "system_verdict": "VERIFIED",
+      "justification": "Prosecutors alleged Derek Chauvin and his then-wife underreported their joint income by $464,433 for 2014\u20132019, and Chauvin later pleaded guilty in the related tax case; this supports the claim that about half a million dollars was underreported.",
+      "correct": false,
+      "latency_seconds": 13.5,
+      "costs": {
+        "basic_agent": 0.00076175
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "612e8a56-5f36-4b0c-889f-ef2cf9c61d03",
+      "dataset_claim_id": "9918",
+      "claim_text": "A text-based meme accurately portrays various Democrat politicians' success rate at passing legislation.",
+      "snopes_url": "https://www.snopes.com/fact-check/democratic-senators-pass-bills-rate/",
+      "truth_label": "NEI",
+      "system_verdict": "REFUTED",
+      "justification": "Multiple fact-checking organizations have found text-based memes about Democrats' legislative success to be inaccurate or misleading (for example, a Facebook meme falsely claimed the first three 2019 House Democratic bills sought to impeach the president, ban the Electoral College, or provide $54 billion in foreign aid; they were actually on voting rights, appropriations, and Syria sanctions). Legislative effectiveness is nuanced (see Center for Effective Lawmaking scores) and cannot be accurately summarized by generic memes.",
+      "correct": false,
+      "latency_seconds": 22.3,
+      "costs": {
+        "basic_agent": 0.0008172499999999999
+      },
+      "images_submitted": [
+        "09918-546798-06-proposed-legislation.jpg",
+        "09918-546799-10-AP17297435682026.jpg"
+      ]
+    },
+    {
+      "post_id": "3cb4e2aa-a8d4-44e3-a622-e0d236243e09",
+      "dataset_claim_id": "12980",
+      "claim_text": "Sting video maker James O'Keefe plans to 'infiltrate' the Women's March on Washington.",
+      "snopes_url": "https://www.snopes.com/fact-check/james-okeefe-planning-infiltrate-womens-march-dc/",
+      "truth_label": "NEI",
+      "system_verdict": "NEI",
+      "justification": "Contemporaneous reporting (Snopes) rated the claim \"Unproven,\" noting neither James O'Keefe nor Project Veritas publicly confirmed plans to infiltrate the Women's March; while Project Veritas has a history of undercover operations, no direct evidence was found to confirm the specific claim.",
+      "correct": true,
+      "latency_seconds": 17.7,
+      "costs": {
+        "basic_agent": 0.0006722499999999999
+      },
+      "images_submitted": [
+        "12980-566535-10-james_okeefe_fb.jpg"
+      ]
+    },
+    {
+      "post_id": "91d0c5e2-6cdb-4dcb-84e5-7661955a4c85",
+      "dataset_claim_id": "12204",
+      "claim_text": "Mountain Dew created a 'flamin' hot' soda flavor.",
+      "snopes_url": "https://www.snopes.com/fact-check/mountain-dew-flamin-hot-flavor/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "PepsiCo released MTN DEW Flamin' Hot \u2014 first announced in August 2021 and sold beginning August 31, 2021 as a limited online DEW Store offering; the flavor was later re\u2011released in 2022. Sources confirm Mountain Dew produced a Flamin' Hot soda flavor.",
+      "correct": true,
+      "latency_seconds": 16.3,
+      "costs": {
+        "basic_agent": 0.0006119999999999999
+      },
+      "images_submitted": [
+        "12204-548454-10-Copy-of-Rating-Overlay-FEATURED-IMG-9.jpg"
+      ]
+    },
+    {
+      "post_id": "d741eaaa-f578-405f-99d3-daeb4bfe3c64",
+      "dataset_claim_id": "113507",
+      "claim_text": "Poll watchers in Philadelphia prevented from entering polling places.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/nov/03/tweets/fact-checking-claim-about-poll-watchers-turned-awa/",
+      "truth_label": "NEI",
+      "system_verdict": "REFUTED",
+      "justification": "While isolated instances occurred (e.g., a poll watcher briefly denied entry due to a judge of election misunderstanding), city officials and courts found no evidence of a systemic denial; satellite election offices were not traditional polling places and claims of broad blocking were dismissed by judges.",
+      "correct": false,
+      "latency_seconds": 14.2,
+      "costs": {
+        "basic_agent": 0.0008177499999999999
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "5a5f04a6-8fe8-4a03-ae0b-76a36e54a89f",
+      "dataset_claim_id": "12320",
+      "claim_text": "In August 2020, U.S. House Speaker Nancy Pelosi had a hair appointment at a salon in San Francisco - at a time when hair salons were forbidden to operate in the city due to COVID-19.",
+      "snopes_url": "https://www.snopes.com/fact-check/pelosi-hair-salon/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Surveillance footage and reporting show Pelosi visited eSalonSF on Aug 31, 2020; at that time San Francisco prohibited indoor hair salon services (salons were allowed to offer outdoor services starting Sept 1, 2020), and footage showed her inside the salon without a mask for part of the visit.",
+      "correct": true,
+      "latency_seconds": 14.3,
+      "costs": {
+        "basic_agent": 0.00064575
+      },
+      "images_submitted": [
+        "12320-548459-02-1200_47998984512_dbde2308f8_o.jpg"
+      ]
+    },
+    {
+      "post_id": "665a8b87-78bc-4c2f-8c4e-299492c9b3ad",
+      "dataset_claim_id": "110648",
+      "claim_text": "'Right now, two-thirds of the U.S. Senate is composed of millionaires.",
+      "snopes_url": "https://www.politifact.com/factchecks/2021/mar/25/tom-nelson/democrat-tom-nelson-right-claim-two-thirds-us-sena/",
+      "truth_label": "supported",
+      "system_verdict": "REFUTED",
+      "justification": "Contemporary reporting shows a large share of senators are millionaires (e.g., over 50 senators in 2018 and recent summaries saying 'more than half'), but the sources do not support that roughly 66.7% of the Senate are millionaires; the evidence does not back the claim that two-thirds of the current Senate are millionaires.",
+      "correct": false,
+      "latency_seconds": 16.5,
+      "costs": {
+        "basic_agent": 0.00069675
+      },
+      "images_submitted": [
+        "110648-547642-43-4b494dacc7331b5eba4ce8d268832f63.jpg"
+      ]
+    },
+    {
+      "post_id": "83c3a777-c759-43e3-81b7-2d00deade46b",
+      "dataset_claim_id": "106795",
+      "claim_text": "The coronavirus 'was constructed in the Wuhan Institute of Virology.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/oct/26/scott-perry/pa-rep-scott-perry-airs-debunked-claim-wuhan-lab-c/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "Extensive genomic analyses and the scientific consensus indicate SARS-CoV-2 is not the product of genetic engineering and most evidence supports a natural zoonotic origin; WHO investigators found a lab origin extremely unlikely. U.S. intelligence assessments also state they have no information that WIV genetic engineering involved SARS\u2011CoV\u20112, and there is no evidence the virus existed in any lab before the outbreak.",
+      "correct": true,
+      "latency_seconds": 26.5,
+      "costs": {
+        "basic_agent": 0.00223875
+      },
+      "images_submitted": [
+        "106795-153877-00-158f892bd384051d87624e7c1d729c4c.jpg"
+      ]
+    },
+    {
+      "post_id": "a16e0352-fb80-4e6b-8990-7a9adf582ada",
+      "dataset_claim_id": "103298",
+      "claim_text": "'There was no real scientific basis for believing that' social distancing would be necessary, 'since it had never been studied.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/may/06/laura-ingraham/laura-ingraham-wrong-about-no-real-scientific-basi/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "This is false: social distancing has longstanding scientific and historical basis \u2014 quarantine and distancing date back centuries, studies of the 1918 influenza pandemic found early, sustained NPIs (including distancing) reduced transmission and deaths, and outbreaks like SARS (2003) plus the known droplet transmission of respiratory viruses provided a clear rationale for distancing.",
+      "correct": true,
+      "latency_seconds": 18.4,
+      "costs": {
+        "basic_agent": 0.00079925
+      },
+      "images_submitted": [
+        "103298-547095-22-b3f4d3d5cf90b68981b65fa20800cce3.jpg"
+      ]
+    },
+    {
+      "post_id": "d0957667-5b31-4ce9-8500-5acacce61111",
+      "dataset_claim_id": "14938",
+      "claim_text": "U.S. President-elect Joe Biden has experienced two brain aneurisms, both of which required surgery.",
+      "snopes_url": "https://www.snopes.com/fact-check/biden-two-brain-aneurisms/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Contemporary medical reports state Biden suffered a ruptured brain aneurysm in early 1988 that required immediate surgery and during recovery a second smaller, unruptured aneurysm on the opposite side was found and surgically repaired in May 1988; both events and surgeries are documented and he subsequently recovered.",
+      "correct": true,
+      "latency_seconds": 19.2,
+      "costs": {
+        "basic_agent": 0.00054875
+      },
+      "images_submitted": [
+        "14938-548727-02-GettyImages-1160262759.jpg"
+      ]
+    },
+    {
+      "post_id": "92d349e0-4c6d-4942-81d6-09adc5d56e1a",
+      "dataset_claim_id": "104346",
+      "claim_text": "Says President Trump has ordered the military to take over 'major corrupt cities' to stay in office and that U.S. citizens will receive emergency alerts on their devices.",
+      "snopes_url": "https://www.politifact.com/factchecks/2021/jan/13/facebook-posts/dont-fall-rumors-about-trump-led-military-takeover/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "Multiple fact\u2011checking organizations and federal officials have debunked this claim: there is no evidence President Trump ordered the military to seize U.S. cities or that nationwide emergency alerts would be sent for that purpose, and the Insurrection Act was not invoked; while EAS/WEA can carry presidential messages, they are not linked to any verified plan to keep him in office by military takeover.",
+      "correct": true,
+      "latency_seconds": 22.3,
+      "costs": {
+        "basic_agent": 0.00077175
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "edb50535-0fae-4425-b274-50f7d7b29618",
+      "dataset_claim_id": "102831",
+      "claim_text": "'In Boone County (Missouri) with a 1.7% unemployment rate, we can't find enough people, we can't fill all the job openings.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/mar/10/cheri-toalson-reisch/reisch-says-low-unemployment-rate-isnt-always-good/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "While the specific 1.7% unemployment figure is lower than recent official estimates (about 2.4% in Dec 2024 and ~2.6% in Dec 2025), those low rates still reflect a very tight labor market; multiple sources (Federal Reserve/USAFacts/Data Commons, local leaders and the Missouri Chamber of Commerce) report employers in Boone County/Columbia struggling to fill numerous open jobs.",
+      "correct": true,
+      "latency_seconds": 20.2,
+      "costs": {
+        "basic_agent": 0.00075025
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "04794e02-1ed1-4b16-834a-8e627bfe155f",
+      "dataset_claim_id": "301293",
+      "claim_text": "Photograph shows U.S. soldiers forming a giant Statue of Liberty figure.",
+      "snopes_url": "http://www.snopes.com/photos/patriotic/liberty.asp",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Contemporary sources and historical accounts confirm the photograph is an authentic July 1918 'human photograph' at Camp Dodge, Iowa by Arthur S. Mole and John D. Thomas, using roughly 18,000 U.S. soldiers to form a giant Statue of Liberty as part of a WWI war-bond promotion.",
+      "correct": true,
+      "latency_seconds": 16.0,
+      "costs": {
+        "basic_agent": 0.000649
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "4f82d352-d9ea-43b8-8920-daa22b17b564",
+      "dataset_claim_id": "101817",
+      "claim_text": "Lists eight wealthy politicians and public figures who 'got millions (or close to it) in PPP loans.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/jul/13/facebook-posts/fact-checking-which-trump-supporters-and-allies-go/",
+      "truth_label": "NEI",
+      "system_verdict": "VERIFIED",
+      "justification": "Contemporaneous Treasury/SBA data and reporting confirm businesses linked to wealthy politicians/public figures received PPP loans in the millions or near\u2014e.g., Jared Kushner family companies ($1\u20132M each, $6M+ total), Vern Buchanan\u2019s dealerships ($2\u20136M), Kasowitz Benson Torres LLP ($5\u201310M), Betsy DeVos\u2013linked companies (\u2265$6M), and Kanye West\u2019s Yeezy (millions); House subcommittee and POGO reports corroborate preferential lending to wealthy clients.",
+      "correct": false,
+      "latency_seconds": 24.1,
+      "costs": {
+        "basic_agent": 0.0011625
+      },
+      "images_submitted": [
+        "101817-546957-27-5a276938b963bc80993beb6c3d2a4df2.jpg"
+      ]
+    },
+    {
+      "post_id": "8bf3583b-3f85-458b-b685-1b6bedd49956",
+      "dataset_claim_id": "7127",
+      "claim_text": "Washing instruction tags on Tom Bihn bags carry a hidden message in French disparaging the president.",
+      "snopes_url": "https://www.snopes.com/fact-check/bihn-label/",
+      "truth_label": "NEI",
+      "system_verdict": "VERIFIED",
+      "justification": "Contemporary reporting (e.g., Snopes, Los Angeles Times, HeraldNet) confirms that in April 2004 Tom Bihn care tags bore French text reading \"NOUS SOMMES DESOLES QUE NOTRE PRESIDENT SOIT UN IDIOT. NOUS N'AVONS PAS VOTE POUR LUI,\" which translates to \"We are sorry our president is an idiot. We didn't vote for him.\" The company acknowledged the label and said the intended referent of \"president\" was ambiguous.",
+      "correct": false,
+      "latency_seconds": 21.6,
+      "costs": {
+        "basic_agent": 0.0008835
+      },
+      "images_submitted": [
+        "07127-546524-05-tom_bihns_label_fb.jpg"
+      ]
+    },
+    {
+      "post_id": "28492398-7fb3-4887-9d21-717efa182b44",
+      "dataset_claim_id": "110866",
+      "claim_text": "'70% of Americans don't believe a word the mainstream media puts out,' so 'everyone who thinks Biden won are only 30% of the population.",
+      "snopes_url": "https://www.politifact.com/factchecks/2021/apr/27/facebook-posts/about-66-us-public-thinks-joe-biden-legitimate-pre/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "Polls do show about 70% of Americans express little or no confidence in the mainstream media (e.g., Oct 2025 Gallup: 70% with 'not very much' or 'none at all'), but numerous polls (Quinnipiac Dec 2020: ~60% legit; Washington Post\u2013UMD Jan 2024: 62% legit; AP\u2011NORC Aug: ~70% legit) indicate a majority believe Biden legitimately won \u2014 contradicting the claim that only 30% think he won.",
+      "correct": true,
+      "latency_seconds": 20.5,
+      "costs": {
+        "basic_agent": 0.0009372499999999999
+      },
+      "images_submitted": [
+        "110866-547667-04-8f441f414a5c46e4129fbfb3b8b1ee2c.jpg"
+      ]
+    },
+    {
+      "post_id": "5b6e8577-30c9-4855-bac4-3c0cec39341b",
+      "dataset_claim_id": "110752",
+      "claim_text": "'Six states can't get the votes counted. Six states in which @realDonaldTrump is leading. Six states where Dems are in charge.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/nov/04/facebook-posts/fact-checking-conspiracy-theory-about-ballot-count/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "False: votes in the six states (AZ, GA, MI, NV, PA, WI) were counted, audited and certified; Joe Biden was certified the winner in each, not Trump; and party control varied (some had Republican governors/legislatures), so the claim is incorrect on all three points.",
+      "correct": true,
+      "latency_seconds": 19.2,
+      "costs": {
+        "basic_agent": 0.00080075
+      },
+      "images_submitted": [
+        "110752-547657-24-Screen_Shot_2020-11-04_at_17_37_28.jpg",
+        "110752-547658-37-2214ab9deacb5d1825cb722bbd8059df.jpg"
+      ]
+    },
+    {
+      "post_id": "c73a1fe2-64d4-4454-9e66-19c837096a4b",
+      "dataset_claim_id": "109953",
+      "claim_text": "Says officials in Washington, D.C., are 'jamming all communications.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/jun/02/tweets/how-false-conspiracy-theory-about-washington-commu/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "There is no evidence officials in Washington, D.C., are \"jamming all communications\": carriers and the Metropolitan Police debunked alleged 2020 \"#dcblackout,\" 2021 Capitol outages were attributed to overloaded networks, federal law prohibits jamming, and a 2025 D.C. radio interference was traced to a faulty antenna rather than intentional jamming.",
+      "correct": true,
+      "latency_seconds": 17.2,
+      "costs": {
+        "basic_agent": 0.0008125000000000001
+      },
+      "images_submitted": [
+        "109953-567532-01-62fab983d5e8d961109164fb6b8a994d.jpg"
+      ]
+    },
+    {
+      "post_id": "00a31366-7fdb-4e71-b1d2-d9418e90a180",
+      "dataset_claim_id": "14861",
+      "claim_text": "Pizza Hut advertised that 'pizza is good for you.",
+      "snopes_url": "https://www.snopes.com/fact-check/pizza-is-good-for-you/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Contemporary evidence shows Pizza Hut ran a 1977 ad campaign with the tagline \u201cPizza Delicious. Pizza Nutritious.\u201d and ads stating pizza was high in protein, modest in calories, and contained essential nutrients (appearing in publications such as DC comics).",
+      "correct": true,
+      "latency_seconds": 13.8,
+      "costs": {
+        "basic_agent": 0.00059125
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "1fc21d32-a906-4b7f-a301-9a55ba8a9723",
+      "dataset_claim_id": "110788",
+      "claim_text": "'These 2 Ankeny moms standing next to the Governor are known Qanon and anti-vaxx conspiracy theorists.",
+      "snopes_url": "https://www.politifact.com/factchecks/2021/jun/11/kedron-bardwell/iowa-moms-governor-have-qanon-ties-shared-anti-vax/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Multiple reputable fact-checks (PolitiFact and reports in The Daily Iowan) identify the two Ankeny mothers photographed with Gov. Kim Reynolds\u2014Emily Peterson and Kimberly Reicks\u2014as having spread anti-vaccine/anti-mask conspiracy theories and having ties to QAnon-affiliated individuals; although Reicks disputes the labels, the available evidence supports the claim.",
+      "correct": true,
+      "latency_seconds": 21.0,
+      "costs": {
+        "basic_agent": 0.0009795
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "b0ab5e4a-595f-4996-8b64-8b358edacf7c",
+      "dataset_claim_id": "105566",
+      "claim_text": "Says Condoleezza Rice said, 'If you are taught bitterness and anger, then you will believe you are a victim. You will feel aggrieved and the twin brother of aggrievement is entitlement. So now you think you are owed something and you don't have to work for it and now you're on a really bad road to nowhere because there are people who will play to that sense of victimhood, aggrievement and entitlement, and you still won't have a job.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/aug/19/facebook-posts/condoleezza-rice-once-spoke-about-entitlement-isnt/",
+      "truth_label": "NEI",
+      "system_verdict": "REFUTED",
+      "justification": "The exact long quote is not directly attributable to Condoleezza Rice; it\u2019s a paraphrase/embellishment of remarks she made in 2012 about aggrievement and entitlement (e.g., \u201cThe moment we begin to believe... aggrievement... his twin brother... entitlement.\u201d) and similar RNC comments, so the circulating sentence is a 'Frankenquote.'",
+      "correct": false,
+      "latency_seconds": 15.8,
+      "costs": {
+        "basic_agent": 0.0007785
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "e359a5b7-9d4e-4758-baad-afbbf78cdb9a",
+      "dataset_claim_id": "100392",
+      "claim_text": "'Wisconsin is one of the nine states with the highest rate of infection per capita.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/sep/16/tony-evers/wisconsin-trending-poorly-covid-19-cases-evers-sta/",
+      "truth_label": "supported",
+      "system_verdict": "REFUTED",
+      "justification": "Recent data do not support the claim: CDC (Mar 10, 2026) shows infections growing in only 2 states and declining/steady in the rest and does not list Wisconsin among states with the highest per-capita infection rates. Older sources that placed Wisconsin high (Oct 2020) are outdated, and later reports (Aug 2021, 2024\u20132026 disease summaries) do not include Wisconsin among the top states by infection incidence.",
+      "correct": false,
+      "latency_seconds": 21.3,
+      "costs": {
+        "basic_agent": 0.000743
+      },
+      "images_submitted": [
+        "100392-546851-15-d44a64fe203013a7d5cfffdef529ad58.jpg"
+      ]
+    },
+    {
+      "post_id": "f668a17d-09fa-43cd-ab9f-e2f7752d3364",
+      "dataset_claim_id": "109531",
+      "claim_text": "'Inauguration Cancelled, Trump Remains in Office.",
+      "snopes_url": "https://www.politifact.com/factchecks/2021/jan/16/facebook-posts/claim-inauguration-canceled-trump-remain-president/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "Claims that an inauguration was canceled and Trump remained in office are false: Joe Biden was inaugurated on Jan 20, 2021 (claims of cancellation were debunked), and Donald Trump was sworn in for a second term on Jan 20, 2025\u2014only certain events (the outdoor parade) were canceled or moved indoors due to weather, not the inauguration itself.",
+      "correct": true,
+      "latency_seconds": 20.4,
+      "costs": {
+        "basic_agent": 0.0009109999999999999
+      },
+      "images_submitted": [
+        "109531-547554-23-dbc2da2d44372c8b63ceb073d52c8b18.jpeg"
+      ]
+    },
+    {
+      "post_id": "99581d2d-68fb-4c9e-85e2-eff0d6eadea1",
+      "dataset_claim_id": "10048",
+      "claim_text": "U.S. Sen. Elizabeth Warren said or argued to the effect that 'taxpayers must fund sex reassignment surgery.",
+      "snopes_url": "https://www.snopes.com/fact-check/elizabeth-warren-sex-reassignment/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Warren has explicitly supported taxpayer-funded coverage of medically necessary \u201ctransition-related\u201d surgeries \u2014 including a 2019 plan calling for VA coverage for veterans and stating such care should be covered under a \u201cMedicare for All\u201d plan \u2014 and has said incarcerated people are entitled to medically necessary transition surgeries, which demonstrates she argued public/taxpayer programs should fund them.",
+      "correct": true,
+      "latency_seconds": 14.7,
+      "costs": {
+        "basic_agent": 0.00080075
+      },
+      "images_submitted": [
+        "10048-546862-04-GettyImages-1171198103.jpg"
+      ]
+    },
+    {
+      "post_id": "37d3aea9-0b36-4b07-8bfc-90a9052db9b3",
+      "dataset_claim_id": "303782",
+      "claim_text": "Russian president Vladimir Putin slammed Western countries for using GMOs and vaccines that slow evolution.",
+      "snopes_url": "http://www.snopes.com/putin-gmo-evolution/",
+      "truth_label": "NEI",
+      "system_verdict": "REFUTED",
+      "justification": "Multiple fact-checks trace the quote to January 2016 posts on dubious/anti\u2011vaccine sites and an alleged Security Council report, but found no evidence Putin ever made such statements; Snopes rated the claim \"Unproven.\" While Putin has criticized GMOs and signed bans, the specific accusation that he slammed Western countries for using GMOs and vaccines to slow human evolution is unsupported and appears false.",
+      "correct": false,
+      "latency_seconds": 24.5,
+      "costs": {
+        "basic_agent": 0.00079625
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "3b6bb808-7d06-4725-9901-8eb74246e06f",
+      "dataset_claim_id": "102386",
+      "claim_text": "Says an image of a Vermont mansion is one of Bernie Sanders homes.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/mar/06/viral-image/viral-photo-3-million-vermont-estate-not-owned-ber/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "Fact-checkers identified the pictured mansion as a 15,460 sq ft estate in Stowe, Vermont, sold in 2017 for nearly $3 million, not owned by Bernie Sanders. Sanders\u2019 documented properties are a modest Burlington colonial, a D.C. row house, and a seasonal North Hero lake cabin, not an opulent Stowe mansion.",
+      "correct": true,
+      "latency_seconds": 15.6,
+      "costs": {
+        "basic_agent": 0.00057575
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "79d5726a-e942-408b-87b7-5730f3511fd9",
+      "dataset_claim_id": "115954",
+      "claim_text": "The Biden administration 'halted deportations for all illegal aliens - murderers, rapists, terrorists, MS-13 gang members are not being deported.",
+      "snopes_url": "https://www.politifact.com/factchecks/2021/feb/26/tom-cotton/tom-cotton-falsely-claims-joe-biden-halted-deporta/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "The claim is false: Biden\u2019s initial 100\u2011day pause explicitly exempted suspected terrorists, those endangering national security/public safety, and individuals convicted of aggravated felonies (e.g., murder, rape), and DHS guidance prioritizes removal of threats (including violent criminals and gang members); ICE deportations have continued and rose to a 10\u2011year high in FY2024, contradicting the assertion that such individuals are not being deported.",
+      "correct": true,
+      "latency_seconds": 17.8,
+      "costs": {
+        "basic_agent": 0.0008405
+      },
+      "images_submitted": [
+        "115954-548058-14-f43eaa7ee00e50291a98dbb5ead992f8.jpg"
+      ]
+    },
+    {
+      "post_id": "0f547dfd-086e-4b11-83e4-a58aa2ed26ab",
+      "dataset_claim_id": "113356",
+      "claim_text": "'Remember, the American Revolution began when they came for the guns.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/mar/18/eric-burlison/guns-not-only-factor-american-revolution/",
+      "truth_label": "NEI",
+      "system_verdict": "VERIFIED",
+      "justification": "Contemporary sources and historians agree the immediate outbreak of hostilities at Lexington and Concord (April 19, 1775) was precipitated by General Gage\u2019s orders to seize colonial gunpowder and weapons; colonists viewed British disarmament efforts as a direct threat and had been mobilizing militias in response. Thus the claim that the Revolution began when British forces came for the guns is supported by the evidence.",
+      "correct": false,
+      "latency_seconds": 13.4,
+      "costs": {
+        "basic_agent": 0.0006412499999999999
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "be625cb1-7d3c-41a1-8acd-4c2228a34df9",
+      "dataset_claim_id": "13734",
+      "claim_text": "In late September 2020, the U.S. Department of Agriculture distributed millions of federally funded aid boxes that included a letter from President Donald Trump crediting his administration for their distribution.",
+      "snopes_url": "https://www.snopes.com/fact-check/federal-food-box-credit-trump/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Contemporaneous reporting and records show USDA\u2019s Farmers to Families Food Box program included White House letters signed by President Trump; American Oversight and news outlets (ProPublica, CBS, Snopes) document that the administration required the letters be added in mid-late September 2020 and that millions of federally funded boxes contained the letter.",
+      "correct": true,
+      "latency_seconds": 14.2,
+      "costs": {
+        "basic_agent": 0.0011094999999999998
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "b728ce83-3102-4def-a755-408bb939f042",
+      "dataset_claim_id": "7967",
+      "claim_text": "In February 2018, the owners of a caf\u00e9 in Oakland, California said they would not be serving police officers and would be asking them to leave.",
+      "snopes_url": "https://www.snopes.com/fact-check/oakland-coffee-police-officers/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Contemporary reports and Hasta Muerte Coffee\u2019s own February 22, 2018 Instagram post confirm the worker-owned Oakland caf\u00e9 publicly stated a policy of not serving police and asking officers to leave, after an incident on Feb. 16 when an Oakland sergeant was reportedly denied service.",
+      "correct": true,
+      "latency_seconds": 12.0,
+      "costs": {
+        "basic_agent": 0.0005672499999999999
+      },
+      "images_submitted": [
+        "07967-549600-03-police_coffee_feature.jpg"
+      ]
+    },
+    {
+      "post_id": "98dc8fc7-68d2-4f25-9d85-bbd3cdacccbd",
+      "dataset_claim_id": "103746",
+      "claim_text": "Data show that more white people than Black people are shot and killed by police.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/jun/03/tiktok-posts/tiktok-video-misleads-police-shooting-data/",
+      "truth_label": "NEI",
+      "system_verdict": "VERIFIED",
+      "justification": "Major databases show higher raw counts of White victims (e.g., The Washington Post recorded 51% White vs 27% Black for 2015\u2013May 2020 and its 2015\u20132024 dataset shows roughly half of victims are White), though Black people are killed at a much higher rate per capita (e.g., 2.6\u20132.9 times higher in recent analyses).",
+      "correct": false,
+      "latency_seconds": 19.5,
+      "costs": {
+        "basic_agent": 0.0007615
+      },
+      "images_submitted": [
+        "103746-547126-27-Screen_Shot_2020-06-03_at_4.36.45_PM.jpg",
+        "103746-547127-33-95fc9ae921d5b510a6e85176c2c7d56f.jpg"
+      ]
+    },
+    {
+      "post_id": "6912ba5d-6552-4cef-bdcc-c2e494d8896f",
+      "dataset_claim_id": "106881",
+      "claim_text": "Says Al Jazeera tweeted, '#BreakingNews Taliban started abducting minor girls from their home. The parents who are refusing to give their daughters to Taliban are being killed by Taliban fighters.",
+      "snopes_url": "https://www.politifact.com/factchecks/2021/aug/19/viral-image/doctored-al-jazeera-tweet-makes-claims-about-talib/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "Multiple fact-checkers (AFP, NewsMeter, BOOM Fact Check, India Today) found the alleged Al Jazeera tweet to be morphed and fake; Al Jazeera told AFP the image is \u201ccompletely fabricated.\u201d The screenshot contains errors (e.g., \u201cAl Jajeera\u201d misspelling, wrong handles) and uses a 2016 photo unrelated to any abduction.",
+      "correct": true,
+      "latency_seconds": 20.9,
+      "costs": {
+        "basic_agent": 0.0009345
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "9f0c7b90-a40d-4faf-a64b-d1b730b58247",
+      "dataset_claim_id": "11885",
+      "claim_text": "In September 2020, Dr. Li-Meng Yan, a former post-doctoral student at Hong Kong University, appeared In multiple televised interviews claiming that she had proof SARS-CoV-2, the virus that causes COVID-19, was manufactured by the Chinese Communist Party in a Wuhan Lab.",
+      "snopes_url": "https://www.snopes.com/fact-check/li-meng-yan-covid-19-lab/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Contemporaneous reports show Li\u2011Meng Yan appeared in multiple televised interviews in September 2020 (including Loose Women) and released a Sept 14, 2020 preprint asserting SARS\u2011CoV\u20112 was engineered in a Wuhan lab controlled by the Chinese government; these sources confirm she made those claims (even though they were widely dismissed by scientists).",
+      "correct": true,
+      "latency_seconds": 18.0,
+      "costs": {
+        "basic_agent": 0.000786
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "2c2a5a9e-8b7f-4577-b6c6-850e52d2102e",
+      "dataset_claim_id": "114876",
+      "claim_text": "Photo shows '2 sitting senators counting ballots' in Georgia.",
+      "snopes_url": "https://www.politifact.com/factchecks/2021/jan/06/viral-image/photo-shows-poll-workers-counting-ballots-pennsylv/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "An Associated Press fact-check shows the photo is of a poll worker in Pittsburgh, Pennsylvania, not Georgia; Georgia state Sen. Elena Parent \u2014 who was misidentified \u2014 confirmed she wasn\u2019t the person in the image and had not been in Pennsylvania in 2020. There is no evidence that two sitting Georgia senators were counting ballots as claimed.",
+      "correct": true,
+      "latency_seconds": 14.2,
+      "costs": {
+        "basic_agent": 0.000616
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "66cc5057-a591-4f58-a83b-b3e093c4fd5b",
+      "dataset_claim_id": "8616",
+      "claim_text": "Actor Jimmy Stewart suffered what would in 2019 be diagnosed as PTSD due to his experience as a World War II bomber pilot.",
+      "snopes_url": "https://www.snopes.com/fact-check/jimmy-stewart-ptsd-world-war-ii/",
+      "truth_label": "NEI",
+      "system_verdict": "VERIFIED",
+      "justification": "Biographies and contemporary accounts (e.g., Robert Matzen\u2019s Mission: Jimmy Stewart and the Fight for Europe) report Stewart returned from WWII with insomnia, nightmares, weight loss, depression, and was described as \u201cflak\u2011happy\u201d and eventually grounded by officers; historians say these symptoms are consistent with what would now be diagnosed as PTSD.",
+      "correct": false,
+      "latency_seconds": 14.8,
+      "costs": {
+        "basic_agent": 0.000705
+      },
+      "images_submitted": [
+        "08616-546670-09-GettyImages-3309316-e1575680276827.jpg"
+      ]
+    },
+    {
+      "post_id": "a53eeca7-3376-41b5-845e-77085cb2a2d5",
+      "dataset_claim_id": "14328",
+      "claim_text": "On Oct. 17, Women's March protesters in Washington D.C. assaulted Isabella DeLuca for carrying a Trump 2020 flag.",
+      "snopes_url": "https://www.snopes.com/fact-check/womens-march-assault-trump-flag/",
+      "truth_label": "NEI",
+      "system_verdict": "NEI",
+      "justification": "DeLuca sustained facial injuries and was hospitalized, and photographic/video evidence and medical records are consistent with an assault; however, independent review (Snopes) found video showing DeLuca may have instigated or escalated the confrontation and there is no definitive evidence that her flag was forcibly seized or that the assailants were clearly acting as Women\u2019s March protesters, so the precise circumstances and motive remain ambiguous.",
+      "correct": true,
+      "latency_seconds": 26.8,
+      "costs": {
+        "basic_agent": 0.0007675
+      },
+      "images_submitted": [
+        "14328-548654-02-pixel_crop_122104693_850593782145713_6773707279383354492_n.jpg",
+        "14328-548655-11-GettyImages-1229128592.jpg"
+      ]
+    },
+    {
+      "post_id": "cc04bfa4-4f00-4bec-8a69-c91872e10775",
+      "dataset_claim_id": "5585",
+      "claim_text": "Thousands of CIA files on unidentified flying objects (UFOs) were made available on the agency's website and on the Black Vault, a clearinghouse for declassified documents, in January 2021.",
+      "snopes_url": "https://www.snopes.com/fact-check/cia-files-ufos/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Multiple sources report that in January 2021 the CIA released roughly 2,700\u20132,780 pages of declassified UFO documents to its FOIA Electronic Reading Room, which were uploaded to The Black Vault (by John Greenewald Jr. on Jan. 7, 2021) and converted to searchable PDFs.",
+      "correct": true,
+      "latency_seconds": 13.4,
+      "costs": {
+        "basic_agent": 0.0006969999999999999
+      },
+      "images_submitted": [
+        "05585-546372-02-GettyImages-51044440-scaled-e1611072945906.jpg"
+      ]
+    },
+    {
+      "post_id": "a92eb07e-c703-41f5-9d20-e67d21660011",
+      "dataset_claim_id": "100649",
+      "claim_text": "Cal Cunningham 'voted for over $1 billion in new taxes.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/aug/13/national-republican-senatorial-committee/attack-ad-right-about-cunninghams-2001-budget-vote/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Contemporary records and multiple fact-checkers (PolitiFact, WFAE, RealClearPolitics) confirm that the 2001 North Carolina budget vote supported by Cunningham included more than $1 billion in new taxes and fees to address an $800 million shortfall.",
+      "correct": true,
+      "latency_seconds": 14.1,
+      "costs": {
+        "basic_agent": 0.000758
+      },
+      "images_submitted": [
+        "100649-546880-40-4764dec63db13f685e6fac8e896c0116.jpg"
+      ]
+    },
+    {
+      "post_id": "f29e2d94-da65-44bf-8b91-b8b2eecba171",
+      "dataset_claim_id": "114243",
+      "claim_text": "Georgia Gov. Brian Kemp 'mandates restaurants reopen'",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/may/08/facebook-posts/worries-restaurant-owners-are-real-post-saying-geo/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "Governor Kemp issued executive orders that permitted restaurants to resume dine-in service beginning April 27, 2020 with strict safety requirements; the orders allowed but did not compel restaurants to reopen, and many businesses chose to remain closed.",
+      "correct": true,
+      "latency_seconds": 14.5,
+      "costs": {
+        "basic_agent": 0.00078725
+      },
+      "images_submitted": [
+        "114243-547954-32-bae6840a5d573ee5cae8f26f96f16626.jpg"
+      ]
+    },
+    {
+      "post_id": "e5f0613b-24d1-4c65-8986-4cb44f193087",
+      "dataset_claim_id": "105677",
+      "claim_text": "'Pritzker's Hierarchy of Vaccine Priorities' puts prisoners, politicians and college students ahead of 'individuals with high-risk health factors, and everyone else.",
+      "snopes_url": "https://www.politifact.com/factchecks/2021/feb/12/illinois-republican-party/did-pritzker-prioritize-inmates-pols-and-college-k/",
+      "truth_label": "NEI",
+      "system_verdict": "REFUTED",
+      "justification": "Illinois' Phase 1B (starting Jan 25, 2021) included incarcerated people and state lawmakers (lawmakers were added Feb 3), while people aged 16\u201364 with high-risk medical conditions were placed in Phase 1C to begin after 1B; however, college students were not generally prioritized in Phase 1B and would only qualify if they met other criteria, so the claim that students were placed ahead of high\u2011risk individuals is incorrect.",
+      "correct": false,
+      "latency_seconds": 19.1,
+      "costs": {
+        "basic_agent": 0.0007985
+      },
+      "images_submitted": [
+        "105677-145031-12-146549184_10164625467330099_5199969258631499589_n.jpg",
+        "105677-547250-18-048f2ad4d44515aaee39df1f66200edb.jpg"
+      ]
+    },
+    {
+      "post_id": "f7cea875-b09c-44e4-9cf2-5957c5c8b0f3",
+      "dataset_claim_id": "100886",
+      "claim_text": "Says the American Civil Liberties Union opposes H.R. 1 on grounds that 'it threatens our freedom of speech.",
+      "snopes_url": "https://www.politifact.com/factchecks/2021/mar/01/ronna-mcdaniel/yes-aclu-has-criticized-hr-1-heres-why/",
+      "truth_label": "NEI",
+      "system_verdict": "VERIFIED",
+      "justification": "The ACLU publicly opposed the 2019 H.R.1 (For the People Act), arguing that certain provisions\u2014especially campaign-finance disclosure rules\u2014would \u201cunconstitutionally burden the speech and associational rights\u201d of organizations and citizens and could \u201cchill speech,\u201d i.e. threaten freedom of speech.",
+      "correct": false,
+      "latency_seconds": 17.9,
+      "costs": {
+        "basic_agent": 0.0006605000000000001
+      },
+      "images_submitted": [
+        "100886-546903-29-61405e85add3a8c2a7a4227fb21d719f.jpg"
+      ]
+    },
+    {
+      "post_id": "f5afb4db-11f5-4381-909e-6dba44c659ed",
+      "dataset_claim_id": "109000",
+      "claim_text": "Says Sen. Cory Booker wants to require a federal license for gun owners but criticizes voter ID laws as discriminatory.",
+      "snopes_url": "https://www.politifact.com/factchecks/2021/mar/30/viral-image/yes-sen-cory-booker-proposed-federal-gun-licenses-/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Booker has repeatedly introduced a Federal Firearm Licensing Act that would require a federal license, training, and background checks to own a gun and has said, \u201cIf a license is required to drive a car, it should be required to own a gun.\u201d He has also publicly criticized voter ID laws as discriminatory/targeting people of color and warned they create barriers to voting.",
+      "correct": true,
+      "latency_seconds": 14.3,
+      "costs": {
+        "basic_agent": 0.00062975
+      },
+      "images_submitted": [
+        "109000-547497-13-cory_booker.jpg"
+      ]
+    },
+    {
+      "post_id": "ac50a4cd-5d68-45f0-95a3-7cb777d1a4ad",
+      "dataset_claim_id": "9187",
+      "claim_text": "A photograph shows a rhino that was given a pink horn to prevent poaching.",
+      "snopes_url": "https://www.snopes.com/fact-check/rhinos-elephants-getting-pink-horns-prevent-poaching/",
+      "truth_label": "NEI",
+      "system_verdict": "REFUTED",
+      "justification": "Conservation groups have injected rhino horns with indelible pink dye and toxins to deter poaching, but the dye is infused into the horn interior and does not typically produce a bright, long-lasting pink exterior; photos showing vividly pink horns are often digitally altered and create unrealistic expectations.",
+      "correct": false,
+      "latency_seconds": 22.8,
+      "costs": {
+        "basic_agent": 0.0007394999999999999
+      },
+      "images_submitted": [
+        "09187-47853-01-white-rhinoceros-picture-id159953229.jpg",
+        "09187-529050-13-pink_rhino_horn_faux.jpg"
+      ]
+    },
+    {
+      "post_id": "de61cbd9-8fdc-42c7-ada0-ede1deca2329",
+      "dataset_claim_id": "108172",
+      "claim_text": "Says The Washington Times ran a front-page headline that said, 'President Gore.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/nov/09/viral-image/no-washington-times-didnt-run-president-gore-cover/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "The Washington Times confirmed the image was doctored and never ran a \u201cPresident Gore\u201d front-page; the real Nov. 8, 2000 front page declared \u201cPresident Bush,\u201d and the fake Gore front page has circulated online since at least 2010 (originating on DeviantArt) and resurfaced in Nov. 2020.",
+      "correct": true,
+      "latency_seconds": 9.6,
+      "costs": {
+        "basic_agent": 0.00055625
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "5cf4b985-e91f-47b7-b397-d1fd18758c8f",
+      "dataset_claim_id": "103339",
+      "claim_text": "'Prescription drug companies are charging Americans prices that are on average 4x higher than what's charged in other countries.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/mar/05/gwen-moore/wisconsin-us-rep-moore-target-prescription-drug-co/",
+      "truth_label": "supported",
+      "system_verdict": "REFUTED",
+      "justification": "A 2022 RAND analysis found U.S. prescription drug prices across all drugs averaged 2.78 times those in 33 comparison countries, not 4x; however U.S. prices for brand-name drugs averaged about 4.22\u00d7 (around 3.22\u00d7 after estimated rebates). Thus the blanket claim of 'on average 4x higher' is inaccurate unless restricted to brand-name drugs.",
+      "correct": false,
+      "latency_seconds": 18.2,
+      "costs": {
+        "basic_agent": 0.00066975
+      },
+      "images_submitted": [
+        "103339-547096-03-812f3a01f38abe8faaa33d3300f83a31.JPG.jpg"
+      ]
+    },
+    {
+      "post_id": "83eba334-494d-473e-91a4-13735f2aa3ef",
+      "dataset_claim_id": "115711",
+      "claim_text": "Says Ruth Bader Ginsburg said, 'The age of consent for sexual acts must be lowered to age 12 years old.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/aug/11/viral-image/no-ruth-bader-ginsburg-didnt-say-she-wanted-lower-/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "Multiple fact-checking organizations and news outlets have debunked this claim; it arose from a misreading of a 1977 report Ginsburg co-authored (Sex Bias in the U.S. Code) that discussed gender-neutral statutory language and cited a 1973 proposed bill mentioning victims under 12 \u2014 Ginsburg did not advocate lowering the age of consent to 12.",
+      "correct": true,
+      "latency_seconds": 13.6,
+      "costs": {
+        "basic_agent": 0.0006397499999999999
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "77a01044-bc3f-449c-b5de-08282494de35",
+      "dataset_claim_id": "9058",
+      "claim_text": "Sean Buchanan criticized President Donald Trump's immigration policies, before dying in a car crash caused by an undocumented immigrant.",
+      "snopes_url": "https://www.snopes.com/fact-check/man-killed-trump-immigration/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Reports show Sean Buchanan posted criticisms of President Trump\u2019s immigration policies (opposing family separation and supporting Syrian refugees), and he died Aug 2, 2019 in a motorcycle crash caused by Miguel Ramirez-Vallente, an undocumented Salvadoran whom Colorado State Patrol determined caused the collision and who was charged in connection with the crash.",
+      "correct": true,
+      "latency_seconds": 13.3,
+      "costs": {
+        "basic_agent": 0.00057
+      },
+      "images_submitted": [
+        "09058-546716-02-GettyImages-1158351393.jpg"
+      ]
+    },
+    {
+      "post_id": "d0e8fe09-6b2d-492e-a8ba-d298286f2589",
+      "dataset_claim_id": "2029",
+      "claim_text": "A photograph shows a root beer-flavored vape juice-flavored root beer beverage.",
+      "snopes_url": "https://www.snopes.com/fact-check/root-beer-flavored-vape-juice/",
+      "truth_label": "NEI",
+      "system_verdict": "VERIFIED",
+      "justification": "The circulated photograph does depict a product labeled \u201cRoot Beer-Flavored Vape Juice-Flavored Root Beer,\u201d but sources (Snopes and an Omega Mart spokesperson) say it is an artpiece at Meow Wolf\u2019s Omega Mart in Las Vegas and not a genuine, commercially sold beverage.",
+      "correct": false,
+      "latency_seconds": 19.2,
+      "costs": {
+        "basic_agent": 0.0005737499999999999
+      },
+      "images_submitted": [
+        "02029-546047-05-root-beer-flavored-vape-juice-flavored-root-beer.jpg",
+        "02029-546048-08-root-beer-vape-juice.jpg"
+      ]
+    },
+    {
+      "post_id": "735af2cf-20ed-4f38-b6cb-72a76a7a0eaa",
+      "dataset_claim_id": "302195",
+      "claim_text": "A town in Belgium was forced to remove a nativity scene to avoid offending four Muslim residents.",
+      "snopes_url": "http://www.snopes.com/belgian-town-removes-nativity-scene-appease-four-muslim-residents/",
+      "truth_label": "NEI",
+      "system_verdict": "REFUTED",
+      "justification": "The nativity scene in Holsbeek was removed citing separation of church and state and complaints from non-Christians and people of no faith, not because of demands by four Muslims; officials and fact-checkers (e.g., Snopes) found no evidence the Muslim community specifically demanded removal and the \u201cfour Muslims\u201d claim was misleading.",
+      "correct": false,
+      "latency_seconds": 18.0,
+      "costs": {
+        "basic_agent": 0.00066625
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "8528a6ac-843c-49aa-bc9a-30cdd39c2585",
+      "dataset_claim_id": "7963",
+      "claim_text": "President Truman denounced the use of 'socialism' as a 'scare word ... for almost anything that helps all the people.",
+      "snopes_url": "https://www.snopes.com/fact-check/truman-socialism-scare-word/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Contemporary accounts and the cited campaign speech in Syracuse, NY (Oct. 10, 1952) record Truman saying, \u201cSocialism is a scare word they have hurled... Socialism is their name for almost anything that helps all the people,\u201d matching the claim.",
+      "correct": true,
+      "latency_seconds": 12.8,
+      "costs": {
+        "basic_agent": 0.000663
+      },
+      "images_submitted": [
+        "07963-546596-11-getty_truman.jpg"
+      ]
+    },
+    {
+      "post_id": "06ac1051-6acf-4e43-8dc3-8d1d0ca9bce8",
+      "dataset_claim_id": "108127",
+      "claim_text": "'I have never sued a nun - any nuns.",
+      "snopes_url": "https://www.politifact.com/factchecks/2021/feb/26/xavier-becerra/did-hhs-nominee-xavier-becerra-sue-nuns/",
+      "truth_label": "NEI",
+      "system_verdict": "REFUTED",
+      "justification": "While Becerra did not originally file suit against the Little Sisters of the Poor, as California AG he sued the federal government over the ACA contraceptive mandate; after the nuns were allowed to intervene as defendants, Becerra continued to litigate directly against them. Fact-checkers (PolitiFact) rated his statement \"Half True\" for this reason.",
+      "correct": false,
+      "latency_seconds": 16.7,
+      "costs": {
+        "basic_agent": 0.00063075
+      },
+      "images_submitted": [
+        "108127-164470-09-Sidebar-stats-7.2.21-04.png",
+        "108127-164470-10-Sidebar-stats-01.png",
+        "108127-547411-44-51f3a0124d6eb112eea33c7f0b6601ac.jpg"
+      ]
+    },
+    {
+      "post_id": "cb921dc4-85e4-43ee-a5bc-8dca06429776",
+      "dataset_claim_id": "478",
+      "claim_text": "U.S. millionaires will each receive an average of $1.7 million in stimulus payments via the March 2020 Coronavirus Aid, Relief, and Economic Security (CARES) Act.",
+      "snopes_url": "https://www.snopes.com/fact-check/us-millionaires-stimulus-checks/",
+      "truth_label": "NEI",
+      "system_verdict": "REFUTED",
+      "justification": "Analyses of Joint Committee on Taxation data show wealthy owners of pass-through businesses received an average tax benefit of roughly $1.7M from a CARES Act provision that temporarily suspended a 2017 deduction limit, but this was a tax break\u2014not direct \u201cstimulus payments\u201d (economic impact payments were about $1,200 per adult).",
+      "correct": false,
+      "latency_seconds": 23.3,
+      "costs": {
+        "basic_agent": 0.00078725
+      },
+      "images_submitted": [
+        "00478-530441-01-GettyImages-705167989-e1587485305362.jpg"
+      ]
+    },
+    {
+      "post_id": "d8d03ddb-2e63-4812-8fd9-ffad3b374da3",
+      "dataset_claim_id": "103067",
+      "claim_text": "'You had the last two administrations deport twice as many people as we deported - twice as many.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/mar/13/joe-biden/facts-behind-joe-bidens-claim-obama-era-deportatio/",
+      "truth_label": "NEI",
+      "system_verdict": "NEI",
+      "justification": "The claim is ambiguous about who \u201cwe\u201d refers to and what counts as a \"deportation.\" Official removal counts vary (Obama ~2.7\u20133.0M removals; Trump ~1.2\u20131.5M removals; Biden ~649k\u20131.1M formal removals FY2021\u2013Feb2024), while including Title 42 expulsions raises Biden-era totals to ~4.4M \u2014 so the statement cannot be judged true or false without clearer definitions or timeframe.",
+      "correct": true,
+      "latency_seconds": 29.4,
+      "costs": {
+        "basic_agent": 0.001192
+      },
+      "images_submitted": [
+        "103067-547054-14-e70bc6b477d74a6561568ea45c9e68b8.jpg"
+      ]
+    },
+    {
+      "post_id": "7f2bd95b-711c-46d8-8204-6c65bcff5801",
+      "dataset_claim_id": "105250",
+      "claim_text": "'Detroit spent $294 million on police last year, and $9 million on health.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/jun/16/rashida-tlaib/fact-checking-rep-tlaibs-claim-detroits-police-hea/",
+      "truth_label": "supported",
+      "system_verdict": "REFUTED",
+      "justification": "City budget documents show Detroit\u2019s police budget was roughly $389M\u2013$441M for FY2024\u2013FY2025, which contradicts the claim of $294M; the $9M health figure is not supported by recent budgets (FY2020 General Fund health was $12.7M, and a $9.3M figure refers to FY2026\u201327 homelessness services in a different department).",
+      "correct": false,
+      "latency_seconds": 21.7,
+      "costs": {
+        "basic_agent": 0.0007502499999999999
+      },
+      "images_submitted": [
+        "105250-547222-45-02129161be1c46843f97312217e843f9.jpg"
+      ]
+    },
+    {
+      "post_id": "c76e090c-e2bf-4d6e-ac5c-aa5eb0c58a8e",
+      "dataset_claim_id": "105529",
+      "claim_text": "'The average family in America forks over more of their hard-earned income to their local hospital than to the IRS.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/jul/22/mike-gallagher/yes-average-american-family-pays-more-hospital-exp/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Multiple 2019\u20132020 analyses using 2018 data show the average U.S. family\u2019s share of hospital spending was about $9,200 (\u224815% of the $62,454 median household income), which exceeded estimated federal income tax payments (median federal tax rates \u224813.5\u201313.8%), supporting the claim for that period.",
+      "correct": true,
+      "latency_seconds": 27.0,
+      "costs": {
+        "basic_agent": 0.0009732499999999999
+      },
+      "images_submitted": [
+        "105529-143859-00-opengraph1200by630.jpg",
+        "105529-143862-08-us-median-household-income-not-significantly-different-from-2017-figure-2.jpeg",
+        "105529-143862-11-us-median-household-income-not-significantly-different-from-2017-figure-1.jpeg",
+        "105529-143863-00-opengraph1200by630.jpg",
+        "105529-143864-00-mages.forbes.com%2Ftheapothecary%2Ffiles%2F2019%2F01%2FHospital-spend-vs-IRS.png"
+      ]
+    },
+    {
+      "post_id": "a5637b52-5aea-4667-b1b8-2fc160d0cac7",
+      "dataset_claim_id": "4031",
+      "claim_text": "During an interview with CORE national spokesman Niger Innis, MSNBC displayed a graphic identifying him as 'Nigger Innis.",
+      "snopes_url": "https://www.snopes.com/fact-check/niger-innis/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Contemporaneous reports state that during a Feb 4, 2002 MSNBC interview with CORE spokesman Niger Innis a chyron mistakenly read \u201c'Nigger Innis\u201d; anchor Gregg Jarrett apologized on-air and the network said it was a typographical error and corrected the graphic.",
+      "correct": true,
+      "latency_seconds": 9.6,
+      "costs": {
+        "basic_agent": 0.0005402499999999999
+      },
+      "images_submitted": [
+        "04031-546229-03-niger_innis_msnbc_gaffe.jpg"
+      ]
+    },
+    {
+      "post_id": "d443a13a-7a41-45db-a1ea-0b1043179368",
+      "dataset_claim_id": "111857",
+      "claim_text": "'Biden wants to end Shareholder Capitalism.. that's your 401k..your pensions.. your retirement..",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/sep/23/facebook-posts/no-biden-doesnt-want-dissolve-stock-market/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "Biden has called for ending the \u201cera of shareholder capitalism\u201d to promote stakeholder capitalism, but that refers to corporate governance philosophy \u2014 not abolishing stock ownership or retirement accounts. He has proposed expanding access to 401(k)s and equalizing tax benefits; there is no policy to eliminate 401(k)s, pensions, or personal retirement savings.",
+      "correct": true,
+      "latency_seconds": 20.5,
+      "costs": {
+        "basic_agent": 0.000771
+      },
+      "images_submitted": [
+        "111857-547731-23-1d62f5df551e8401e444b5803fb36816.jpg"
+      ]
+    },
+    {
+      "post_id": "552f1d89-169f-4591-9583-56c7fbb71c39",
+      "dataset_claim_id": "104420",
+      "claim_text": "'We had the highest number of (military) sexual assaults ever reported in the last year' and 'we had the lowest conviction rate and the lowest prosecution rate.",
+      "snopes_url": "https://www.politifact.com/factchecks/2021/mar/25/kirsten-gillibrand/fact-checking-kirsten-gillibrand-military-sexual-a/",
+      "truth_label": "supported",
+      "system_verdict": "REFUTED",
+      "justification": "The DoD FY2024 report shows 8,195 sexual-assault reports in FY2024\u2014down from 8,515 in FY2023 and 8,942 in FY2022\u2014so it was not the highest. The report also notes nearly three-quarters (~75%) of court-martial cases ended in convictions, a slight increase over the prior year, contradicting the claim of the lowest conviction rate; while charges declined, the report does not support a claim of the lowest prosecution rate.",
+      "correct": false,
+      "latency_seconds": 27.2,
+      "costs": {
+        "basic_agent": 0.0010135
+      },
+      "images_submitted": [
+        "104420-135114-00-cover_issue_22_en_US.jpg",
+        "104420-547184-12-77bcc4e45a0cabb0b74fa3a89ddda1f1.jpg",
+        "104420-135114-00-cover_issue_22_en_US.jpg"
+      ]
+    },
+    {
+      "post_id": "e68416de-31f4-4987-9143-43126fc71245",
+      "dataset_claim_id": "114303",
+      "claim_text": "Says Raphael Warnock 'ran over his wife' and was 'arrested for obstructing an investigation into child abuse.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/nov/16/erick-erickson/no-proof-warnock-ran-over-wife-obstruction-case-dr/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "The allegation that Warnock \u201cran over his wife\u201d was made by his estranged wife in March 2020, but police and medical officials reported no visible injury, Warnock denied it, and he was not charged. He was, however, arrested in 2002 in connection with obstructing a child-abuse investigation at a church camp (charges were later dropped).",
+      "correct": true,
+      "latency_seconds": 21.5,
+      "costs": {
+        "basic_agent": 0.0006805
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "b0178ce7-dfc6-43ad-a0bb-912923af8892",
+      "dataset_claim_id": "100841",
+      "claim_text": "Says Joe Biden executive orders caused price increases of 50 cents in gas and 10% in food.",
+      "snopes_url": "https://www.politifact.com/factchecks/2021/mar/10/facebook-posts/no-price-gas-isnt-50-cents-price-food-isnt-10-unde/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "Available evidence does not show Joe Biden executive orders directly caused a $0.50 rise in gasoline or a 10% increase in food; gasoline price changes since Biden took office vary widely (roughly 30\u201340%) and are driven by multiple global factors, and food prices rose ~22\u201325% since 2020 with causes tied to inflation, supply chains, and energy costs rather than solely Biden executive orders.",
+      "correct": true,
+      "latency_seconds": 17.7,
+      "costs": {
+        "basic_agent": 0.00070275
+      },
+      "images_submitted": [
+        "100841-546901-27-b3ae38d2dc62a7e825d3d172d91b29f3.jpg"
+      ]
+    },
+    {
+      "post_id": "eef9e559-360d-4c67-b4c6-b13b7347d851",
+      "dataset_claim_id": "6837",
+      "claim_text": "mixture",
+      "snopes_url": "https://www.snopes.com/fact-check/marine-banned/",
+      "truth_label": "NEI",
+      "system_verdict": "VERIFIED",
+      "justification": "Sources define a mixture as two or more chemical substances physically combined without chemical reaction; components retain their identities, can be separated by physical methods, and mixtures are classified as homogeneous or heterogeneous (e.g., saltwater, air).",
+      "correct": false,
+      "latency_seconds": 16.7,
+      "costs": {
+        "basic_agent": 0.00066
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "7b42101c-f55e-43cb-b809-27a144487167",
+      "dataset_claim_id": "112143",
+      "claim_text": "'The Vice President has the power to reject fraudulently chosen electors.",
+      "snopes_url": "https://www.politifact.com/factchecks/2021/jan/05/donald-trump/does-mike-pence-have-power-reject-electoral-colleg/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "The Vice President\u2019s role in counting electoral votes is purely ministerial under the 12th Amendment and historical practice, and the Electoral Count Reform Act (2022) explicitly states the VP cannot unilaterally determine, accept, or reject electors; formal objections must be raised and sustained by votes of both congressional chambers.",
+      "correct": true,
+      "latency_seconds": 17.2,
+      "costs": {
+        "basic_agent": 0.0007247499999999999
+      },
+      "images_submitted": [
+        "112143-547767-02-0ed0efbfaa59f790bd1af878eca5c4d5.jpg"
+      ]
+    },
+    {
+      "post_id": "5f73e2c7-812c-4a34-83ba-d7a60a3bfa6d",
+      "dataset_claim_id": "118403",
+      "claim_text": "New and proposed state laws on voting mean 'if you are going to be standing in that line for all those hours, you can't have any water or any food.",
+      "snopes_url": "https://www.politifact.com/factchecks/2021/jul/15/kamala-harris/fact-checking-kamala-harris-claim-food-water-hando/",
+      "truth_label": "refuted",
+      "system_verdict": "VERIFIED",
+      "justification": "This is true in at least some states: Georgia\u2019s Election Integrity Act (SB 202) explicitly bars non-election workers from giving food or water within 150 feet of a polling place or within 25 feet of voters in line (violations carry misdemeanor penalties). Similar restrictions or concerns have been raised in other states (e.g., Arizona and debates in Texas), while a few states (e.g., New York) have moved to allow refreshments.",
+      "correct": false,
+      "latency_seconds": 19.9,
+      "costs": {
+        "basic_agent": 0.0009154999999999999
+      },
+      "images_submitted": [
+        "118403-2469611-21-992db124c65f3698d7d8ed54b833c18e.jpg"
+      ]
+    },
+    {
+      "post_id": "cad20ea3-5289-43cd-b8b7-e76157e22c09",
+      "dataset_claim_id": "100945",
+      "claim_text": "'Immigrants make up a majority of essential workers in places like New York City.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/may/07/kirsten-gillibrand/do-immigrants-make-majority-essential-workers-new-/",
+      "truth_label": "supported",
+      "system_verdict": "REFUTED",
+      "justification": "Data show immigrants constitute roughly 40\u201346% of New York City\u2019s essential workforce (one source: 46% born outside the U.S.; another: 40%) and about 31% in New York State\u2014figures below a majority (>50%). Thus the claim that immigrants make up a majority of essential workers in NYC is false.",
+      "correct": false,
+      "latency_seconds": 19.4,
+      "costs": {
+        "basic_agent": 0.0008025
+      },
+      "images_submitted": [
+        "100945-546905-23-6655dc5d95e2a2809f4ef2169dd09705.jpg"
+      ]
+    },
+    {
+      "post_id": "7ee0273b-cebe-492a-98a5-c7a6b821419d",
+      "dataset_claim_id": "7045",
+      "claim_text": "Oreos have a new Lady Gaga-themed cookie.",
+      "snopes_url": "https://www.snopes.com/fact-check/lady-gaga-oreo/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Oreo released limited-edition \"Chromatica\" Oreos themed to Lady Gaga\u2019s album, announced in December 2020 and sold in the U.S. starting January 2021 (pink Golden Oreos with green creme and Chromatica designs).",
+      "correct": true,
+      "latency_seconds": 12.7,
+      "costs": {
+        "basic_agent": 0.0005215
+      },
+      "images_submitted": [
+        "07045-546488-02-GettyImages-1218781343.jpg"
+      ]
+    },
+    {
+      "post_id": "68193480-b8bf-4c9f-a129-2a7f882ac7a9",
+      "dataset_claim_id": "101597",
+      "claim_text": "Says Joe Biden 'attacked voters this primary,' saying 'damn liar,' 'full of s---' and 'dog-faced pony soldier.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/mar/12/facebook-posts/yes-biden-did-call-voters-damn-liar-lying-dog-face/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Multiple news reports document Biden using those exact phrases during his 2020 primary campaign \u2014 telling a man in New Hampton, Iowa, \u201cYou\u2019re a damn liar, man\u201d (Dec. 2019), calling a Detroit worker \u201cyou\u2019re full of s---\u201d (March 2020), and calling a college student a \u201clying, dog-faced pony soldier\u201d at a New Hampshire event (Feb. 2020). These remarks were made in interactions with voters at campaign events.",
+      "correct": true,
+      "latency_seconds": 14.2,
+      "costs": {
+        "basic_agent": 0.0006635
+      },
+      "images_submitted": [
+        "101597-546949-04-Screen_Shot_2020-03-11_at_3.31.39_PM.jpg",
+        "101597-546950-29-0f86256c6420fa0411ed0c1033b00df8.jpg"
+      ]
+    },
+    {
+      "post_id": "0edd189d-5544-4f9d-ac4c-5e90a631512d",
+      "dataset_claim_id": "116444",
+      "claim_text": "'The facility (NextGen Precision Health Institute) construction alone will bring 3,400 jobs and $472 million in revenue to Missouri.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/apr/24/mun-choi/um-system-president-rates-mostly-true-claim-about-/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "A University of Missouri System update explicitly states the facility\u2019s construction \"will bring 3,400 jobs and $472 million in revenue to Missouri.\" PolitiFact independently found the university\u2019s economic projection was essentially equivalent (about 3,287 jobs and ~$468M) and rated the statement Mostly True, so the claim is supported by the cited projections.",
+      "correct": true,
+      "latency_seconds": 17.5,
+      "costs": {
+        "basic_agent": 0.001069
+      },
+      "images_submitted": []
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+# All services share two infrastructure dependencies: Memgraph and Kafka.
+# Sensitive values (API keys, model name) are read from a .env file placed
+# next to this file.  Copy .env.example → .env and fill in your credentials.
+#
+# SCALING NOTE: KAFKA_NUM_PARTITIONS must be >= the replica count for agents
+# in the same consumer group to actually run in parallel. If topics were
+# already created with fewer partitions, run POST /admin/reset first.
+
+x-agent-env: &agent-env
+  GRAPH_URI: bolt://memgraph:7687
+  GRAPH_USER: ""
+  GRAPH_PASSWORD: ""
+  KAFKA_BROKERS: kafka:29092
+  KAFKA_NUM_PARTITIONS: "5"
+  MODEL_NAME: ${MODEL_NAME:-openai/gpt-4o}
+  OPENAI_API_KEY: ${OPENAI_API_KEY}
+  GOOGLE_API_KEY: ${GOOGLE_API_KEY}
+  SCRAPER_URI: ${SCRAPER_URI:-https://api.scrapecreators.com/v1}
+  SCRAPER_API_KEY: ${SCRAPER_API_KEY}
+  TAVILY_API_KEY: ${TAVILY_API_KEY}
+  TAVILY_MCP_URL: ${TAVILY_MCP_URL}
+  MINIO_ENDPOINT: http://minio:9000
+  MINIO_PUBLIC_URL: ${MINIO_PUBLIC_URL:-http://minio:9000}
+  MINIO_ACCESS_KEY: ${MINIO_ACCESS_KEY:-minioadmin}
+  MINIO_SECRET_KEY: ${MINIO_SECRET_KEY:-minioadmin}
+  MINIO_BUCKET: ${MINIO_BUCKET:-media}
+
+x-agent-common: &agent-common
+  build:
+    context: .
+    dockerfile: Dockerfile
+  restart: unless-stopped
+  environment:
+    <<: *agent-env
+  mem_limit: 512m
+  depends_on:
+    memgraph:
+      condition: service_healthy
+    kafka:
+      condition: service_started
+    minio:
+      condition: service_healthy
+
+services:
+
+  # ── Infrastructure ───────────────────────────────────────────────────────────
+
+  memgraph:
+    image: memgraph/memgraph-platform:latest
+    ports:
+      - "7687:7687" # Bolt (drivers connect here)
+      - "3000:3000" # Memgraph Lab UI
+    environment:
+      # Tell Memgraph to cap its own graph data memory at 2 GB.
+      MEMGRAPH: "--memory-limit=2048 --memory-warning-threshold=90 --bolt-num-workers=20 --query-execution-timeout-sec=60"
+    mem_limit: 3g # Docker hard cap: 2 GB graph data + 1 GB for Lab UI overhead
+    memswap_limit: 3g # Prevent swap usage on top of the cap
+    healthcheck:
+      test: [ "CMD-SHELL", "echo 'RETURN 1;' | mgconsole" ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    volumes:
+      - mg_lib:/var/lib/memgraph
+      - mg_log:/var/log/memgraph
+    restart: unless-stopped
+
+  kafka:
+    image: confluentinc/cp-kafka:latest
+    hostname: kafka
+    container_name: kafka
+    ports:
+      - "9092:9092" # Host-facing (local dev / tools)
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE: "true"
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:9093
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:29092,CONTROLLER://0.0.0.0:9093,PLAINTEXT_HOST://0.0.0.0:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      CLUSTER_ID: Mk3OEYBSD34fcwNTJENDM2Qk
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_LOG_DIRS: /var/lib/kafka/data
+    volumes:
+      - kafka_data:/var/lib/kafka/data
+    restart: unless-stopped
+
+  kafbat-ui:
+    image: ghcr.io/kafbat/kafka-ui:latest
+    container_name: kafbat-ui
+    ports:
+      - "8080:8080"
+    environment:
+      KAFKA_CLUSTERS_0_NAME: local
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:29092
+      DYNAMIC_CONFIG_ENABLED: "true"
+    depends_on:
+      kafka:
+        condition: service_started
+    restart: unless-stopped
+
+  minio:
+    image: minio/minio:latest
+    container_name: minio
+    command: server /data --console-address ":9001"
+    ports:
+      - "9000:9000" # S3 API
+      - "9001:9001" # Web console
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ACCESS_KEY:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${MINIO_SECRET_KEY:-minioadmin}
+    volumes:
+      - minio_data:/data
+    healthcheck:
+      test: [ "CMD", "mc", "ready", "local" ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+  # ── Frontend ─────────────────────────────────────────────────────────────────
+
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    container_name: frontend
+    ports:
+      - "3001:3001"
+    environment:
+      BACKEND_URL: http://backend:8081
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  # ── Backend API ──────────────────────────────────────────────────────────────
+
+  backend:
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    container_name: backend
+    ports:
+      - "8081:8081"
+    environment:
+      GRAPH_URI: bolt://memgraph:7687
+      GRAPH_USER: ""
+      GRAPH_PASSWORD: ""
+      KAFKA_BROKERS: kafka:29092
+      KAFKA_NUM_PARTITIONS: "5"
+      SCRAPER_URI: ${SCRAPER_URI:-https://api.scrapecreators.com/v1}
+      SCRAPER_API_KEY: ${SCRAPER_API_KEY}
+      MAIN_PORT: "8081"
+    volumes:
+      - ./mocheg:/app/mocheg:ro
+    depends_on:
+      memgraph:
+        condition: service_healthy
+      kafka:
+        condition: service_started
+    restart: unless-stopped
+  # ── Agents ───────────────────────────────────────────────────────────────────
+  # Each agent runs the same Docker image; AGENT_NAME selects which agent.py to
+  # execute. Replicas share the same Kafka consumer group so Kafka distributes
+  # messages across them automatically — each partition is consumed by one replica.
+  # KAFKA_NUM_PARTITIONS (set to 3 above) must be >= replica count.
+
+  post_creation_agent:
+    <<: *agent-common
+    environment:
+      <<: *agent-env
+      AGENT_NAME: post_creation_agent
+    deploy:
+      replicas: 1
+
+  query_generation_agent:
+    <<: *agent-common
+    environment:
+      <<: *agent-env
+      AGENT_NAME: query_generation_agent
+    deploy:
+      replicas: 1
+
+  evidence_retrieval_agent:
+    <<: *agent-common
+    environment:
+      <<: *agent-env
+      AGENT_NAME: evidence_retrieval_agent
+    deploy:
+      replicas: 1
+
+  post_judge_agent:
+    <<: *agent-common
+    environment:
+      <<: *agent-env
+      AGENT_NAME: post_judge_agent
+    deploy:
+      replicas: 1
+
+  media_verification_service:
+    <<: *agent-common
+    environment:
+      <<: *agent-env
+      AGENT_NAME: media_verification_service
+    deploy:
+      replicas: 1
+
+volumes:
+  kafka_data:
+  mg_lib:
+  mg_log:
+  minio_data:

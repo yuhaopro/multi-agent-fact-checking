@@ -1,0 +1,31 @@
+[project]
+name = "agents"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "boto3>=1.35.0",
+    "dotenv>=0.9.9",
+    "fastapi>=0.115.0",
+    "google-adk>=1.26.0",
+    "ipykernel>=7.2.0",
+    "kafka-python>=2.3.0",
+    "litellm>=1.82.0",
+    "matplotlib>=3.10.8",
+    "nbconvert>=7.17.0",
+    "neo4j>=6.1.0",
+    "numpy>=2.4.3",
+    "opik",
+    "pandas>=3.0.1",
+    "pillow>=12.1.1",
+    "pydantic",
+    "shared",
+    "uvicorn[standard]>=0.34.0",
+]
+
+[tool.uv.sources]
+shared = { workspace = true }
+
+[tool.uv.workspace]
+members = ["shared"]

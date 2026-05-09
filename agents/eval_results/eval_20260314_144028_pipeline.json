@@ -1,0 +1,774 @@
+{
+  "total_submitted": 10,
+  "completed": 10,
+  "correct": 9,
+  "accuracy": 0.9,
+  "avg_latency_seconds": 82.4,
+  "avg_cost": 0.009156210000000001,
+  "per_label": {
+    "supported": {
+      "total": 5,
+      "correct": 4
+    },
+    "refuted": {
+      "total": 3,
+      "correct": 3
+    },
+    "NEI": {
+      "total": 2,
+      "correct": 2
+    }
+  },
+  "records": [
+    {
+      "post_id": "8179963c-9d88-4737-8aed-7e62a0b5d6e3",
+      "dataset_claim_id": "8033",
+      "truth_label": "supported",
+      "claim_text": "People without permanent homes who do not normally file taxes can submit information to the IRS in order to receive stimulus payments as part of the March 2021 COVID-19 relief bill.",
+      "snopes_url": "https://www.snopes.com/fact-check/homeless-stimulus-payment/",
+      "system_verdict": "VERIFIED",
+      "correct": true,
+      "latency_seconds": 70.7,
+      "costs": {
+        "post_judge": 0.0018729999999999999
+      },
+      "artifact": {
+        "post": {
+          "agent_start_time": 1773470127.4216902,
+          "content": "People without permanent homes who do not normally file taxes can submit information to the IRS in order to receive stimulus payments as part of the March 2021 COVID-19 relief bill.",
+          "costs_json": "{\"post_judge\": 0.0018729999999999999, \"query_generation\": 0.00856235}",
+          "created_at": "2026-03-14T06:35:27Z",
+          "id": "8179963c-9d88-4737-8aed-7e62a0b5d6e3",
+          "justification": "According to the search summary (reflecting Treasury/IRS guidance and the American Rescue Plan Act of 2021), the March 2021 law authorized a third round of Economic Impact Payments \u2014 up to $1,400 per eligible individual (and $1,400 per qualifying dependent) \u2014 with payments beginning in mid\u2011March 2021. The post claims the March 2021 COVID\u201119 relief bill included direct stimulus payments to eligible individuals; the evidence directly confirms that fact. Therefore, the claim is VERIFIED.",
+          "status": "VERIFIED",
+          "title": "",
+          "updated_at": "2026-03-14T06:36:32Z",
+          "url": "https://www.snopes.com/fact-check/homeless-stimulus-payment/",
+          "costs": {
+            "post_judge": 0.0018729999999999999,
+            "query_generation": 0.00856235
+          }
+        },
+        "queries": [
+          {
+            "query_text": "Can people who do not normally file federal tax returns, including people without permanent homes (homeless individuals), submit information to the IRS to receive stimulus payments from the American Rescue Plan Act of March 2021?",
+            "snippet": "",
+            "evidence": [
+              {
+                "content": "Yes. When the American Rescue Plan Act (March 2021) authorized the third round of Economic Impact Payments (up to $1,400 per eligible individual), the IRS provided ways for people who do not normally file federal tax returns \u2014 including people without permanent homes \u2014 to submit information so they could receive the payment. The IRS public guidance and online tools (for example, its Non\u2011Filers/Non\u2011Filer Sign-up tools and related pages on IRS.gov, plus the Get My Payment and Recovery Rebate Credit options) allowed non\u2011filers to provide basic identity, dependency, and direct\u2011deposit or mailing information so the agency could issue a payment. Homeless individuals could use a shelter, trusted mailing address, P.O. box, or provide bank account routing information for direct deposit; some groups (Social Security or Railroad Retirement beneficiaries) received payments automatically and did not need to take action. Eligibility rules still applied (citizens or qualifying resident aliens, not claimed as dependents, not certain ineligible categories), and people who hadn\u2019t received automatic payments could also claim the amount as a Recovery Rebate Credit on a 2020 tax return if needed.",
+                "created_at": "2026-03-14T06:36:41Z",
+                "id": "915842b9-5fb3-495c-a180-bb9f1cc0121e",
+                "published_at": "2026-03-14T06:36:41Z",
+                "status": "COMPLETED",
+                "title": "Internal Agent Knowledge",
+                "updated_at": "2026-03-14T06:36:41Z",
+                "url": "INTERNAL_KNOWLEDGE"
+              }
+            ]
+          },
+          {
+            "query_text": "Did the March 2021 COVID-19 relief bill (American Rescue Plan Act of 2021) include direct stimulus (economic impact) payments to eligible individuals?",
+            "snippet": "Yes. The American Rescue Plan Act of 2021, signed in March 2021, included a third round of Economic Impact Payments (direct stimulus payments). The law provided up to $1,400 per eligible individual (up to $2,800 for married couples filing jointly) plus $1,400 for each qualifying dependent (including adult dependents). Payments began in mid\u2011March 2021 and the Treasury/IRS issued guidance on these EIP payments and \u201cplus\u2011up\u201d payments based on filed tax returns.",
+            "evidence": []
+          }
+        ],
+        "media": [
+          {
+            "ai_score": 0.0,
+            "created_at": "2026-03-14T06:35:27Z",
+            "id": "78f60afe-8c6d-433b-a344-010eeff1f53f",
+            "is_ai_generated": false,
+            "status": "SUCCESS",
+            "storage_url": "http://minio:9000/media/media/78f60afe-8c6d-433b-a344-010eeff1f53f/image.jpg",
+            "type": "IMAGE",
+            "updated_at": "2026-03-14T06:35:27Z",
+            "url": "http://minio:9000/media/mocheg/8033/08033-546600-03-6757835075_cf5e1c9b5a_b.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "post_id": "eb3774b8-bdd7-4445-b163-f9ec0edf89cf",
+      "dataset_claim_id": "104601",
+      "truth_label": "refuted",
+      "claim_text": "'A Black man invented the light bulb, not a white guy named Edison.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/sep/04/joe-biden/making-point-overlooked-black-history-biden-misses/",
+      "system_verdict": "REFUTED",
+      "correct": true,
+      "latency_seconds": 184.9,
+      "costs": {
+        "evidence_retrieval": 0.006192,
+        "query_generation": 0.0199963,
+        "post_judge": 0.00865825
+      },
+      "artifact": {
+        "post": {
+          "agent_start_time": 1773470204.1407785,
+          "content": "'A Black man invented the light bulb, not a white guy named Edison.",
+          "costs_json": "{\"evidence_retrieval\": 0.006192, \"query_generation\": 0.0199963, \"post_judge\": 0.00865825}",
+          "created_at": "2026-03-14T06:35:27Z",
+          "id": "eb3774b8-bdd7-4445-b163-f9ec0edf89cf",
+          "justification": "According to the U.S. Department of Energy and Live Science, the incandescent light bulb was the product of many inventors over decades \u2014 Edison developed the first practical, commercially viable carbon-filament lamp and the supporting electrical distribution system but did not single-handedly \u201cinvent\u201d electric light. Sources also note Lewis Howard Latimer (and earlier inventors such as Joseph Swan, Humphry Davy, et al.) made important technical and manufacturing contributions that improved filament longevity and mass production. Therefore a claim that Edison alone invented the incandescent bulb is incorrect.",
+          "status": "REFUTED",
+          "title": "",
+          "updated_at": "2026-03-14T06:39:47Z",
+          "url": "https://www.politifact.com/factchecks/2020/sep/04/joe-biden/making-point-overlooked-black-history-biden-misses/",
+          "costs": {
+            "evidence_retrieval": 0.006192,
+            "query_generation": 0.0199963,
+            "post_judge": 0.00865825
+          }
+        },
+        "queries": [
+          {
+            "query_text": "Was Thomas Alva Edison white?",
+            "snippet": "",
+            "evidence": [
+              {
+                "content": "",
+                "created_at": "2026-03-14T06:38:33Z",
+                "id": "86695481-38c3-4240-ac34-eb0ffc6ac26e",
+                "published_at": "",
+                "status": "COMPLETED",
+                "title": "Extraction failed",
+                "updated_at": "2026-03-14T06:39:01Z",
+                "url": "https://monmouthtimeline.org/history/thomas-alva-edison"
+              },
+              {
+                "content": "Detailed Results:\n\nTitle: What does Thomas Alva Edison mean?\nURL: https://www.definitions.net/definition/Thomas+Alva+Edison\nContent: undefined\nRaw Content: The STANDS4 Network\n Abbreviations.com\n Anagrams.net\n Biographies.net\n Calculators.net\n Convert.net\n Definitions.net\n Grammar.com\n Literature.com\n Lyrics.com\n Phrases.com\n Poetry.com\n Quotes.net\n References.net\n Rhymes.com\n Scripts.com\n Symbols.com\n Synonyms.com\n USZip.com\nDefinitions.net\nDefinitions.net\nWhat does Thomas Alva Edison mean?\nDefinitions for Thomas Alva Edison thomas alva edi\u00b7son\nThis dictionary definitions page includes all the possible meanings, example usage and translations of the word Thomas Alva Edison.\nPrinceton's WordNetRate this definition:4.0 / 7 votes\n1. Edison, Thomas Edison, Thomas Alva Edisonnoun\nUnited States inventor; inventions included the phonograph and incandescent electric light and the microphone and the Kinetoscope (1847-1931)\nWikipediaRate this definition:0.0 / 0 votes\n1. Thomas Alva Edison\nThomas Alva Edison (February 11, 1847 \u2013 October 18, 1931) was an American inventor and businessman. He developed many devices in fields such as electric power generation, mass communication, sound recording, and motion pictures. These inventions, which include the phonograph, the motion picture camera, and early versions of the electric light bulb, have had a widespread impact on the modern industrialized world. He was one of the first inventors to apply the principles of organized science and teamwork to the process of invention, working with many researchers and employees. He established the first industrial research laboratory.Edison was raised in the American Midwest; early in his career, he worked as a telegraph operator, which inspired some of his earliest inventions. In 1876, he established his first laboratory facility in Menlo Park, New Jersey, where many of his early inventions were developed. He later established a botanical laboratory in Fort Myers, Florida, in collaboration with businessmen Henry Ford and Harvey S. Firestone, and a laboratory in West Orange, New Jersey, that featured the world's first film studio, the Black Maria. With 1,093 US patents in his name, as well as patents in other countries, Edison is regarded as the most as the most prolific inventor in American history. Edison married twice and fathered six children. He died in 1931 of complications of diabetes.\nChatGPTRate this definition:0.0 / 0 votes\n1. thomas alva edison\nThomas Alva Edison was an American inventor and business magnate who played a crucial role in shaping the modern industrialized world. He is best known for developing many devices in fields such as electric power generation, telecommunications, sound recording, and motion pictures. These inventions include the phonograph, the motion picture camera, and the practical electric light bulb. Hailed as \"The Wizard of Menlo Park,\" Edison holds a record 1,093 patents for inventions. His work has had a significant impact on society's daily life.\nSuggested ResourcesRate this definition:2.0 / 2 votes\n1. thomas alva edison\nQuotes by thomas alva edison -- Explore a large variety of famous quotes made by thomas alva edison on the Quotes.net website.\nBiographical Dictionary of FreethinkersRate this definition:0.0 / 0 votes\n1. Thomas Alva Edison\nAmerican inventor, born Milan, Ohio, 10 Feb. 1847. As a boy he sold fruit and papers at the trains. He read, however, Gibbon, Hume and other important works before he was ten. He afterwards set up a paper of his own, then became telegraph operator, studied electricity, invented electric light, the electric pen, the telephone, microphone, phonograph, etc. Edison is known to be an Agnostic and to pay no attention to religion.\nMatched Categories\n1.  Inventor\nHow to pronounce Thomas Alva Edison?\n1. Alex\nUS English\nDavid\nUS English\nMark\nUS English\nDaniel\nBritish\nLibby\nBritish\nMia\nBritish\nKaren\nAustralian\nHayley\nAustralian\nNatasha\nIndian\nPriya\nIndian\nNeerja\nIndian\nZira\nUS English\nOliver\nBritish\nWendy\nBritish\nFred\nUS English\nTessa\nSouth African\nHow to say Thomas Alva Edison in sign language?\nNumerology\n1. Chaldean Numerology\nThe numerical value of Thomas Alva Edison in Chaldean Numerology is: 6\n2. Pythagorean Numerology\nThe numerical value of Thomas Alva Edison in Pythagorean Numerology is: 7\nReferences\n1. < Alva Edison>\n2. \n3. \n4. < Alva Edison>\nTranslations for Thomas Alva Edison\nFrom our Multilingual Translation Dictionary\n \u062a\u0648\u0645\u0627\u0633 \u0627\u0644\u0641\u0627 \u0627\u062f\u064a\u0633\u0648\u0646Arabic\n Thomas Alva EdisonCzech\n thomas Alva EdisonsDanish\n Thomas Alva EdisonGerman\n thomas Alva EdisonGreek\n Thomas Alva EdisonSpanish\n \u062a\u0648\u0645\u0627\u0633 \u0627\u062f\u06cc\u0633\u0648\u0646 \u0622\u0644\u0648\u0627Persian\n Thomas Alva EdisonFinnish\n Thomas Alva EdisonFrench\n \u0925\u0949\u092e\u0938 \u0905\u0932\u094d\u0935\u093e \u090f\u0921\u0940\u0938\u0928Hindi\n Thomas Alva EdisonHungarian\n thomas alva edisonIndonesian\n Thomas Alva EdisonItalian\n \u05d0\u05d3\u05d9\u05e1\u05d5\u05df \u05d0\u05dc\u05d5\u05d5\u05d4 \u05ea\u05d5\u05de\u05d0\u05e1Hebrew\n \u30c8\u30de\u30b9\u30a2\u30eb\u30d0\u30a8\u30b8\u30bd\u30f3Japanese\n \ud1a0\ub9c8\uc2a4 \uc54c\ubc14 \uc5d0\ub514\uc2a8Korean\n Thomas Alva EdisonLatin\n Thomas Alva EdisonDutch\n av Thomas Alva EdisonNorwegian\n Thomas Alva EdisonPolish\n thomas alva edisonPortuguese\n thomas alva edisonRomanian\n \u0422\u043e\u043c\u0430\u0441 \u0410\u043b\u0432\u0430 \u042d\u0434\u0438\u0441\u043e\u043dRussian\n Thomas Alva EdisonSwedish\n \u0ba4\u0bbe\u0bae\u0bb8\u0bcd \u0b86\u0bb2\u0bcd\u0bb5\u0bbe \u0b8e\u0b9f\u0bbf\u0b9a\u0ba9\u0bcdTamil\n \u0c25\u0c3e\u0c2e\u0c38\u0c4d \u0c06\u0c32\u0c4d\u0c35\u0c3e \u0c0e\u0c21\u0c3f\u0c38\u0c28\u0c4dTelugu\n Thomas Alva EdisonThai\n Alva EdisonTurkish\n \u0422\u043e\u043c\u0430\u0441 \u0410\u043b\u0432\u0430 \u0415\u0434\u0456\u0441\u043e\u043d\u0430Ukrainian\n \u062a\u06be\u0627\u0645\u0633 \u0627\u0644\u0648\u0627 \u0627\u06cc\u0688\u06cc\u0633\u0646Urdu\n Thomas Alva EdisonVietnamese\n Thomas Alva EdisonYiddish\n \u6258\u9a6c\u65af\u00b7\u963f\u5c14\u74e6\u00b7\u7231\u8fea\u751fChinese\nGet even more translations for Thomas Alva Edison \u00bb\nTranslation\nFind a translation for the Thomas Alva Edison definition in other languages:\nSelect another language:\n - Select -\n \u7b80\u4f53\u4e2d\u6587 (Chinese - Simplified)\n \u7e41\u9ad4\u4e2d\u6587 (Chinese - Traditional)\n Espa\u00f1ol (Spanish)\n Esperanto (Esperanto)\n \u65e5\u672c\u8a9e (Japanese)\n Portugu\u00eas (Portuguese)\n Deutsch (German)\n \u0627\u0644\u0639\u0631\u0628\u064a\u0629 (Arabic)\n Fran\u00e7ais (French)\n \u0420\u0443\u0441\u0441\u043a\u0438\u0439 (Russian)\n \u0c95\u0ca8\u0ccd\u0ca8\u0ca1 (Kannada)\n \ud55c\uad6d\uc5b4 (Korean)\n \u05e2\u05d1\u05e8\u05d9\u05ea (Hebrew)\n Gaeilge (Irish)\n \u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 (Ukrainian)\n \u0627\u0631\u062f\u0648 (Urdu)\n Magyar (Hungarian)\n \u092e\u093e\u0928\u0915 \u0939\u093f\u0928\u094d\u0926\u0940 (Hindi)\n Indonesia (Indonesian)\n Italiano (Italian)\n \u0ba4\u0bae\u0bbf\u0bb4\u0bcd (Tamil)\n T\u00fcrk\u00e7e (Turkish)\n \u0c24\u0c46\u0c32\u0c41\u0c17\u0c41 (Telugu)\n \u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22 (Thai)\n Ti\u1ebfng Vi\u1ec7t (Vietnamese)\n \u010ce\u0161tina (Czech)\n Polski (Polish)\n Romne\u0219te (Romanian)\n Nederlands (Dutch)\n \u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac (Greek)\n Latinum (Latin)\n Svenska (Swedish)\n Dansk (Danish)\n Suomi (Finnish)\n \u0641\u0627\u0631\u0633\u06cc (Persian)\n \u05d9\u05d9\u05b4\u05d3\u05d9\u05e9 (Yiddish)\n \u0570\u0561\u0575\u0565\u0580\u0565\u0576 (Armenian)\n Norsk (Norwegian)\n English (English)\nWord of the Day\nWould you like us to send you a FREE new word definition delivered to your inbox daily?\nCitation\nUse the citation below to add this definition to your bibliography:\nStyle:MLAChicagoAPA\n\"Thomas Alva Edison.\" Definitions.net. STANDS4 LTD, 2026. Web. 9 Mar. 2026. <>.\nPowered by CITE.ME Cite.Me\nDiscuss these Thomas Alva Edison definitions with the community:\nReport Comment\nWe're doing our best to make sure our content is useful, accurate and safe.  \nIf by any chance you spot an inappropriate comment while navigating through our website please use this form to let us know, and we'll take care of it shortly.\nAttachment\n\nYou need to be logged in to favorite.\nor fill the form below\nCreate a new account\nLog In\nAre we missing a good definition for Thomas Alva Edison? Don't keep it to yourself...\nNote\nThe ASL fingerspelling provided here is most commonly used for proper names of people and places; it is also used in some languages for which no sign is available at that moment.  \nThere are obviously specific signs for many words available in sign language that are more appropriate for daily usage.\nImage Credit\nThe Web's Largest Resource for\nDefinitions & Translations\nA Member Of The STANDS4 Network\nImage or illustration of\nThomas Alva Edison\n\nThomas Alva Edison\nCredit \u00bb\n\nFree, no signup required:\nAdd to Chrome\nGet instant definitions for any word that hits you anywhere on the web!\nFree, no signup required:\nAdd to Firefox\nGet instant definitions for any word that hits you anywhere on the web!\n\nBrowse Definitions.net\n#ABCDEFGHIJKLMNOPQRSTUVWXYZ  Random New Words\n\nQuiz\nAre you a words master?\n\u00bb\ndwell\nA abide\nB emanate\nC abhor\nD elaborate\n\nNearby & related entries:\n thomas a. watson\n thomas abel\n thomas aikenhead\n thomas aitkenhead\n thomas allsop\n Thomas Alva Edison noun\n thomas and friends\n thomas and friends: all engines go!\n thomas and the magic railroad\n thomas anders\n thomas anderson\nAlternative searches for Thomas Alva Edison:\n Search for Synonyms for Thomas Alva Edison\n Search for Anagrams for Thomas Alva Edison\n Famous quotes by Thomas Alva Edison\n Search for Phrases containing the term Thomas Alva Edison\n Search for Poems containing the term Thomas Alva Edison\n Search for Scripts containing the term Thomas Alva Edison\n Search for Abbreviations containing the term Thomas Alva Edison\n What rhymes with Thomas Alva Edison?\n Search for Song lyrics that mention Thomas Alva Edison\n Search for Thomas Alva Edison on Amazon\nThank you\n\nThanks for your vote!\nWe truly appreciate your support.",
+                "created_at": "2026-03-14T06:38:35Z",
+                "id": "fcccffd7-9870-4e06-a3a9-d488f4109bc7",
+                "published_at": "2026-03-09",
+                "status": "COMPLETED",
+                "title": "What does Thomas Alva Edison mean?",
+                "updated_at": "2026-03-14T06:39:14Z",
+                "url": "https://www.definitions.net/definition/Thomas+Alva+Edison"
+              }
+            ]
+          },
+          {
+            "query_text": "Did Thomas Alva Edison invent the incandescent light bulb?",
+            "snippet": "The search snippets indicate that Edison was not the original inventor of the incandescent light bulb. Early demonstrations of electric light predate Edison (e.g., Humphry Davy\u2019s early electric lamp in the early 1800s and 1830s arc-lamp work). Edison\u2019s contribution (October 1879, patents in 1879\u20131880) was to develop a practical, longer-lasting carbon-filament incandescent bulb and, crucially, the accompanying electrical distribution system to commercialize electric lighting. Reputable sources (National Geographic, Smithsonian, U.S. Department of Energy) characterize Edison as the developer of the first practical, commercially viable incandescent lamp rather than the very first inventor of electric light.",
+            "evidence": []
+          },
+          {
+            "query_text": "What was Lewis Howard Latimer's role or contribution in the development of the incandescent light bulb?",
+            "snippet": "Lewis Howard Latimer was an African American inventor, draftsman, and patent expert who played a key role in making the incandescent light bulb commercially viable. He worked as a draftsman and patent investigator for inventors including Hiram Maxim and Thomas A. Edison, producing technical drawings and helping defend and secure patents. Latimer developed and patented a \"Process for Manufacturing Carbons,\" an improved method for producing carbon filaments that made incandescent bulbs longer-lasting and more mass-producible. He also documented the Edison system in his 1890 book Incandescent Electric Lighting, further contributing to the technology's adoption.",
+            "evidence": []
+          },
+          {
+            "query_text": "Who invented the incandescent light bulb?",
+            "snippet": "",
+            "evidence": [
+              {
+                "content": "Detailed Results:\n\nTitle: The History of the Light Bulb | Department of Energy\nURL: https://www.energy.gov/articles/history-light-bulb\nContent: undefined\nRaw Content: An official website of the United States government\nHere's how you know\nOfficial websites use .gov   \nA .gov website belongs to an official government organization in the United States.\nSecure .gov websites use HTTPS   \nA lock (   ) or https:// means you\u2019ve safely connected to the .gov website. Share sensitive information only on official, secure websites.\nBlog\nThe History of the Light Bulb\nFrom incandescent bulbs to fluorescents to LEDs, we're exploring the long history of the light bulb.\nEnergy.gov\nNovember 22, 2013\nmin  minute read time\nThis interactive map is not viewable in your browser. Please view it in a modern browser.\nRead more about the History of the Light Bulb.\nMore than 150 years ago, inventors began working on a bright idea that would have a dramatic impact on how we use energy in our homes and offices. This invention changed the way we design buildings, increased the length of the average workday and jumpstarted new businesses. It also led to new energy breakthroughs -- from power plants and electric transmission lines to home appliances and electric motors.\nLike all great inventions, the light bulb can\u2019t be credited to one inventor. It was a series of small improvements on the ideas of previous inventors that have led to the light bulbs we use in our homes today.\nIncandescent Bulbs Light the Way\nLong before Thomas Edison patented -- first in 1879 and then a year later in 1880 -- and began commercializing his incandescent light bulb, British inventors were demonstrating that electric light was possible with the arc lamp. In 1835, the first constant electric light was demonstrated, and for the next 40 years, scientists around the world worked on the incandescent lamp, tinkering with the filament (the part of the bulb that produces light when heated by an electrical current) and the bulb\u2019s atmosphere (whether air is vacuumed out of the bulb or it is filled with an inert gas to prevent the filament from oxidizing and burning out). These early bulbs had extremely short lifespans, were too expensive to produce or used too much energy.\nWhen Edison and his researchers at Menlo Park came onto the lighting scene, they focused on improving the filament -- first testing carbon, then platinum, before finally returning to a carbon filament. By October 1879, Edison\u2019s team had produced a light bulb with a carbonized filament of uncoated cotton thread that could last for 14.5 hours. They continued to experiment with the filament until settling on one made from bamboo that gave Edison\u2019s lamps a lifetime of up to 1,200 hours -- this filament became the standard for the Edison bulb for the next 10 years. Edison also made other improvements to the light bulb, including creating a better vacuum pump to fully remove the air from the bulb and developing the Edison screw (what is now the standard socket fittings for light bulbs).\n(Historical footnote: One can\u2019t talk about the history of the light bulb without mentioning William Sawyer and Albon Man, who received a U.S. patent for the incandescent lamp, and Joseph Swan, who patented his light bulb in England. There was debate on whether Edison\u2019s light bulb patents infringed on these other inventors\u2019 patents. Eventually Edison\u2019s U.S. lighting company merged with the Thomson-Houston Electric Company -- the company making incandescent bulbs under the Sawyer-Man patent -- to form General Electric, and Edison\u2019s English lighting company merged with Joseph Swan\u2019s company to form Ediswan in England.)\nWhat makes Edison\u2019s contribution to electric lighting so extraordinary is that he didn\u2019t stop with improving the bulb -- he developed a whole suite of inventions that made the use of light bulbs practical. Edison modeled his lighting technology on the existing gas lighting system. In 1882 with the Holborn Viaduct in London, he demonstrated that electricity could be distributed from a centrally located generator through a series of wires and tubes (also called conduits). Simultaneously, he focused on improving the generation of electricity, developing the first commercial power utility called the Pearl Street Station in lower Manhattan. And to track how much electricity each customer was using, Edison developed the first electric meter.\nWhile Edison was working on the whole lighting system, other inventors were continuing to make small advances, improving the filament manufacturing process and the efficiency of the bulb. The next big change in the incandescent bulb came with the invention of the tungsten filament by European inventors in 1904. These new tungsten filament bulbs lasted longer and had a brighter light compared to the carbon filament bulbs. In 1913, Irving Langmuir figured out that placing an inert gas like nitrogen inside the bulb doubled its efficiency. Scientists continued to make improvements over the next 40 years that reduced the cost and increased the efficiency of the incandescent bulb. But by the 1950s, researchers still had only figured out how to convert about 10 percent of the energy the incandescent bulb used into light and began to focus their energy on other lighting solutions.\nEnergy Shortages Lead to Fluorescent Breakthroughs\nIn the 19th century, two Germans -- glassblower Heinrich Geissler and physician Julius Pl\u00fccker -- discovered that they could produce light by removing almost all of the air from a long glass tube and passing an electrical current through it, an invention that became known as the Geissler tube. A type of discharge lamp, these lights didn\u2019t gain popularity until the early 20th century when researchers began looking for a way to improve lighting efficiency. Discharge lamps became the basis of many lighting technologies, including neon lights, low-pressure sodium lamps (the type used in outdoor lighting such as streetlamps) and fluorescent lights.\nBoth Thomas Edison and Nikola Tesla experimented with fluorescent lamps in the 1890s, but neither ever commercially produced them. Instead, it was Peter Cooper Hewitt\u2019s breakthrough in the early 1900s that became one of the precursors to the fluorescent lamp. Hewitt created a blue-green light by passing an electric current through mercury vapor and incorporating a ballast (a device connected to the light bulb that regulates the flow of current through the tube). While the Cooper Hewitt lamps were more efficient than incandescent bulbs, they had few suitable uses because of the color of the light.\nBy the late 1920s and early 1930s, European researchers were doing experiments with neon tubes coated with phosphors (a material that absorbs ultraviolet light and converts the invisible light into useful white light). These findings sparked fluorescent lamp research programs in the U.S., and by the mid and late 1930s, American lighting companies were demonstrating fluorescent lights to the U.S. Navy and at the 1939 New York World\u2019s Fair. These lights lasted longer and were about three times more efficient than incandescent bulbs. The need for energy-efficient lighting American war plants led to the rapid adoption of fluorescents, and by 1951, more light in the U.S. was being produced by linear fluorescent lamps.\nIt was another energy shortage -- the 1973 oil crisis -- that caused lighting engineers to develop a fluorescent bulb that could be used in residential applications. In 1974, researchers at Sylvania started investigating how they could miniaturize the ballast and tuck it into the lamp. While they developed a patent for their bulb, they couldn\u2019t find a way to produce it feasibly. Two years later in 1976, Edward Hammer at General Electric figured out how to bend the fluorescent tube into a spiral shape, creating the first compact fluorescent light (CFL). Like Sylvania, General Electric shelved this design because the new machinery needed to mass-produce these lights was too expensive.\nEarly CFLs hit the market in the mid-1980s at retail prices of $25-35, but prices could vary widely by region because of the different promotions carried out by utility companies. Consumers pointed to the high price as their number one obstacle in purchasing CFLs. There were other problems -- many CFLs of 1990 were big and bulky, they didn\u2019t fit well into fixtures, and they had low light output and inconsistent performance. Since the 1990s, improvements in CFL performance, price, efficiency (they use about 75 percent less energy than incandescents) and lifetime (they last about 10 times longer) have made them a viable option for both renters and homeowners. Nearly 30 years after CFLs were first introduced on the market, an ENERGY STAR\u00ae CFL costs as little as $1.74 per bulb when purchased in a four-pack.\nLEDs: The Future is Here\nOne of the fastest developing lighting technologies today is the light-emitting diode (or LED). A type of solid-state lighting, LEDs use a semiconductor to convert electricity into light, are often small in area (less than 1 square millimeter) and emit light in a specific direction, reducing the need for reflectors and diffusers that can trap light.\nThey are also the most efficient lights on the market. Also called luminous efficacy, a light bulb\u2019s efficiency is a measure of emitted light (lumens) divided by power it draws (watts). A bulb that is 100 percent efficient at converting energy into light would have an efficacy of 683 lm/W. To put this in context, a 60- to 100-watt incandescent bulb has an efficacy of 15 lm/W, an equivalent CFL has an efficacy of 73 lm/W, and current LED-based replacement bulbs on the market range from 70-120 lm/W with an average efficacy of 85 lm/W.\nIn 1962 while working for General Electric, Nick Holonyak, Jr., invented the first visible-spectrum LED in the form of red diodes. Pale yellow and green diodes were invented next. As companies continued to improve red diodes and their manufacturing, they began appeari\nWhat are the key facts?\nLike all great inventions, the light bulb can\u2019t be credited to one inventor.\nIt was a series of small improvements on the ideas of previous inventors that have led to the light bulbs we use in our homes today.\nLearn more about the history of the incandescent light bulb.\nExplore the history of fluorescent lights, from the Geissler tube to CFLs.\nRead about the advancements in LED lights.\nRebecca Matulka\nRebecca Matulka served as a digital communications specialist for the Energy Department. In 2012, she joined the Energy.gov team, covering all things energy efficiency -- from fuel cells and vehicle technologies to advancements in manufacturing and consumer energy efficiency tips. Previously, Rebecca worked at an environmental nonprofit, where she built the organization's digital presence and spearheaded its rebranding efforts.\nAn avid reader and a want-to-be master chef, Rebecca spends her free time with her nose buried in the latest fiction best seller or trying out new recipes. She can also be seen walking her dog Miette -- the world's cutest pomeranian -- around D.C.\nTags: \n Lighting\n Energy Efficiency\n Clean Energy\n Next-Generation Energy Technologies\nMore by these authors\n Rebecca Matulka\nFormer Digital Communications Specialist, Office of Public Affairs\n Daniel Wood\nFormer Data Visualization and Cartographic Specialist, Office of Public Affairs\nMedia Inquiries:\n(202) 586-4940 or DOENews@hq.doe.gov\nRead more at the energy.gov Newsroom",
+                "created_at": "2026-03-14T06:37:30Z",
+                "id": "5e3075bc-6b04-4cb3-8b60-500bf4c8cadf",
+                "published_at": "2013-11-22",
+                "status": "COMPLETED",
+                "title": "The History of the Light Bulb | Department of Energy",
+                "updated_at": "2026-03-14T06:38:35Z",
+                "url": "https://www.energy.gov/articles/history-light-bulb"
+              },
+              {
+                "content": "Detailed Results:\n\nTitle: Who Invented the lightbulb? | Live Science\nURL: https://www.livescience.com/43424-who-invented-the-light-bulb.html\nContent: undefined\nRaw Content: Background\nYour membership journey starts here.\nKeep exploring and earning more as a member.\nBadge picture\nLive Science Quizzes\nLive Science Quizzes\nQuick, fun science challenges.\nScience Crosswords\nScience Crosswords\nShort, brain-teasing puzzles.\nExplore your membership benefits.\nScience Newsletters\nScience Newsletters\nSelect the newsletters you'd like to receive and enter your email below.\nLive Science\nAn artist&#039;s illustration of a black hole in yellow, blue and pink light\nA photo of a rocky excavation site, with light brown rock covered in tools and signs. \nA photo of a modern replica of an actual 10th-century Viking longship on the River Thames in London. There are people on the boat and it is in front of a glass building.\nA series of purple vertical cylinders wrapped with pink and blue bands with various colored balls moving across them\nA reconstruction of a late Neanderthal from El Salt.\nside view of a carved mammoth with incised zigzags on it\nA man with glasses and a blue shirt stands behind a Ferris-wheel looking contraption with red and blue lighting in a dark room\nA close up of a man&#039;s lower legs, with both feet wearing tall black sneakers and black socks. He wears white basketball shorts and is bouncing a basketball between his hands while standing on a midline on a wooden basketball court\nA series of three skulls, with a neanderthal skull on the left, human in the middle, and australopithecus afarensis on the right\nWomem operating an old mainframe\nartistic drawing of a Neanderthal using a piece of pyrite and flint to make sparks\nShining brain inside woman&#039;s head illustration\nA close up of an array of lenses, mirrors and lasers sitting on a table\nA photo of a &quot;hobbit&quot; skull against a black background\nAn animation of two black holes merging\nWho invented the lightbulb?\nThough Thomas Edison is credited as the man who invented the lightbulb, several inventors paved the way for him.\nWhen you purchase through links on our site, we may earn an affiliate commission. Here\u2019s how it works.\nThe Menlo Park lab of Thomas Edison, who invented the lightbulb, is shown here after its relocation to the Henry Ford Museum in Greenfield Village, Dearborn, Michigan. The arrow on the vacuum pump (center) marks the site of Edison&#039;s recreation of the lighting of the incandescent bulb on Oct. 21, 1929.\nGet the world\u2019s most fascinating discoveries delivered straight to your inbox.\nBecome a Member in Seconds\nUnlock instant access to exclusive member features.\nYou are now subscribed\nYour newsletter sign-up was successful\nWant to add more newsletters?\nDaily Newsletter\nDelivered Daily\nDaily Newsletter\nSign up for the latest discoveries, groundbreaking research and fascinating breakthroughs that impact you and the wider world direct to your inbox.\nLife&#039;s Little Mysteries\nOnce a week\nLife's Little Mysteries\nFeed your curiosity with an exclusive mystery every week, solved with science and delivered direct to your inbox before it's seen anywhere else.\nHow It Works\nOnce a week\nHow It Works\nSign up to our free science & technology newsletter for your weekly fix of fascinating articles, quick quizzes, amazing images, and more\nSpace.com Newsletter\nDelivered daily\nSpace.com Newsletter\nBreaking space news, the latest updates on rocket launches, skywatching events and more!\nWatch This Space\nOnce a month\nWatch This Space\nSign up to our monthly entertainment newsletter to keep up with all our coverage of the latest sci-fi and space movies, tv shows, games and books.\nNight Sky This Week\nOnce a week\nNight Sky This Week\nDiscover this week's must-see night sky events, moon phases, and stunning astrophotos. Sign up for our skywatching newsletter and explore the universe with us!\nJoin the club\nGet full access to premium articles, exclusive features and a growing list of member rewards.\nThough Thomas Edison is usually credited as the man who invented the lightbulb, the famous American inventor wasn't the only one who contributed to the development of this revolutionary technology.\nAlessandro Volta, Humphrey Davy and Joseph Swan played a critical role in the development of this technology.\nEarly research & development\nThe story of the lightbulb begins long before Edison patented the first commercially successful bulb in 1879. In 1800, Italian inventor Alessandro Volta developed the first practical method of generating electricity, the voltaic pile. Made of alternating discs of zinc and copper \u2014 interspersed with layers of cardboard soaked in salt water \u2014 the pile conducted electricity when a copper wire was connected at either end. Volta's glowing copper wire is officially considered a precursor to the battery, but is also one of the earliest manifestations of incandescent lighting.\nartistic drawing of a Neanderthal using a piece of pyrite and flint to make sparks\nPhoto of the portion of the Bayeux Tapestry depicting people pointing up at a flaming comet. \nPhotograph of the Pesse canoe, the oldest boat in the world. Carved wood.\nAccording to Harold H Schobert (\"Energy and Society: An Introduction,\" CRC Press, 2014) the Voltaic Pile \"made it possible for scientists to experiment with electric currents under controlled conditions\" and furthered experiments with electricity. Not long after Volta presented his discovery of a continuous source of electricity to the Royal Society in London, Davy produced the world's first electric lamp by connecting voltaic piles to charcoal electrodes.\nDavy's 1802 invention was known as an electric arc lamp, named for the bright arc of light emitted between its two carbon rods, according to \"The Life of Sir Humphrey Davy\" (HardPress Publishing, 2016)\nengraving of Humphry working on alkalis experiment\nengraving of Humphry working on alkalis experiment\nWhile Davy's arc lamp was certainly an improvement on Volta's stand-alone piles, it still wasn't a very practical source of lighting. This rudimentary lamp burned out quickly and was much too bright for use in a home or workspace. However in a 2012 lecture for the Proceedings of the American Philosophical Society, John Meurig Thomas wrote that Davy\u2019s other experiments with lighting led to both the miners' safety lamp, and also street lighting in Paris \"and many other European cities.\" The principles behind Davy's arc light were used throughout the 1800s in the development of many other electric lamps and bulbs.\nIn 1840, British scientist Warren de la Rue developed an efficiently designed lightbulb using a coiled platinum filament in place of copper, but the high cost of platinum kept the bulb from becoming a commercial success, according to Interesting Engineering. In 1848, Englishman William Staite improved the longevity of conventional arc lamps by developing a clockwork mechanism that regulated the movement of the lamps' quick-to-erode carbon rods, according to the Institution of Engineering and Technology. But the cost of the batteries used to power Staite's lamps also limited their practical applications.\nGet the world\u2019s most fascinating discoveries delivered straight to your inbox.\nRelated: 20 inventions that changed the world\nJoseph Swan vs. Thomas Edison\nIn 1850, English chemist Joseph Swan began trying to make electrical light more economical, and by 1860 he had developed a lightbulb that used carbonized paper filaments in place of those made of platinum, according to the BBC. Swan received a patent in the U.K. in 1878, and in February 1879 he demonstrated a working lamp in a lecture in Newcastle, England, according to the Smithsonian Institution.\nLike earlier renditions of the lightbulb, Swan's filaments were placed in a vacuum tube to minimize their exposure to oxygen, extending their lifespan. Unfortunately for Swan, vacuum pumps weren't very efficient then, and the prototype didn't work well enough for everyday use.\nartistic drawing of a Neanderthal using a piece of pyrite and flint to make sparks\nPhoto of the portion of the Bayeux Tapestry depicting people pointing up at a flaming comet. \nPhotograph of the Pesse canoe, the oldest boat in the world. Carved wood.\nEdison realized that the problem with Swan's design was the filament. A thin filament with high electrical resistance would make a lamp practical because it would require only a little current to make it glow. He demonstrated his lightbulb, with a platinum filament in a glass vacuum bulb, in December 1879 in Menlo Park, New Jersey, according to the Franklin Institute. Swan incorporated the improvement into his lightbulbs and founded an electrical lighting company in England.\nEdison sued for patent infringement, but Swan's patent was a strong claim, at least in the U.K., according to CIO. The two inventors eventually joined forces and formed Edison-Swan United, which became one of the world's largest manufacturers of lightbulbs, according to the Science Museum Group .\nIllustration showing Thomas Edison with a lightbulb\nIllustration showing Thomas Edison with a lightbulb\nFirst practical incandescent lightbulb\nWhere Edison surpassed his competition was in developing a practical and inexpensive lightbulb, according to the DOE. Edison and his team of researchers tested more than 3,000 designs for bulbs between 1878 and 1880.\nIn Nov. 1879, Edison filed a patent for an electric lamp with a carbon filament, according to the National Archives. The patent listed several materials that might be used for the filament, including cotton, linen and wood. Edison spent the next year finding the perfect filament for his new bulb, testing more than 6,000 plants to determine which material would burn the longest.\nSeveral months after the 1879 patent was granted, Edison and his team discovered that a carbonized bamboo filament could burn for more than 1,200 hours, according to the Edison Museum. Bamboo was used for the filaments in Edison's bulbs until it began to be replaced by longer-lasting materials in the 1880s to early 1900s.\nRelated: What's the longest burning lightbulb?\nIn 1882, Lewis Howard Latimer, one of Edison's researchers, patented a more efficient way of manufacturing carbon filaments, according to Rutgers University. And in 1903, Willis R. Whitney invented a treatment for these filaments that allowed them to burn bright without darkening the insides of their glass bulbs, according to the Smithsonian Institution.\nA retro style &#039;Edison bulb&#039;\nA retro style &#039;Edison bulb&#039;\nWilliam David Coolidge, an American physicist with General Electric, improved the company's method of manufacturing tungsten filaments in 1910. Tungsten, which has the highest melting point of any chemical element, was known by Edison to be an excellent material for lightbulb filaments, but the machinery needed to produce super-fine tungsten wire was not available in the late 19th century.\nTungsten is still the primary material used in incandescent bulb filaments today.\nRachel Ross and Callum McKelvie contributed to this article. This article was updated on Nov. 2, 2022.\nAdditional resources\nRead more about Franklin's invention at the Franklin Institute. Learn more about Thomas Edison's life from MIT. Watch a video about how light bulbs work from minutephysics on YouTube.\nartistic drawing of a Neanderthal using a piece of pyrite and flint to make sparks\nPhoto of the portion of the Bayeux Tapestry depicting people pointing up at a flaming comet. \nPhotograph of the Pesse canoe, the oldest boat in the world. Carved wood.\nMarie and Pierre Curie (center and right) in their lab with another unidentified man.\nIllustration of a spider-looking metal robot grasping a cancerous cell. \nWomem operating an old mainframe\nA man rushes to get on a very crowded elevator. \nA close up of a man&#039;s lower legs, with both feet wearing tall black sneakers and black socks. He wears white basketball shorts and is bouncing a basketball between his hands while standing on a midline on a wooden basketball court\nA colorful image shows a opalescent sphere carving a streak through a rainbow colored surface, kicking up white streaks behind it\nA cartoon showing a series of figures carrying different dark blue numbers walking across a green and yellow circuit board. In the background, a human brain floats in the center of blue concentric circles with a circuit board pattern in the shape of the brain \nAn animation of two black holes merging\nA concrete structure with large pillars and a metal staircase looms over a snowy landscape with green and red auroras illuminating the night sky \na camera, telescope and binoculars on a red background\nA young woman running in a snowy park \nan artist&#039;s rendering of DNA double helixes in rainbow colors\nthe hands of a young and old woman touch\na series of small walls in a lush, mountainous landscape\nan illustration of a man&#039;s silouette, with the top half of the head fading as if into a fog\nClose-up of a woman holding her hands over her pelvis in pain. She is wearing a brown checked shirt and blue denim jeans and is sat on a white couch. \nLive Science is part of Future US Inc, an international media group and leading digital publisher. Visit our corporate site.\n\n\u00a9\nFuture US, Inc. Full 7th Floor, 130 West 42nd Street,\nNew York,\nNY 10036.\nPlease login or signup to comment\nPlease wait...",
+                "created_at": "2026-03-14T06:37:31Z",
+                "id": "32f80b9a-01a9-4de2-8484-558d67eae5de",
+                "published_at": "2022-11-02",
+                "status": "COMPLETED",
+                "title": "Who invented the lightbulb?",
+                "updated_at": "2026-03-14T06:38:49Z",
+                "url": "https://www.livescience.com/43424-who-invented-the-light-bulb.html"
+              }
+            ]
+          }
+        ],
+        "media": [
+          {
+            "ai_score": 0.0,
+            "created_at": "2026-03-14T06:35:28Z",
+            "id": "af572441-e39b-4435-853a-bf8b254300ab",
+            "is_ai_generated": false,
+            "status": "SUCCESS",
+            "storage_url": "http://minio:9000/media/media/af572441-e39b-4435-853a-bf8b254300ab/image.jpg",
+            "type": "IMAGE",
+            "updated_at": "2026-03-14T06:35:28Z",
+            "url": "http://minio:9000/media/mocheg/104601/104601-547194-33-dd744aab3e806c4891533c2cefd724c2.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "post_id": "b4cb9fd3-44ef-4126-8f52-b7a190b500d5",
+      "dataset_claim_id": "107875",
+      "truth_label": "supported",
+      "claim_text": "Says gubernatorial candidate Rebecca Kleefisch 'worked with Scott Walker to sign five abortion restrictions into law that took away services and threatened doctors with prison time for providing safe and legal abortions.",
+      "snopes_url": "https://www.politifact.com/factchecks/2021/nov/02/kelda-helen-roys/yes-five-abortion-restrictions-took-away-services-/",
+      "system_verdict": "VERIFIED",
+      "correct": true,
+      "latency_seconds": 73.7,
+      "costs": {
+        "post_judge": 0.0017745
+      },
+      "artifact": {
+        "post": {
+          "agent_start_time": 1773470127.5219495,
+          "content": "Says gubernatorial candidate Rebecca Kleefisch 'worked with Scott Walker to sign five abortion restrictions into law that took away services and threatened doctors with prison time for providing safe and legal abortions.",
+          "costs_json": "{\"post_judge\": 0.0017745, \"query_generation\": 0.014906849999999998, \"evidence_retrieval\": 0.0052575}",
+          "created_at": "2026-03-14T06:35:27Z",
+          "id": "b4cb9fd3-44ef-4126-8f52-b7a190b500d5",
+          "justification": "According to multiple news outlets and fact-checkers (including PolitiFact), Gov. Scott Walker\u2019s administration enacted five major abortion restrictions while Rebecca Kleefisch served as lieutenant governor (2011\u20132019): a 20-week abortion ban, limits on medication abortions, a prohibition on abortion coverage through the state insurance exchange, a hospital admitting-privileges requirement for providers, and barring providers from receiving certain state family-planning funds. The post\u2019s claim is that these five restrictions were signed into law during Walker\u2019s tenure with Kleefisch as lieutenant governor, and the cited sources confirm that core assertion. Therefore, the claim is VERIFIED.",
+          "status": "VERIFIED",
+          "title": "",
+          "updated_at": "2026-03-14T06:36:39Z",
+          "url": "https://www.politifact.com/factchecks/2021/nov/02/kelda-helen-roys/yes-five-abortion-restrictions-took-away-services-/",
+          "costs": {
+            "post_judge": 0.0017745,
+            "query_generation": 0.014906849999999998,
+            "evidence_retrieval": 0.0052575
+          }
+        },
+        "queries": [
+          {
+            "query_text": "Did any abortion restriction law signed by Scott Walker in Wisconsin during 2011\u20132019 include criminal penalties that could result in prison time for doctors who provided abortions?",
+            "snippet": "",
+            "evidence": [
+              {
+                "content": "",
+                "created_at": "2026-03-14T06:37:11Z",
+                "id": "c405ddcb-fe61-47d1-a8b0-17c8709d1def",
+                "published_at": "",
+                "status": "COMPLETED",
+                "title": "Extraction failed",
+                "updated_at": "2026-03-14T06:37:26Z",
+                "url": "https://www.politico.com/story/2015/07/wisconsin-abortion-20-weeks-not-legal-scott-walker-120370"
+              },
+              {
+                "content": "Detailed Results:\n\nTitle: Yes, five abortion restrictions that took away services passed under ...\nURL: https://www.politifact.com/factchecks/2021/nov/02/kelda-helen-roys/yes-five-abortion-restrictions-took-away-services-/\nContent: undefined\nRaw Content: The Poynter Institute\n California\n Florida\n Iowa\n Michigan\n New Hampshire\n New York\n North Carolina\n Pennsylvania\n Texas\n West Virginia\n Wisconsin\n All Issues\n Online hoaxes\n Coronavirus\n Health Care\n Immigration\n Extremism\n Taxes\n Marijuana\n Environment\n Crime\n Guns\n Foreign Policy\n LGBTQ+\n Donald Trump\n JD Vance\n Mitch McConnell\n Mike Johnson\n Joe Biden\n PunditFact\n Tucker Carlson\n Sean Hannity\n Rachel Maddow\n Bloggers\n PolitiFact Videos\n 2024 Elections\n True\n Mostly True\n Half True\n Mostly False\n False\n Pants on Fire\n MAGA-Meter\n Biden Promise Tracker\n Trump-O-Meter\n Obameter\n Latest Promises\n Our Process\n Our Staff\n En Espa\u00f1ol\n Who pays for PolitiFact?\n Advertise with Us\n Suggest a Fact-check\n Corrections and Updates\n Newsletters\nDonate\nFollow us\nThe Facts Newsletter\nSign up\nEnglish  Espa\u00f1ol\nGet PolitiFact in your inbox.\n  \nKelda Helen Roys \nstated on September 28, 2021 in Email:\nSays gubernatorial candidate Rebecca Kleefisch \u201cworked with Scott Walker to sign five abortion restrictions into law that took away services and threatened doctors with prison time for providing safe and legal abortions.\u201d\ntrue  true\n Health Care\n Women\n Wisconsin\n Kelda Helen Roys\nWisconsin Lt. Gov. Rebecca Kleefisch and Gov. Scott Walker announced their re-election bids on Nov. 5, 2017. (Michael Sears/Milwaukee Journal Sentinel)    Wisconsin Lt. Gov. Rebecca Kleefisch and Gov. Scott Walker announced their re-election bids on Nov. 5, 2017. (Michael Sears/Milwaukee Journal Sentinel)\nWisconsin Lt. Gov. Rebecca Kleefisch and Gov. Scott Walker announced their re-election bids on Nov. 5, 2017. (Michael Sears/Milwaukee Journal Sentinel)\nMadeline Heim \nBy Madeline Heim November 2, 2021\nYes, five abortion restrictions that took away services passed under Kleefisch and Walker\nIf Your Time is short\n Former Gov. Scott Walker signed a number of abortion restrictions while in office that former Lt. Gov. Rebecca Kleefisch, now running for governor, supported.\n They include a ban on abortions after 20 weeks, limits on medication abortions, prohibiting the procedure from being covered through the health care exchange, requiring providers to have hospital admitting privileges and preventing providers from getting money from state family planning grants.\n The abortion ban after 20 weeks carried with it a punishment of up to 3.5 years in prison for a provider who performed the procedure after that timeframe.\n Although Walker, not Kleefisch, pushed these restrictions through, she has long been a pro-life candidate, and pro-life groups gave her credit for some of them.\nSee the sources for this fact-check\nEven before Texas lawmakers made headlines by effectively banning abortions after six weeks of pregnancy, statehouses across the country were setting up to tighten abortion restrictions in other ways.\nBuoyed by a more conservative U.S. Supreme Court, states have enacted more than 100 such restrictions as of early October, according to the Guttmacher Institute, a research organization that supports abortion access. Experts say the new laws could be aimed at directly challenging Roe v. Wade, which was decided in 1973.\nSuch restrictions have been blocked in Wisconsin in recent years by Democratic Gov. Tony Evers, who has vetoed a handful of abortion bills that made their way to his desk since he took office in 2019.\nBut former Lt. Governor Rebecca Kleefisch, a Republican challenging Evers in 2022, has made it clear she\u2019ll do the opposite if elected.\nKleefisch told a conservative radio host in September that she would sign a bill that bans abortions after a fetal heartbeat is detected. (That breaks with former Gov. Scott Walker, who signaled at the end of his term that he would not ban abortions after six weeks of pregnancy.)\nState Sen. Kelda Roys, D-Madison, sought to bring up Kleefisch\u2019s past record on abortion under Walker, even though at the time it didn\u2019t include that specific bill.\nIn a Sept. 28, 2021 fundraising email, Roys wrote that \"Wisconsin cannot become the next Texas\" under Kleefisch as governor.\n\"Rebecca Kleefisch worked with Scott Walker to sign five abortion restrictions into law that took away services and threatened doctors with prison time for providing safe and legal abortions,\" she wrote.\nIs Roys right?\nBills did limit abortion services, and one included the threat of prison time\nRoys\u2019 office pointed to five laws passed during the Walker administration that involved abortion:\n A 2015 law that banned abortions after 20 weeks, with no exceptions made for fatal fetal anomalies or for victims of rape or incest.\n A 2012 law that prohibited giving an abortion-inducing drug to a pregnant person unless the physician who prescribed the drug gives the person a physical exam and is physically present when the drug is given.\n A 2012 law that prohibited insurance plans offered in Wisconsin under the Affordable Care Act from covering some abortions.\n A 2013 law requiring abortion providers to have hospital admitting privileges.\n A 2011 budget provision that prohibited abortion providers from receiving funding from state family planning grants funded with state and federal money.\nIt\u2019s clear that these laws took away abortion services by limiting when, how and where people could obtain abortions.\nMany of them were aimed at reducing the capacity of Planned Parenthood. The 2011 funding cut also ended up taking away health care services that weren\u2019t abortion-related by forcing the closure of Planned Parenthood clinics in Beaver Dam, Johnson Creek, Chippewa Falls and Shawano. At the time, Planned Parenthood officials said those centers did not perform abortions but did provide people with check-ups, screenings and access to birth control.\n(It\u2019s also worth noting that the law about hospital admitting privileges, which would have cut in half the number of abortion providers in the state, was ruled unconstitutional by a federal appeals court two years later.)\nWhat about Roys\u2019 point about prison time for doctors who provided abortions?\nWalker\u2019s 2015 bill banning abortion after 20 weeks made performing the procedure after that point a felony punishable by up to three and a half years in prison. Anti-abortion advocates say the fetus can feel pain during the procedure at 20 weeks; the American College of Obstetrics and Gynecology reports that painful touch cannot be distinguished until late in the third trimester.\nTo be sure, it was Walker signing the bills into law, not Kleefisch.\nBut the former lieutenant governor has long been part of the anti-abortion movement. She earned the endorsements of Wisconsin anti-abortion groups when she ran for lieutenant governor for the first time in 2010. And during the 2012 recall election, she was endorsed by the Susan B. Anthony List Candidate Fund, a national anti-abortion political action committee.\nIn that endorsement, the Susan B. Anthony List president thanked Kleefisch for her leadership alongside Walker and the Legislature in defunding Planned Parenthood of more than $1 million dollars.\nOur ruling\nRoys said Kleefisch worked with Walker to pass five abortion restrictions that took away services and threatened abortion providers with prison time.\nThe five rules did restrict abortion services, and one carried a punishment of prison time. Though Kleefisch did not herself sign them into law, she\u2019s been credited with helping to push them through.\nWe rate this claim True.\nRead About Our Process\nThe Principles of the Truth-O-Meter\nOur Sources\nTexas Tribune, \"Gov. Greg Abbott signs into law one of nation\u2019s strictest abortion measures, banning procedure as early as six weeks into a pregnancy,\" May 19, 2021\nThe 19th, \"In 2021, states are poised to tighten abortion restrictions,\" Jan. 10, 2021\nGuttmacher Institute, \"For the First Time Ever, U.S. States Enacted More Than 100 Abortion Restrictions in a Single Year,\" Oct. 4, 2021\nOyez, Roe v. Wade, accessed Oct. 20, 2021\nMilwaukee Journal Sentinel, \"Gov. Tony Evers vetoes \u2018born alive\u2019 legislation and other abortion measures,\" June 21, 2019\nMilwaukee Journal Sentinel, \"Wisconsin won't change its abortion laws now. But it's on the table depending on the outcome of the 2022 election,\" Sept. 13, 2021\nMilwaukee Journal Sentinel, \"GOP lawmakers to fast-track abortion ban after 20 weeks,\" May 25, 2015\nWisconsin state Legislature, 2011 Wisconsin Act 217, accessed Oct. 20, 2021\nMilwaukee Journal Sentinel, \"Walker signs bevy of bills into law,\" April 6, 2012\nMilwaukee Journal Sentinel, \"Scott Walker signs abortion bill; providers quickly sue,\" July 5, 2013\nMilwaukee Journal Sentinel, \"Planned Parenthood funding facing cuts,\" May 18, 2011\nMilwaukee Journal Sentinel, \"Planned Parenthood, citing budget cut, to close four rural Wisconsin centers,\" Feb. 18, 2013\nMilwaukee Journal Sentinel, \"Judges: Wisconsin abortion admitting privileges law unconstitutional,\" Nov. 23, 2015\nAmerican College of Obstetrics and Gynecology, Fetal Pain, accessed Oct. 21, 2021\nRacine County Republican Party, \"Kleefisch garners Wisconsin Right to Life endorsement,\" July 7, 2010\nSusan B. Anthony List, \"SBA List Candidate Fund endorses Lt. Gov. Rebecca Kleefisch in Wisconsin recall election,\" April 6, 2012\nBrowse the Truth-O-Meter\nMore by Madeline Heim\n  \nFrancesca Hong \nstated on June 12, 2025 in X, formerly Twitter:\n\u201cNearly 25 cents of every $1 spent via SNAP goes to farmers and ranchers.\u201d\ntrue  true\n  \nBrad Schimel \nstated on February 6, 2025 in X, formerly Twitter:\n\u201cEliminate school choice\u201d is on Susan Crawford\u2019s agenda.\nfalse  false\n  \nSocial Media \nstated on February 18, 2025 in X, formerly Twitter:\nThe Chicago Cubs owner is bankrolling Brad Schimel.\nmostly-true  mostly-true\n  \nCommon Cause \nstated on January 8, 2025 in News release:\nWisconsin makes it more difficult for its citizens to vote than almost any state in the nation.\ntrue  true\n  \nRon Johnson \nstated on November 17, 2024 in TV interview:\n\u201cThere's never been a placebo-controlled study on childhood vaccines.\u201d\nfalse  false\n  \nDonald Trump \nstated on October 6, 2024 in Rally:\n\u201cWith your Democrat governor, you have some of the highest electricity prices and highest energy costs. It\u2019s just about at the top in Wisconsin.\u201d\nfalse  false\n  \nRobin Vos \nstated on November 6, 2024 in News conference:\n\u201cEvery single county in America, every single county, Kamala Harris did worse than Joe Biden did.\u201d\nfalse  false\n  \nClimate Power \nstated on October 18, 2024 in Organization email:\nSays Eric Hovde \u201cclaims anyone who believes in transitioning to a clean energy economy is \u2018smoking crack cocaine.\u2019\u201d\nfalse  false\n  \nTammy Baldwin \nstated on October 7, 2024 in X, formerly Twitter:\n\u201cWhen I worked on the Affordable Care Act, I wrote the amendment that allows all young people to stay on their parents\u2019 health insurance until they turn 26. Overnight, millions of young Americans got health care.\u201d\nmostly-true  mostly-true\n  \nAmanda Nedweski \nstated on January 22, 2024 in Wisconsin Assembly:\n\"We have technology and medical advancements today that can tell you if you are pregnant the day after conception.\"\nfalse  false\nYes, five abortion restrictions that took away services passed under Kleefisch and Walker\nClear\n   \nBruce Blakeman \nstated on January 14, 2026 in a statement:\nNew York ranks No. 1 in the nation for individual tax burden.\nmostly-true  mostly-true\n   \nSocial Media \nstated on February 14, 2026 in social media posts:\nThe Epstein files \u201cexpose Ellen DeGeneres\u201d as a cannibal.\npants-fire  pants-fire\n   \nX posts \nstated on February 12, 2026 in an X post:\nSavannah Guthrie's husband\u2019s company is listed as a \"co conspirator\" in the Epstein files, \u201cin case you're wondering why now of all times for (her) mother to be 'kidnapped.'\"\nfalse  false\n   \nDonald Trump \nstated on February 8, 2026 in an interview on NBC:\nCrime in Minneapolis \u201cis down 25, 30% because we\u2019ve removed thousands of criminals from the area.\u201d\nbarely-true  barely-true\nLoad more\nSupport independent fact-checking. Become a member!\nIn a world of wild talk and fake news, help us stand up for the facts.\nSign me up",
+                "created_at": "2026-03-14T06:37:13Z",
+                "id": "49e0cef0-6eec-4b89-8dba-b38f292d97b9",
+                "published_at": "2021-11-02",
+                "status": "COMPLETED",
+                "title": "Yes, five abortion restrictions that took away services passed under Kleefisch and Walker",
+                "updated_at": "2026-03-14T06:37:58Z",
+                "url": "https://www.politifact.com/factchecks/2021/nov/02/kelda-helen-roys/yes-five-abortion-restrictions-took-away-services-/"
+              }
+            ]
+          },
+          {
+            "query_text": "Did the abortion restriction laws signed by Scott Walker during 2011\u20132019 in Wisconsin remove or reduce access to abortion services (for example by restricting clinic services, funding, or telemedicine)?",
+            "snippet": "Yes. Multiple laws signed by Gov. Scott Walker during his 2011\u20132019 tenure included measures that reduced access to abortion services. PolitiFact summarizes five restrictions Walker signed: a 20-week abortion ban (making non\u2011emergency abortions after 20 weeks a felony), limits on medication abortions, a prohibition on abortion coverage through the ACA exchange, a requirement that providers have hospital admitting privileges (Act 37), and a rule preventing providers from receiving state family\u2011planning grant funds. Courts and reporting noted practical effects: a federal judge (U.S. District Judge William Conley) found the admitting\u2011privileges law was intended to \u201ccripple abortion clinics\u201d and restrict availability and struck down/blocked some provisions; reporting by WPR and Courthouse News described that the 20\u2011week ban and other measures forced some patients to travel and reduced services. These actions therefore removed or reduced access by restricting clinic operations, limiting funding, and curtailing medication\u2011abortion options (which also affects telemedicine delivery).",
+            "evidence": []
+          },
+          {
+            "query_text": "Which abortion restriction laws did Governor Scott Walker sign into law in Wisconsin while Rebecca Kleefisch was lieutenant governor (2011\u20132019), and do they total five?",
+            "snippet": "Multiple sources (including PolitiFact) identify five abortion restrictions signed into law under Gov. Scott Walker while Rebecca Kleefisch was lieutenant governor (2011\u20132019): 1) a ban on abortions after 20 weeks; 2) limits on medication (medical) abortions; 3) a prohibition on covering abortion through the state health insurance exchange; 4) a requirement that abortion providers have hospital admitting privileges; and 5) preventing providers from receiving state family-planning grant funds. These five restrictions are the measures referenced in the claim and were enacted during Walker\u2019s administration while Kleefisch served as lieutenant governor.",
+            "evidence": []
+          }
+        ],
+        "media": [
+          {
+            "ai_score": 0.0,
+            "created_at": "2026-03-14T06:35:28Z",
+            "id": "ed11b8bb-282a-4c96-88d4-b8a0cfa32bb7",
+            "is_ai_generated": false,
+            "status": "SUCCESS",
+            "storage_url": "http://minio:9000/media/media/ed11b8bb-282a-4c96-88d4-b8a0cfa32bb7/image.jpg",
+            "type": "IMAGE",
+            "updated_at": "2026-03-14T06:35:28Z",
+            "url": "http://minio:9000/media/mocheg/107875/107875-547390-29-4f17be61a2774a0946faa84088b62182.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "post_id": "e7d85769-b7ec-4b06-b33b-237c74c047f8",
+      "dataset_claim_id": "9484",
+      "truth_label": "NEI",
+      "claim_text": "Congress voted to give Apache land to an environmentally exploitative foreign corporation.",
+      "snopes_url": "https://www.snopes.com/fact-check/congress-votes-to-sell-apache-land-to-foreign-corporation/",
+      "system_verdict": "NEI",
+      "correct": true,
+      "latency_seconds": 88.2,
+      "costs": {
+        "post_judge": 0.00117075
+      },
+      "artifact": {
+        "post": {
+          "agent_start_time": 1773470127.528013,
+          "content": "Congress voted to give Apache land to an environmentally exploitative foreign corporation.",
+          "costs_json": "{\"post_judge\": 0.00117075, \"query_generation\": 0.021818849999999997, \"evidence_retrieval\": 0.006123750000000001}",
+          "created_at": "2026-03-14T06:35:27Z",
+          "id": "e7d85769-b7ec-4b06-b33b-237c74c047f8",
+          "justification": "Congress included a provision in the FY2015 National Defense Authorization Act authorizing a land exchange that would transfer roughly 2,400 acres at Oak Flat to Resolution Copper (a Rio Tinto subsidiary). Reporting indicates the parcel is federally managed public land that is sacred to the San Carlos Apache and other tribes but was not legally owned by the Apache tribe, so describing the action as \u201cCongress sold Apache land\u201d is misleading. Because the evidence supports that Congress authorized a transfer to a private mining company but contradicts the claim that this was legally tribal-owned land, the post contains a mixture of true and misleading elements and cannot be fully verified or fully refuted.",
+          "status": "NEI",
+          "title": "",
+          "updated_at": "2026-03-14T06:36:54Z",
+          "url": "https://www.snopes.com/fact-check/congress-votes-to-sell-apache-land-to-foreign-corporation/",
+          "costs": {
+            "post_judge": 0.00117075,
+            "query_generation": 0.021818849999999997,
+            "evidence_retrieval": 0.006123750000000001
+          }
+        },
+        "queries": [
+          {
+            "query_text": "Is the corporation that Congress voted to transfer Apache land to a foreign-owned or foreign-incorporated company (what country is it owned/incorporated in)?",
+            "snippet": "",
+            "evidence": [
+              {
+                "content": "Detailed Results:\n\nTitle: Grijalva Bill Reverses Giveaway of Sacred Tribal Land to Foreign ...\nURL: https://democrats-naturalresources.house.gov/media/press-releases/grijalva-bill-reverses-giveaway-of-sacred-tribal-land-to-foreign-owned-mining-company_sen-sanders-offering-senate-companion\nContent: undefined\nRaw Content: Skip to primary navigation Skip to content\n About\n+ The Committee\n+ Our Members\n+ Ranking Member Huffman\n Subcommittees\n+ Energy and Mineral Resources\n+ Federal Lands\n+ Water, Wildlife and Fisheries\n+ Indian and Insular Affairs\n+ Oversight and Investigations\n Committee Activity\n+ Hearings\n+ Bills\n+ Letters\n+ Reports\n+ Fact Sheets\n+ Climate Wins\n+ Environmental Justice\n+ Puerto Rico Political Status\n Newsroom\n+ Press Releases\n+ Media Advisories\n+ Opinion Pieces\n+ Press Kit\n Contact\n+ Get Updates\n+ Tipline\n+ Contact Us\n+ Job Postings\n+ Internships\nNatural Resources Committee Main Website Logo\nTipline Button\nTranslate Button\nx\n About\n+ The Committee\n+ Our Members\n+ Ranking Member Huffman\n Subcommittees\n+ Energy and Mineral Resources\n+ Federal Lands\n+ Water, Wildlife and Fisheries\n+ Indian and Insular Affairs\n+ Oversight and Investigations\n Committee Activity\n+ Hearings\n+ Bills\n+ Letters\n+ Reports\n+ Fact Sheets\n+ Climate Wins\n+ Environmental Justice\n+ Puerto Rico Political Status\n Newsroom\n+ Press Releases\n+ Media Advisories\n+ Opinion Pieces\n+ Press Kit\n Contact\n+ Get Updates\n+ Tipline\n+ Contact Us\n+ Job Postings\n+ Internships\nMENU\n Facebook Link\n Twitter Link\n Youtube Link\n Instagram Link\n Bluesky Link\n Substack Link\n Flickr Link\n1. Home\n2. Newsroom\n3. Press Releases\n06.15.17\nGrijalva Bill Reverses Giveaway of Sacred Tribal Land to Foreign-Owned Mining Company \u2013 Sen. Sanders Offering Senate Companion\nWashington, D.C. \u2013 Ranking Member Ra\u00fal M. Grijalva today introduced the Save Oak Flat Act, which repeals an unjustified congressional giveaway of sacred Native American land to a mining company called Resolution Copper co-owned by multinational mining conglomerates Rio Tinto and BHP Billiton. Sen. Bernie Sanders (I-Vt.) is introducing a companion bill in the upper chamber today.\nSection 3003 of the 2015 National Defense Authorization Act authorized the transfer of 2,422 acres in Arizona\u2019s Tonto National Forest to Resolution Copper despite the area\u2019s cultural importance to the San Carlos Apache and other local tribes in the region. The area, known as Oak Flat, has been home to tribal acorn gathering and traditional religious ceremonies for centuries. If Resolution Copper continues with its stated plans to establish a so-called block cave mine on the land, its environmental and cultural value will be destroyed.\nGrijalva\u2019s bill \u2013 a successor to his H.R. 2811 from the 114th Congress \u2013 would repeal section 3003, which has no connection to national defense. Grijalva has taken a leading lawmaker role in the ongoing Save Oak Flat movement and hosted a congressional forum on the issue in the last Congress.\n\u201cUsing our military as an excuse to give sacred land away to a mining company is a cynical abuse of power,\u201d Grijalva said today. \u201cThis is exactly the kind of Beltway corporate favoritism the American people can\u2019t stand, and it needs to be undone immediately. Supporting this bill means standing up for tribal sovereignty and environmental quality. Opposing it means handing American resources over to a multinational conglomerate with no interest in our economy, let alone American Indian rights.\u201d\n\u201cToo many times our Native American brothers and sisters have seen the profits of huge corporations put ahead of their sovereign rights,\u201d Sen. Sanders said. \u201cIt is wrong that a backroom deal in Washington could lead to the destruction of a sacred area that is so important to so many. We must defend the hundreds of thousands of Americans who are standing in opposition to this giveaway of our natural resources to foreign corporations.\u201d\nResolution\u2019s proposed mine is directly adjacent to Apache Leap, a beautiful escarpment of unique archeological and historical significance, where Apaches pursued by the U.S. cavalry leapt to their deaths to avoid capture. Vernelda Grant, the tribal historic preservation officer for the San Carlos Apache Tribe, expressed concern in the respected journal Science in 2014 that, as the magazine put it, the mine is \u201cright next door\u201d to Apache Leap and \u201chaving a working copper mine next to the site will change how people experience it.\u201d\nThe Tribe\u2019s campaign to protect Oak Flat has been profiled in the New York Times, Rolling Stone,Indian Country Today and many other publications.\nSection 3003 is strongly opposed by Indian tribes across the country because of the dangerous precedent it has set. By requiring the conveyance of the land regardless of the outcome of mandated federal consultation with affected tribes, it allows Congress essentially to ignore the basic principles of federal-tribal relations. The language also requires the conveyance regardless of the outcome of a mandatory environmental review process, ignoring decades of environmental precedent requiring advance land and water impact analyses so that these analyses can help inform decision-makers about potential impacts from proposed activities before decisions are made that could have irreversible consequences.\nThe bill is cosponsored by the following representatives:\nGrace F. Napolitano (D-Calif.)\nTony C\u00e1rdenas (D-Calif.)\nMark Pocan (D-Wisc.)\nMatt Cartwright (D-Pa.)\nTom Cole (R-Okla.)\nMarkwayne Mullin (R-Okla.)\nWalter B. Jones (R-N.C.)\nDonald S. Beyer, Jr. (D-Va.)\nPeter A. DeFazio (D-Oregon)\nDiana DeGette (D-Colo.)\nJared Huffman (D-Calif.)\nRuben Gallego (D-Ariz.)\nNorma J. Torres (D-Calif.)\nEleanor Holmes Norton (D-D.C.)\nNiki Tsongas (D-Mass.)\nTed W. Lieu (D-Calif.)\nSuzan K. DelBene (D-Wash.)\nDebbie Dingell (D-Mich.)\nBetty McCollum (D-Minn.)\nDerek Kilmer (D-Wash.)\nAlan Lowenthal (D-Calif.)\nEarl Blumenauer (D-Oregon)\nJared Polis (D-Colo.)\nRaul Ruiz (D-Calif.)\nElijah E. Cummings (D-Md.)\nBen Ray Luj\u00e1n (D-N.M.)\nAlcee L. Hastings (D-Fla.)\nMichelle Lujan Grisham (D-N.M.)\nGregorio Kilili Camacho Sablan (D-Mariana Islands)\nColleen Hanabusa (D-Hawaii)\nPress Contact\nMedia Contact: Adam Sarvana\n(202) 225-6065 or (202) 578-6626 mobile\n Print\n Email\n Tweet\nNext Article Previous Article",
+                "created_at": "2026-03-14T06:37:13Z",
+                "id": "91b5cde0-f636-4dac-8465-0e84cbf3acf2",
+                "published_at": "2017-06-15",
+                "status": "COMPLETED",
+                "title": "Grijalva Bill Reverses Giveaway of Sacred Tribal Land to Foreign-Owned Mining Company \u2013 Sen. Sanders Offering Senate Companion",
+                "updated_at": "2026-03-14T06:37:47Z",
+                "url": "https://democrats-naturalresources.house.gov/media/press-releases/grijalva-bill-reverses-giveaway-of-sacred-tribal-land-to-foreign-owned-mining-company_sen-sanders-offering-senate-companion"
+              },
+              {
+                "content": "Detailed Results:\n\nTitle: Congress Voted to Sell Apache Land to Foreign Corporation?\nURL: https://www.snopes.com/fact-check/congress-votes-to-sell-apache-land-to-foreign-corporation/\nContent: undefined\nRaw Content: Snopes Logo\nSnopes Now available in the app store!\nOpen\nLog in to activate your ad-free access. It looks like you might have a Snopes membership! Log in to enjoy your ad-free experience. Log In\nFact Check\nCongress Voted to Sell Apache Land to Foreign Corporation?\nControversial congressional measure reportedly gave sacred Apache land to an environmentally harmful foreign corporation.\nKim LaCapria\nPublished Dec. 11, 2014\n\nClaim:\nCongress voted to give Apache land to an environmentally exploitative foreign corporation.\nRating: Mixture\nMixture\nAbout this rating\nOn 9 December 2014, social media users began circulating an article titled \"House Votes to Sell Apache Land to Foreign Corporation, The Tribe Is Furious\" regarding a trade of federally managed land in Arizona (of cultural significance to the Apache) that had been appended to an unrelated and more urgent bill involving the National Defense Authorization Act (NDAA):\n> For over 5 years, a measure to cede 2,400 acres sacred to the Apache tribe for use in copper mining has been pushed in Congress. Backed by various well-paid corporatist congress members such as Senator John McCain, this measure inevitably dies from the outrage of the native tribes who care for this land. So, this year the members backed by legalized bribes by foreign corporations have attached the measure to the must-pass National Defense Authorization Act in a lame duck session of congress.\n>\n> The attempt to hide this brazen attempt to sell off cultural heritage for mere coin tells us how these congress members feel about their duty to protect this nation. One must wonder how much of the estimated $61 billion in revenue is to be lining these congress members pockets if the bill passes intact. After all, members of congress regularly reap huge profits from bills they introduce.\nA more detailed explanation of the controversial measure observed that:\n> The House approved a bill on December 4 that gives 2,400 acres of sacred Apache land to a giant international mining corporation, then sent it to the Senate for a fast vote in a process that won't allow amendments to be made. The Senate is expected to act on it this week.\n>\n> The land swap bill, called the Southeast Arizona Land Exchange and Conservation Act of 2013 (H.R. 687), was attached as a rider to the annual must-pass National Defense Authorization Act (NDAA) along with several other land-related bills.\nMuch of the claim was correct at the time it was written: a long-standing effort to pass the Southeast Arizona Land Exchange and Conservation Act came to issue on 2 December 2014, when the measure was attached by members of the House of Representatives to a vote on funding for the must-pass National Defense Authorization Act (NDAA). The NDAA is a United States federal law specifying the budget and expenditures of the United States Department of Defense, and as there was no substantive link between the two measures, their attachment amplified criticism that adding the land swap rider to the NDAA unreasonably suppressed opposition to the former.\nNative Americans and conservation groups opposed the legislative transfer of land to Resolution Copper Mining, citing both environmental and cultural concerns. Critics of the measure believed the proposed mode of transfer was heavy-handed and unwarranted:\n> Pushing a land-swap through Congress is not the only option for the mining company to acquire the land, opponents say.\n>\n> \"Rio Tinto has yet to articulate any credible reason why a congressional land exchange is needed, versus the normal administrative processes,\" states the 2013 letter from the Inter-Tribal Council of Arizona to Congress.\n\nAdministrative land exchanges are much more common than legislative land exchanges, says a 2010 policy brief from the University of Montana.\nConservation groups also objected to the privatization of public land, especially culturally significant areas:\n> \"We don't think we should be privatizing public land, especially land that's part of a national forest,\" and land that's important to indigenous groups, said Athan Manuel, director of the lands protection program for the Sierra Club in Washington.\nWhile the land in question in Arizona is culturally significant to Native American groups such as the Apache, it was not tribal land that belonged to them prior to the Southeast Arizona Land Exchange and Conservation Act. The proposal also didn't mandate that the land be \"given\" to a mining company; rather, it would be traded for several other parcels (which although cumulatively larger in size than the property given up did not include land culturally important to local tribal groups). Nevertheless, use of the areas adjacent to the proposed mining site would likely be disrupted or devalued.\nSecretary of the Interior Sally Jewell expressed her disapproval of language in the NDAA that provided for the exchange of a 2,422 acre parcel of U.S. Forest Service land to Resolution Copper Mining, LLC for a number of parcels in Arizona to be managed by the USFS and the Bureau of Land Management by stating:\n> The Oak Flat area, or Chi'Chil'Ba'Goteel, has significant religious, cultural, historical, and archeological value to the San Carlos Apache Tribe and other tribes in the region.\n>\n> I am profoundly disappointed with the Resolution Copper provision, which has no regard for lands considered sacred by nearby Indian tribes. The provision short circuits the long-standing and fundamental practice of pursuing meaningful government-to-government consultation with the 566 federally recognized tribes with whom we have a unique legal and trust responsibility.\n>\n> Although there are consultation requirements in the legislation, the appropriate time for honoring our government-to-government relationship with tribes is before legislating issues of this magnitude. The tribe's sacred land has now been placed in great jeopardy.\n>\n> I look forward to working with Rio Tinto to better understand their plans for development and to see what additional measures they can take to work with the tribes, including forgoing development in these sacred areas.\nOn 5 November 2015, Vermont senator (and Democratic presidential candidate) Bernie Sanders introduced the Save Oak Flat Act (S. 2422), a bill seeking to \"repeal the authorization and requirement for a land exchange between the Department of Agriculture and Resolution Copper Mining, LLC.\" No action has yet been taken on that bill.\nEfforts have since been made to include the Oak Flat area in the National Register of Historic Places, but Republican Rep. Paul Gosar and Democratic Rep. Ann Kirkpatrick, both of Arizona, have opposed that move and have asserted that such a designation would not necessarily preclude mining activity on the land:\n> [T]wo U.S. House members from Arizona sent a letter to the National Park Service asking that the property in Pinal County be withdrawn from consideration for the National Register of Historic Places.\n>\n> A Jan. 21  notice in the Federal Register lists the site for the proposed designation as Chi'chil Bildagoteel Historic District, Superior.\n>\n> Gosar and Kirkpatrick protested to the Park Service last summer when a similar notice was published. The Park Service withdrew the nomination.\n>\n> In their letter, the two lawmakers ask for an additional 60 days for people to comment on the proposal.\n>\n> The 50-page application form for the National Register of Historic Places was filled out by the officials of Tonto National Forest who consulted with members of the San Carlos Apache Tribe.\n>\n> Steve Smith, a spokesman for Gosar, said it is not clear what impact the historic designation would have on the mine.\n\nRep. Gosar also maintained in a press release that the land in question has \"never been a sacred site\":\n> Oak Flat is currently on Forest Service land and is slated to be transferred to a private mining company as part of the bipartisan Southeast Arizona Land Exchange and Conservation Act signed into public law in December 2014. Environmental groups, a D.C. lobbyist from the Clinton Administration and other mining opponents encouraged the Forest Service and National Park Service to list the Oak Flat Campground as a historical site in a deceitful attempt to quietly undermine the copper project.\n>\n> Shame on the Park Service and Forest Service for ramming a bogus historic place listing down the throats of Arizonans. Clearly, the Obama Administration cares more about pandering to extremist environmental groups and a D.C. lobbyist from the Clinton Administration than following the law and listening to the American public. Oak Flat has never been a sacred site, as confirmed by the local tribe's own former historian. Yet, Obama's minions are hell-bent on sabotaging an important mining effort by listing a small, public campground 20 miles away from the nearest tribe's reservation as a historic site.\n>\n> The agency's attempt to silence public comments through deceptive notices and short comment periods is outrageous and inexcusable. Neighboring tribal members who have seen unemployment numbers as high as 70%, a Superior community in dire need of good-paying jobs and Americans throughout the country all need this important mining project. A bipartisan Congress and the president have declared the land exchange for this copper mine to be the law of the land. That should have been the end of it. But blatantly deceitful collaboration that ignores the Rule of Law cannot be tolerated. This fraudulent action is the latest in a long list of egregious bureaucratic abuses of power by the Obama Administration. I will continue to fight this overreach.\nSources\nBregel, Emily.   \"Apache Tribe Distressed by Privatization of Dacred Land.\"     Arizona Daily Star.   11 December 2014.\nDownes, Nathaniel.   \"House Votes to Sell Apache Land to Foreign Corporation, Tribe Is Furious.\"     Addicting Info.   9 December 2014.\nPearce, Matt.   \"Massive Bill Would Protect Some Wilderness, Open Other Public Land.\"     Los Angeles Times.   10 December 2014.\nSanders, Rebekah.   \"Controversial Mine Legislation Slipped into Defense Bill.\"     The Republic.   3 December 2014.\nTheobald, Bill.   \"Arizona Lawmakers Object to Oak Flat Historic Designation Near Resolution Copper Mine.\"     The Arizona Republic.   4 February 2016.\nToensing, Gale Courey.     \"San Carlos Apache Leader Seeks Senate Defeat of Copper Mine on Sacred Land.\"     Indian Country.   8 December 2014.\nBy Kim LaCapria\nKim LaCapria is a former writer for Snopes.",
+                "created_at": "2026-03-14T06:37:15Z",
+                "id": "dcdc1820-226b-4e88-9b11-2cdea44a72eb",
+                "published_at": "2014-12-11",
+                "status": "COMPLETED",
+                "title": "Congress Voted to Sell Apache Land to Foreign Corporation?",
+                "updated_at": "2026-03-14T06:38:05Z",
+                "url": "https://www.snopes.com/fact-check/congress-votes-to-sell-apache-land-to-foreign-corporation/"
+              }
+            ]
+          },
+          {
+            "query_text": "Which corporation did Congress vote to transfer Apache tribal land to?",
+            "snippet": "The search snippets indicate the disputed Oak Flat parcel in southeast Arizona was slated to be transferred under the Southeast Arizona Land Exchange and Conservation Act to Resolution Copper Co., a subsidiary of the international mining conglomerate Rio Tinto. The measure was attached to the December 2014 National Defense Authorization Act, allowing Resolution Copper to acquire roughly 2,400 acres in exchange for other land.",
+            "evidence": []
+          },
+          {
+            "query_text": "Has the corporation that was to receive Apache land been documented or reported to engage in environmentally exploitative practices or to have environmental violations?",
+            "snippet": "",
+            "evidence": [
+              {
+                "content": "Detailed Results:\n\nTitle: APACHE CORPORATION TO RECEIVE TOP 2016 LOUISIANA CONSERVATION AWARD - Louisiana Wildlife Federation\nURL: https://lawildlifefed.org/2017/03/apache-corporation-to-receive-top-2016-louisiana-conservation-award\nContent: undefined\nRaw Content: Skip to content\nlogo - Louisiana Wildlife Federation\nlogo - Louisiana Wildlife Federation\nTAKE ACTION\nAPACHE CORPORATION TO RECEIVE TOP 2016 LOUISIANA CONSERVATION AWARD\n/ News, Blog / By   Rebecca Triche\nApache Corporation has been selected to receive the Governor\u2019s Award \u2013 Conservationist of the Year for 2016 for its Apache Tree Grant Program, which has donated 4 million trees since 2005, including 2 million trees to Louisiana-based charities and agencies.\nThe award, a handsome statuette of a bald eagle, will be presented the evening of Saturday, March 18, 2017 at a festive banquet to be held at Boudreaux\u2019s in Baton Rouge. The public is invited to attend and can purchase banquet tickets online. or call the LWF office at 225-344-6707.\nDownload the banquet invitation.\nThe Governor\u2019s Award is presented annually to the person, business or organization deemed to have made the most outstanding contribution toward the protection, wise use and enjoyment of Louisiana\u2019s natural resources among nominees submitted by the public. The selection for this and six other awards was made by a panel of independent judges with expertise in a wide range of conservation fields. The 53rd Annual Governor\u2019s State Conservation Achievement Awards program is hosted by the Louisiana Wildlife Federation and the awards are presented jointly with the National Wildlife Federation.\nIn 2016, Apache Corporation\u2019s Tree Grant Program donated trees to the Terrebonne Parish Tree Board, the city of New Orleans\u2019 NOLA Tree Project, Baton Rouge Recreation and Park Commission, and University of Louisiana at Lafayette. Apache Corporation also donated 250,000 native bottomland hardwood seedlings to continue habitat restoration efforts for Louisiana black bears in Louisiana and Texas. Thanks to multi-year tree donations from Apache Corporation, Black Bear Conservation Coalition\u2019s Landowner Assistance Program has restored nearly 5,000 acres of hardwood habitat for wildlife habitat.\nFive individuals, and one other organization will also be recognized by the Louisiana Wildlife Federation for their outstanding conservation achievements in 2016. They are:\nTheryn K. Henkel, Ph.D. of New Orleans \u2013 For her work as Assistant Director of Lake Pontchartrain Basin Foundation\u2019s Coastal Sustainability Program, particularly her leadership of the Wetland Forest Restoration Program and the Swamp Restoration Suitability Assessment for the Pontchartrain Basin, and producing the two-day Wastewater Assimilation Workshop in 2016.\nRonald P. Coco of Moreauville \u2013 For his volunteer work in 2016 and many previous years as a Hunter Education Volunteer with the Louisiana Department of Wildlife and Fisheries, and for volunteering for National Hunting and Fishing Day in Woodworth, Archery in Louisiana Schools program, Kids Summer Fishing Camp and Grant Parish Fishing Clinic.\nConnor Patrick Arthur of Florien\u2013 For his youth volunteer work with 4-H as a shooting sports ambassador and leading a \u201cWildlife of Louisiana\u201d session for 450 elementary students at Zwolle Tamale Fiesta, teaching wildlife identification lessons to pre-school children, teaching a hunter safety lesson to junior high school students, teaching a fishing lesson to 400 youth, and volunteering with Hunters Enriching the Lives of People (H.E.L.P).\nBarry Guillot of Luling \u2013 For his work in founding and continuing to coordinate the nationally-recognized LaBranche Wetlands Watchers school-based service-learning program that hosts wetlands education programming annually for 1,200 fourth through eighth grade students, and for his leadership in environmental education as an eighth grade teacher at Harry Hurst Middle School.\nTegan Wendland of New Orleans \u2013 For her work as lead reporter for WWNO\u2019s Coastal Desk producing news and feature stories in 2016 that reported the complexity around the environmental and cultural impacts of Louisiana\u2019s coastal land loss and coastal restoration efforts.\nQuality Deer Management Association, Louisiana State Chapter \u2013 For their work in 2016 in urging the Louisiana Department of Wildlife and Fisheries to implement a deer carcass import ban to prevent the spread of Chronic Wasting Disease into Louisiana; for their education and outreach effort to control impacts from the feral hog population in Louisiana that culminated in creating the Louisiana Feral Hog Management Task Force; and for coordinating local branches that provided enhanced hunting opportunities to handicapped deer hunters, funded deer research studies in Tensas National Refuge, and held numerous education events around the state.\nGolden Ranch Farms, LLC is the signature sponsor of this year\u2019s banquet and other sponsors include: Shell Pipeline LP; Land Trust for Louisiana; Van Kerrebrook & Associates P.C.; Marsh Dog; T. Baker Smith; Barney & Donna Callahan; Ryan & Kaima Schaefer; Warren & Jodie Singer; Bob & Norma Stewart; Andrew Walters; East Ascension Sportsman League; Rapides Wildlife Association; Clint & Virginia Mouser; and Edgar Veillon. Video production and broadcast of the banquet is underwritten by Russ and Sandra Herman.\nThe Louisiana Wildlife Federation is a statewide conservation education and advocacy organization. Established in 1940, it is affiliated with the National Wildlife Federation and represents a broad constituency of conservationists including hunters, anglers, campers, birders, boaters, and other outdoor enthusiasts.\nShare via:\n Facebook\n Twitter\n LinkedIn\nScroll to Top",
+                "created_at": "2026-03-14T06:37:43Z",
+                "id": "df02ef70-644b-4ead-8cda-c9e003c56a99",
+                "published_at": "",
+                "status": "COMPLETED",
+                "title": "APACHE CORPORATION TO RECEIVE TOP 2016 LOUISIANA CONSERVATION AWARD",
+                "updated_at": "2026-03-14T06:38:14Z",
+                "url": "https://lawildlifefed.org/2017/03/apache-corporation-to-receive-top-2016-louisiana-conservation-award"
+              },
+              {
+                "content": "Detailed Results:\n\nTitle: Congress Voted to Sell Apache Land to Foreign Corporation?\nURL: https://www.snopes.com/fact-check/congress-votes-to-sell-apache-land-to-foreign-corporation\nContent: undefined\nRaw Content: Snopes Logo\nSnopes Now available in the app store!\nOpen\nLog in to activate your ad-free access. It looks like you might have a Snopes membership! Log In\nFact Check\nCongress Voted to Sell Apache Land to Foreign Corporation?\nControversial congressional measure reportedly gave sacred Apache land to an environmentally harmful foreign corporation.\nKim LaCapria\nPublished Dec. 11, 2014\n\nClaim:\nCongress voted to give Apache land to an environmentally exploitative foreign corporation.\nRating: Mixture\nMixture\nAbout this rating\nOn 9 December 2014, social media users began circulating an article titled \"House Votes to Sell Apache Land to Foreign Corporation, The Tribe Is Furious\" regarding a trade of federally managed land in Arizona (of cultural significance to the Apache) that had been appended to an unrelated and more urgent bill involving the National Defense Authorization Act (NDAA):\n> For over 5 years, a measure to cede 2,400 acres sacred to the Apache tribe for use in copper mining has been pushed in Congress. Backed by various well-paid corporatist congress members such as Senator John McCain, this measure inevitably dies from the outrage of the native tribes who care for this land. So, this year the members backed by legalized bribes by foreign corporations have attached the measure to the must-pass National Defense Authorization Act in a lame duck session of congress.\n>\n> The attempt to hide this brazen attempt to sell off cultural heritage for mere coin tells us how these congress members feel about their duty to protect this nation. One must wonder how much of the estimated $61 billion in revenue is to be lining these congress members pockets if the bill passes intact. After all, members of congress regularly reap huge profits from bills they introduce.\nA more detailed explanation of the controversial measure observed that:\n> The House approved a bill on December 4 that gives 2,400 acres of sacred Apache land to a giant international mining corporation, then sent it to the Senate for a fast vote in a process that won't allow amendments to be made. The Senate is expected to act on it this week.\n>\n> The land swap bill, called the Southeast Arizona Land Exchange and Conservation Act of 2013 (H.R. 687), was attached as a rider to the annual must-pass National Defense Authorization Act (NDAA) along with several other land-related bills.\nMuch of the claim was correct at the time it was written: a long-standing effort to pass the Southeast Arizona Land Exchange and Conservation Act came to issue on 2 December 2014, when the measure was attached by members of the House of Representatives to a vote on funding for the must-pass National Defense Authorization Act (NDAA). The NDAA is a United States federal law specifying the budget and expenditures of the United States Department of Defense, and as there was no substantive link between the two measures, their attachment amplified criticism that adding the land swap rider to the NDAA unreasonably suppressed opposition to the former.\nNative Americans and conservation groups opposed the legislative transfer of land to Resolution Copper Mining, citing both environmental and cultural concerns. Critics of the measure believed the proposed mode of transfer was heavy-handed and unwarranted:\n> Pushing a land-swap through Congress is not the only option for the mining company to acquire the land, opponents say.\n>\n> \"Rio Tinto has yet to articulate any credible reason why a congressional land exchange is needed, versus the normal administrative processes,\" states the 2013 letter from the Inter-Tribal Council of Arizona to Congress.\n>\n> Administrative land exchanges are much more common than legislative land exchanges, says a 2010 policy brief from the University of Montana.\nConservation groups also objected to the privatization of public land, especially culturally significant areas:\n> \"We don't think we should be privatizing public land, especially land that's part of a national forest,\" and land that's important to indigenous groups, said Athan Manuel, director of the lands protection program for the Sierra Club in Washington.\nWhile the land in question in Arizona is culturally significant to Native American groups such as the Apache, it was not tribal land that belonged to them prior to the Southeast Arizona Land Exchange and Conservation Act. The proposal also didn't mandate that the land be \"given\" to a mining company; rather, it would be traded for several other parcels (which although cumulatively larger in size than the property given up did not include land culturally important to local tribal groups). Nevertheless, use of the areas adjacent to the proposed mining site would likely be disrupted or devalued.\nSecretary of the Interior Sally Jewell expressed her disapproval of language in the NDAA that provided for the exchange of a 2,422 acre parcel of U.S. Forest Service land to Resolution Copper Mining, LLC for a number of parcels in Arizona to be managed by the USFS and the Bureau of Land Management by stating:\n> The Oak Flat area, or Chi'Chil'Ba'Goteel, has significant religious, cultural, historical, and archeological value to the San Carlos Apache Tribe and other tribes in the region.\n>\n> I am profoundly disappointed with the Resolution Copper provision, which has no regard for lands considered sacred by nearby Indian tribes. The provision short circuits the long-standing and fundamental practice of pursuing meaningful government-to-government consultation with the 566 federally recognized tribes with whom we have a unique legal and trust responsibility.\n>\n> Although there are consultation requirements in the legislation, the appropriate time for honoring our government-to-government relationship with tribes is before legislating issues of this magnitude. The tribe's sacred land has now been placed in great jeopardy.\n>\n> I look forward to working with Rio Tinto to better understand their plans for development and to see what additional measures they can take to work with the tribes, including forgoing development in these sacred areas.\nOn 5 November 2015, Vermont senator (and Democratic presidential candidate) Bernie Sanders introduced the Save Oak Flat Act (S. 2422), a bill seeking to \"repeal the authorization and requirement for a land exchange between the Department of Agriculture and Resolution Copper Mining, LLC.\" No action has yet been taken on that bill.\nEfforts have since been made to include the Oak Flat area in the National Register of Historic Places, but Republican Rep. Paul Gosar and Democratic Rep. Ann Kirkpatrick, both of Arizona, have opposed that move and have asserted that such a designation would not necessarily preclude mining activity on the land:\n> [T]wo U.S. House members from Arizona sent a letter to the National Park Service asking that the property in Pinal County be withdrawn from consideration for the National Register of Historic Places.\n>\n> A Jan. 21  notice in the Federal Register lists the site for the proposed designation as Chi'chil Bildagoteel Historic District, Superior.\n>\n> Gosar and Kirkpatrick protested to the Park Service last summer when a similar notice was published. The Park Service withdrew the nomination.\n>\n> In their letter, the two lawmakers ask for an additional 60 days for people to comment on the proposal.\n>\n> The 50-page application form for the National Register of Historic Places was filled out by the officials of Tonto National Forest who consulted with members of the San Carlos Apache Tribe.\n>\n> Steve Smith, a spokesman for Gosar, said it is not clear what impact the historic designation would have on the mine.\nRep. Gosar also maintained in a press release that the land in question has \"never been a sacred site\":\n> Oak Flat is currently on Forest Service land and is slated to be transferred to a private mining company as part of the bipartisan Southeast Arizona Land Exchange and Conservation Act signed into public law in December 2014. Environmental groups, a D.C. lobbyist from the Clinton Administration and other mining opponents encouraged the Forest Service and National Park Service to list the Oak Flat Campground as a historical site in a deceitful attempt to quietly undermine the copper project.\n>\n> Shame on the Park Service and Forest Service for ramming a bogus historic place listing down the throats of Arizonans. Clearly, the Obama Administration cares more about pandering to extremist environmental groups and a D.C. lobbyist from the Clinton Administration than following the law and listening to the American public. Oak Flat has never been a sacred site, as confirmed by the local tribe's own former historian. Yet, Obama's minions are hell-bent on sabotaging an important mining effort by listing a small, public campground 20 miles away from the nearest tribe's reservation as a historic site.\n>\n> The agency's attempt to silence public comments through deceptive notices and short comment periods is outrageous and inexcusable. Neighboring tribal members who have seen unemployment numbers as high as 70%, a Superior community in dire need of good-paying jobs and Americans throughout the country all need this important mining project. A bipartisan Congress and the president have declared the land exchange for this copper mine to be the law of the land. That should have been the end of it. But blatantly deceitful collaboration that ignores the Rule of Law cannot be tolerated. This fraudulent action is the latest in a long list of egregious bureaucratic abuses of power by the Obama Administration. I will continue to fight this overreach.\nSources\nBregel, Emily.   \"Apache Tribe Distressed by Privatization of Dacred Land.\"     Arizona Daily Star.   11 December 2014.\nDownes, Nathaniel.   \"House Votes to Sell Apache Land to Foreign Corporation, Tribe Is Furious.\"     Addicting Info.   9 December 2014.\nPearce, Matt.   \"Massive Bill Would Protect Some Wilderness, Open Other Public Land.\"     Los Angeles Times.   10 December 2014.\nSanders, Rebekah.   \"Controversial Mine Legislation Slipped into Defense Bill.\"     The Republic.   3 December 2014.\nTheobald, Bill.   \"Arizona Lawmakers Object to Oak Flat Historic Designation Near Resolution Copper Mine.\"     The Arizona Republic.   4 February 2016.\nToensing, Gale Courey.     \"San Carlos Apache Leader Seeks Senate Defeat of Copper Mine on Sacred Land.\"     Indian Country.   8 December 2014.\nBy Kim LaCapria\nKim LaCapria is a former writer for Snopes.",
+                "created_at": "2026-03-14T06:37:44Z",
+                "id": "569432ce-dee4-43df-afce-3e8f2264f9c4",
+                "published_at": "2014-12-11",
+                "status": "COMPLETED",
+                "title": "Congress Voted to Sell Apache Land to Foreign Corporation?",
+                "updated_at": "2026-03-14T06:39:09Z",
+                "url": "https://www.snopes.com/fact-check/congress-votes-to-sell-apache-land-to-foreign-corporation"
+              }
+            ]
+          },
+          {
+            "query_text": "Did the United States Congress vote to transfer land belonging to the Apache tribe to a private party or corporation?",
+            "snippet": "In December 2014 Congress included a provision in the FY2015 National Defense Authorization Act that authorized a land exchange transferring about 2,400 acres at Oak Flat (Chi\u2019chil Bi\u0142dagoteel) in the Tonto National Forest to Resolution Copper, a private mining company. The land is federally managed public land that is sacred to the San Carlos Apache and other tribes; it was not land legally owned by the Apache tribe, so descriptions that Congress \u2018sold Apache land\u2019 are misleading. The provision was controversial, prompted tribal opposition and litigation (e.g., Apache Stronghold), and fact-checkers (Snopes) characterized related claims as a mixture of true and misleading information.",
+            "evidence": []
+          }
+        ],
+        "media": []
+      }
+    },
+    {
+      "post_id": "6be98831-03fc-4d5d-9ba9-cb1382e489b2",
+      "dataset_claim_id": "116234",
+      "truth_label": "refuted",
+      "claim_text": "No U.S. presidents elected before Donald Trump were racist.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/jul/27/joe-biden/long-history-racism-us-presidency/",
+      "system_verdict": "REFUTED",
+      "correct": true,
+      "latency_seconds": 50.8,
+      "costs": {
+        "query_generation": 0.00458735,
+        "post_judge": 0.0029839999999999997
+      },
+      "artifact": {
+        "post": {
+          "agent_start_time": 1773470266.780257,
+          "content": "No U.S. presidents elected before Donald Trump were racist.",
+          "costs_json": "{\"query_generation\": 0.00458735, \"post_judge\": 0.0029839999999999997}",
+          "created_at": "2026-03-14T06:35:27Z",
+          "id": "6be98831-03fc-4d5d-9ba9-cb1382e489b2",
+          "justification": "According to PolitiFact, an academic review (PMC), and a historians' panel (OAH), historians document that multiple U.S. presidents before 2016 held racist beliefs and enacted racially discriminatory policies, placing Donald Trump in a longer history of racialized presidential politics. The post's implied absolute claim that no presidents elected before Trump were racist is directly contradicted by this scholarly consensus. Therefore the claim is REFUTED.",
+          "status": "REFUTED",
+          "title": "",
+          "updated_at": "2026-03-14T06:38:35Z",
+          "url": "https://www.politifact.com/factchecks/2020/jul/27/joe-biden/long-history-racism-us-presidency/",
+          "costs": {
+            "query_generation": 0.00458735,
+            "post_judge": 0.0029839999999999997
+          }
+        },
+        "queries": [
+          {
+            "query_text": "Were any U.S. presidents elected before Donald Trump (all presidents elected prior to 2016) documented by historians as having racist beliefs or enacting racist policies?",
+            "snippet": "Multiple reputable sources note that historians and scholars document racist beliefs and policies among U.S. presidents before Donald Trump. A PolitiFact analysis of Biden\u2019s comment cites historians saying there have been \u201ca number of racist American presidents,\u201d contradicting the claim that Trump was the first. An academic review (PMC) frames racism as woven into the history of the U.S. presidency and states that nearly all presidents benefited from whiteness and that only a few, notably Lyndon B. Johnson, supported meaningful civil rights legislation. A historians\u2019 panel (OAH) also places Trump in a longer context of racial politics and points to earlier presidents\u2019 roles in racialized policy and rhetoric.",
+            "evidence": []
+          }
+        ],
+        "media": [
+          {
+            "ai_score": 0.0,
+            "created_at": "2026-03-14T06:35:28Z",
+            "id": "40b37311-b297-45f1-8285-b58343f896ac",
+            "is_ai_generated": false,
+            "status": "SUCCESS",
+            "storage_url": "http://minio:9000/media/media/40b37311-b297-45f1-8285-b58343f896ac/image.jpg",
+            "type": "IMAGE",
+            "updated_at": "2026-03-14T06:35:28Z",
+            "url": "http://minio:9000/media/mocheg/116234/116234-2298122-01-JQA-article-slave-jail_191231_153051.jpg"
+          },
+          {
+            "ai_score": 0.0,
+            "created_at": "2026-03-14T06:35:28Z",
+            "id": "b3ab4ccc-8f9d-4a51-8473-ff9e4117ac03",
+            "is_ai_generated": false,
+            "status": "SUCCESS",
+            "storage_url": "http://minio:9000/media/media/b3ab4ccc-8f9d-4a51-8473-ff9e4117ac03/image.jpg",
+            "type": "IMAGE",
+            "updated_at": "2026-03-14T06:35:28Z",
+            "url": "http://minio:9000/media/mocheg/116234/116234-2298177-42-tom-false.jpg"
+          },
+          {
+            "ai_score": 0.0,
+            "created_at": "2026-03-14T06:35:28Z",
+            "id": "c734e7e3-74f9-4481-b2a1-07d81442dcb1",
+            "is_ai_generated": false,
+            "status": "SUCCESS",
+            "storage_url": "http://minio:9000/media/media/c734e7e3-74f9-4481-b2a1-07d81442dcb1/image.jpg",
+            "type": "IMAGE",
+            "updated_at": "2026-03-14T06:35:28Z",
+            "url": "http://minio:9000/media/mocheg/116234/116234-548097-37-f08cd6f700bd1265dcee552b1d4cfa23.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "post_id": "552489ce-bb68-468b-a23c-b094eae837be",
+      "dataset_claim_id": "101932",
+      "truth_label": "supported",
+      "claim_text": "'Bill Gates told us about the coronavirus in 2015.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/mar/25/facebook-posts/bill-gates-warned-2015-we-were-unprepared-infectio/",
+      "system_verdict": "REFUTED",
+      "correct": false,
+      "latency_seconds": 108.6,
+      "costs": {
+        "evidence_retrieval": 0.0030549999999999996,
+        "query_generation": 0.01080025,
+        "post_judge": 0.003991
+      },
+      "artifact": {
+        "post": {
+          "agent_start_time": 1773470317.5807512,
+          "content": "'Bill Gates told us about the coronavirus in 2015.",
+          "costs_json": "{\"evidence_retrieval\": 0.0030549999999999996, \"query_generation\": 0.01080025, \"post_judge\": 0.003991}",
+          "created_at": "2026-03-14T06:35:27Z",
+          "id": "552489ce-bb68-468b-a23c-b094eae837be",
+          "justification": "According to the 2015 TED Talk transcript (and reporting by multiple fact-checkers), Bill Gates warned in 2015 that the world was unprepared for a highly infectious pandemic and urged better preparedness, but he did not mention the word \"coronavirus\" or specifically refer to coronaviruses. The post's key assertion \u2014 that Gates explicitly warned about \"coronavirus\" in 2015 \u2014 is contradicted by the primary transcript and fact-checking sources, so the claim is refuted.",
+          "status": "REFUTED",
+          "title": "",
+          "updated_at": "2026-03-14T06:40:23Z",
+          "url": "https://www.politifact.com/factchecks/2020/mar/25/facebook-posts/bill-gates-warned-2015-we-were-unprepared-infectio/",
+          "costs": {
+            "evidence_retrieval": 0.0030549999999999996,
+            "query_generation": 0.01080025,
+            "post_judge": 0.003991
+          }
+        },
+        "queries": [
+          {
+            "query_text": "Did Bill Gates mention the word \"coronavirus\" or coronaviruses in 2015?",
+            "snippet": "Multiple reputable sources (Africa Check, USA Today fact-check, PolitiFact and BBC) report that in his 2015 TED Talk Bill Gates warned about the risk of a future deadly epidemic and said the world was unprepared for a major infectious disease outbreak, but he did not specifically mention the word \"coronavirus\" or coronaviruses in 2015. USA Today and Africa Check explicitly state Gates warned generally about epidemics rather than naming coronaviruses.",
+            "evidence": []
+          },
+          {
+            "query_text": "Transcript of Bill Gates TED Talk \"The next outbreak? We're not ready\" (2015)",
+            "snippet": "",
+            "evidence": [
+              {
+                "content": "Detailed Results:\n\nTitle: Bill Gates: The next outbreak? We're not ready | TED Talk\nURL: https://www.ted.com/talks/bill_gates_the_next_outbreak_we_re_not_ready\nContent: undefined\nRaw Content: Ideas change everything\nSIGN IN\n\nTED is supported by ads and partners\nThe next outbreak? We're not ready\n46,485,460 plays|\nBill Gates |\nTED2015\n\u2022 March 2015\nIn 2014, the world avoided a global outbreak of Ebola, thanks to thousands of selfless health workers -- plus, frankly, some very good luck. In hindsight, we know what we should have done better. So, now's the time, Bill Gates suggests, to put all our good ideas into practice, from scenario planning to vaccine research to health worker training. As he says, \"There's no need to panic ... but we need to get going.\"\nTED is supported by ads and partners\nIdeas are better live\nSee all TEDx events\nTheme: Longer by Nature: The Science and Soul of Living Well\nMarch 11, 2026\nSanta Barbara, CA, United States\nTheme: U-Lead\nMay 9, 2026\nNea Smirni, Greece\nTEDxManitou Springs Salon\nMay 16, 2026\nColorado Springs, United States\nSee all TEDx events\nIn 2014, the world avoided a global outbreak of Ebola, thanks to thousands of selfless health workers -- plus, frankly, some very good luck. In hindsight, we know what we should have done better. So, now's the time, Bill Gates suggests, to put all our good ideas into practice, from scenario planning to vaccine research to health worker training. As he says, \"There's no need to panic ... but we need to get going.\"\nThis talk was presented at an official TED conference.\nRead our curation guidelines.\nAbout the speaker\nBill Gates\nBill Gates\nTechnologist, philanthropist\nSee speaker profile\nBill Gates warned that we weren\u2019t ready for a global pandemic in a talk at TED2015. Now he\u2019s working to make sure the world is better prepared next time around.\nLearn more\nHow to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need\nBill Gates | Knopf (2021)\nBill Gates - How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need\nThis talk was presented at an official TED conference.\nRead our curation guidelines.",
+                "created_at": "2026-03-14T06:39:15Z",
+                "id": "bd5cee4b-4dc6-4f8c-82f2-d5031f5401fd",
+                "published_at": "",
+                "status": "COMPLETED",
+                "title": "Bill Gates: The next outbreak? We're not ready | TED Talk",
+                "updated_at": "2026-03-14T06:39:36Z",
+                "url": "https://www.ted.com/talks/bill_gates_the_next_outbreak_we_re_not_ready"
+              },
+              {
+                "content": "Detailed Results:\n\nTitle: Transcript of Bill Gates Warning of Pandemics in a 1025 TED Talk | Rev\nURL: https://www.rev.com/transcripts/bill-gates-ted-talk-transcript-from-2015-warns-of-pandemics-epidemics\nContent: undefined\nRaw Content: Help CenterDevelopersSecurity\nContact Support | 1(888) 369-0701369-0701)Login\nHuman-Verified & Professional Services\nHuman Transcription\nExpert Human Transcription with 99% AccuracyHuman Captions\nAccessible & Compliant Captions for Video Content in English or SpanishCourt Reporting Self-Service\nFrom Instant Drafts To Ready To Certify TranscriptsGlobal Subtitles\nExpand Globally with Accurate Subtitles in 17 LanguagesView All Pay-Per-Minute Services\nTranscription, captions, & subtitles tailored to your budget & timeline\nAI Platform Features\nAI TranscriptionAI NotetakerAI CaptionsRev Mobile AppView All AI Features\nPremium Tools. Premium Perks.\nSave on Human Transcription & unlock AI features built for precision, efficiency, & privacy.Multi-File Analysis\nSpot inconsistencies, patterns, & key facts across multiple audio, video, & text files in seconds.\nIndustries\nLegal\nCriminal Prosecution\nEliminate Evidence Backlogs, Uncover Critical Details, & Deliver JusticeCriminal Defense\nCut Hours of Review, Catch Inconsistencies, & Build a Stronger CaseLaw Enforcement\nGet Back In The Field & Increase Close RatesCivil Law\nBuild Stronger Cases With AI-powered TranscriptsCourt Reporting Agencies\nA Trusted Partner from Transcription to CertificationSmartDepo\nAI Summaries & Depo Memos With 100% Page-Line Accuracy\nIndustries\nResearch & ConsultingNewsrooms & JournalistsVideo Distribution & AccessibilityEducationHealthcareView All Industries\nCutting Evidence Review Time by 94% for Anderson Law LLCSmartDepo\nComprehensive AI-powered deposition summaries with 100% accurate page-line citations.\nResources\nBlog\nExpert Insights On Legal Tech, AI Workflows, And MorePress\nLatest News About Rev's Speech-To-Text TechnologyReports & Guides\nWhitepapers, Reports, And Guides To Inform Your Business DecisionsLearning Center\nGuides And Tutorials To Help You Get The Most From RevTranscript Library\nFree Transcripts From Influential Moments In Politics And MediaCase Studies\nDiscover How Rev Industry Leaders Put Rev To Work\nReviews\nTrusted Feedback And Ratings From G2, Mobile App Stores, And MoreThe Rough Draft\nWhere Journalists, Leaders, & Innovators Share Their Creative BreakthroughsPartners\nDiscover Our Bar Association Partners & Learn How To Partner With RevCareers\nWe're Hiring For Ambitious Team Members Across Rev\nRead Trending Articles\nHow Law Enforcement Transcription Helps Justice Move FasterCourt Hearing Types + How Rev Can HelpState Bar of Texas Names Rev First-Ever AI Partner4 in 5 Legal Professionals Are Burned Out: Can AI Be the Lifeline?\nAbout RevPricing\nGet StartedRequest a Demo\nProduct\nBack To Menu\nHuman-Verified & Professional Services\nHuman Transcription\nExpert Human Transcription with 99% AccuracyHuman Captions\nAccessible & Compliant Captions for Video Content in English or SpanishCourt Reporting Self-Service\nFrom Instant Drafts To Ready To Certify TranscriptsGlobal Subtitles\nExpand Globally with Accurate Subtitles in 17 LanguagesView All Pay-Per-Minute Services\nTranscription, captions, & subtitles tailored to your budget & timeline\nAI Platform Features\nAI TranscriptionAI NotetakerAI CaptionsRev Mobile AppView All AI Features\nPremium Tools. Premium Perks.\nSave on Human Transcription & unlock AI features built for precision, efficiency, & privacy.Multi-File Analysis\nSpot inconsistencies, patterns, & key facts across multiple audio, video, & text files in seconds.\nIndustries\nBack To Menu\nLegal\nCriminal Prosecution\nEliminate Evidence Backlogs, Uncover Critical Details, & Deliver JusticeCriminal Defense\nCut Hours of Review, Catch Inconsistencies, & Build a Stronger CaseLaw Enforcement\nGet Back In The Field & Increase Close RatesCivil Law\nBuild Stronger Cases With AI-powered TranscriptsCourt Reporting Agencies\nA Trusted Partner from Transcription to CertificationSmartDepo\nAI Summaries & Depo Memos With 100% Accuracy\nIndustries\nResearch & ConsultingNewsrooms & JournalistsVideo Distribution & AccessibilityEducationHealthcareView All Industries\nCutting Evidence Review Time by 94% for Anderson Law LLCSmartDepo\nComprehensive AI-powered deposition summaries with 100% accurate page-line citations.\nResources\nBack To Menu\nBlog\nExpert Insights On Legal Tech, AI Workflows, And MorePress\nLatest News About Rev's Speech-To-Text TechnologyReports & Guides\nWhitepapers, Reports, And Guides To Inform Your Business DecisionsLearning Center\nGuides And Tutorials To Help You Get The Most From RevTranscript Library\nFree Transcripts From Influential Moments In Politics And MediaCase Studies\nDiscover How Rev Industry Leaders Put Rev To Work\nReviews\nTrusted Feedback And Ratings From G2, Mobile App Stores, And MoreThe Rough Draft\nWhere Journalists, Leaders, & Innovators Share Their Creative BreakthroughsPartners\nDiscover Our Bar Association Partners & Learn How To Partner With RevCareers\nWe're Hiring For Ambitious Team Members Across Rev\nRead Trending Articles\nHow Law Enforcement Transcription Helps Justice Move FasterCourt Hearing Types + How Rev Can HelpState Bar of Texas Names Rev First-Ever AI Partner4 in 5 Legal Professionals Are Burned Out: Can AI Be the Lifeline?\nAbout RevPricing\nHelp CenterDevelopersSecurityContact Support | 1(888) 369-0701369-0701)\nLogin\nGet StartedRequest a Demo\nTranscripts HomeMedia & Entertainment\nBill Gates TED Talk Transcript from 2015: Warns of Pandemics, Epidemics\nBill Gates TED Talk Transcript from 2015: Warns of Pandemics, Epidemics\nIn a TED Talk from 2015, Bill Gates warned that the world is not prepared for an epidemic, pandemic, or outbreak. This feels all too relevant with the 2020 coronavirus (COVID-19) pandemic. Read the full transcript of his TED Talk here.\nHungry For More?\nLuckily for you, we deliver. Subscribe to our blog today.\nThank You for Subscribing!\nA confirmation email is on it\u2019s way to your inbox.\nShare this post\nCopyright Disclaimer\nUnder Title 17 U.S.C. Section 107, allowance is made for \"fair use\" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. Fair use is permitted by copyright statute that might otherwise be infringing.\nBill Gates: (00:07)\nWhen I was a kid, the disaster we worried about most was a nuclear war. That's why we had a barrel like this down in our basement, filled with cans of food and water. When the nuclear attack came, we were supposed to go downstairs, hunker down, and eat out of that barrel. Today, the greatest risk of global catastrophe doesn't look like this. Instead, it looks like this. If anything kills over 10 million people in the next few decades, it's most likely to be a highly infectious virus rather than a war. Not missiles, but microbes.\nBill Gates: (01:03)\nNow, part of the reason for this is that we have invested a huge amount in nuclear deterrence, but we've actually invested very little in a system to stop an epidemic. We're not ready for the next epidemic. Let's look at Ebola. I'm sure all of you read about it in the newspaper. Lots of tough challenges. I followed it carefully through the case analysis tools we use to track polio eradication. And as you look at what went on, the problem wasn't that there was a system that didn't work well enough. The problem was that we didn't have a system at all.\nBill Gates: (01:46)\nIn fact, there are some pretty obvious key missing pieces. We didn't have a group of epidemiologists ready to go who would have gone, seen what the disease was, see how far it had spread. The case reports came in on paper. It was very delayed before they were put online, and they were extremely inaccurate. We didn't have a medical team ready to go. We didn't have a way of preparing people. Now, Medecins Sans Frontieres did a great job orchestrating volunteers, but even so, we were far slower than we should have been getting the thousands of workers into these countries. And a large epidemic would require us to have hundreds of thousands of workers.\nBill Gates: (02:32)\nThere was no one there to look at treatment approaches. No one to look at the diagnostics, no one to figure out what tools should be used. As an example, we could have taken the blood of survivors, processed it, and put that plasma back in people to protect them, but that was never tried. So there was a lot that was missing, and these things are really a global failure. The WHO is funded to monitor epidemics, but not to do these things I talked about. Now in the movies, it's quite different. There's a group of handsome epidemiologists ready to go. They move in, they save the day, but that's just pure Hollywood. The failure to prepare could allow the next epidemic to be dramatically more devastating than Ebola.\nBill Gates: (03:30)\nLet's look at the progression of Ebola over this year. About 10,000 people died, and nearly all were in the three West African countries. There's three reasons why it didn't spread more. The first is there was a lot of heroic work by the health workers. They found the people and they prevented more infections. The second is the nature of the virus. Ebola does not spread through the air, and by the time you're contagious, most people are so sick that they're bedridden. Third, it didn't get into many urban areas, and that was just luck. If it had gotten into a lot more urban areas, the case numbers would have been much larger. So next time we might not be so lucky.\nBill Gates: (04:21)\nYou can have a virus where people feel well enough while they're infectious that they get on a plane or they go to a market. The source of the virus could be a natural epidemic like Ebola or it could be bio-terrorism. And so there are things that would literally make things a thousand times worse. In fact, let's look at a model of a virus spread through the air, like the Spanish flu back in 1918.\nBill Gates: (04:49)\nSo here's what would happen. It would spread throughout the world very, very quickly. And you can see there's over 30 million people die from that epidemic. So this is a serious problem. We should be concerned. But in fact, we can build a really good response system. We have the benefits of all the science and technology that we talked about here. We've got cell phones to get information from the public and get information out to them. We have satellite maps where we can see where people are and where they're moving. We have advances in biology that should dramatically change the turnaround time to look at a pathogen and be able to make drugs and vaccines that fit for that pathogen. So we can have tools, but those tools need to be put into an overall global health system, and we need preparedness.\nBill Gates: (05:41)\nThe best lessons I think on how to get prepared or again, what we do for war. For soldiers, we have full time waiting to go. We have reserves that can scale us up to large numbers. And NATO has a mobile unit that can deploy very rapidly. NATO does a lot of war games to check, are people well trained? Do they understand about fuel and logistics and the same radio frequencies? So they are absolutely ready to go. So those are the kinds of things we need to deal with an epidemic.\nBill Gates: (06:13)\nWhat are the key pieces? First is we need strong health systems in poor countries. That's where mothers can give birth safely. Kids could get all their vaccines, but also where we'll see the outbreak very early on. We need a medical reserve corps. Lots of people who've got the training and background who are ready to go with the expertise. And then we need to pair those medical people with the military, taking advantage of the military's ability to move fast, do logistics and secure areas.\nBill Gates: (06:48)\nWe need to do simulations, germ games, not war games so that we see where the holes are. The last time a germ game was done in the United States was back in 2001, and it didn't go so well. So far the score is germs one, people zero. Finally, we need lots of advanced R&D in areas of vaccines and diagnostics. There are some big breakthroughs like adeno-associated virus that could work very, very quickly.\nBill Gates: (07:21)\nNow, I don't have an exact budget for what this would cost, but I'm quite sure it's very modest compared to the potential harm. The world bank estimates that if we have a worldwide flu epidemic, global wealth will go down by over $3 trillion, and we'd have millions and millions of deaths. These investments offer significant benefits beyond just being ready for the epidemic. The primary health care, the R&D, those things would reduce global health equity and make the world more just as well as more safe.\nBill Gates: (07:55)\nSo I think this should absolutely be a priority. There's no need to panic. We don't have to hoard cans of spaghetti or go down into the basement, but we need to get going because time is not on our side. In fact, if there's one positive thing that can come out of the Ebola epidemic, it's that it can serve is an early warning, a wake-up call to get ready. If we start now, we can be ready for the next epidemic. Thank you. Watch the TEDtalk here\nScience\nHistorical Speeches/Events\nNews\nHungry For More?\nLuckily for you, we deliver. Subscribe to our blog today.\nThank You for Subscribing!\nA confirmation email is on it\u2019s way to your inbox.\nShare this post\nCopyright Disclaimer\nUnder Title 17 U.S.C. Section 107, allowance is made for \"fair use\" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. Fair use is permitted by copyright statute that might otherwise be infringing.\nKeep reading\nSenate Finance Committee Hearing\nTrump Rally in Kentucky\nAltman speaks at BlackRock's US Infrastructure Summit\nSenate Citizenship Hearing\nMike Johnson Fireside Chat\nUN Security Council Meeting on 3/10/26\nSubscribe to The Rev Blog\nSign up to get Rev content delivered straight to your inbox.",
+                "created_at": "2026-03-14T06:39:17Z",
+                "id": "eda9b4a0-948d-45f2-82d7-11406297f71e",
+                "published_at": "",
+                "status": "COMPLETED",
+                "title": "Bill Gates TED Talk Transcript from 2015: Warns of Pandemics, Epidemics",
+                "updated_at": "2026-03-14T06:40:00Z",
+                "url": "https://www.rev.com/transcripts/bill-gates-ted-talk-transcript-from-2015-warns-of-pandemics-epidemics"
+              }
+            ]
+          }
+        ],
+        "media": []
+      }
+    },
+    {
+      "post_id": "3b528b1b-d5bf-484e-af04-1e6aa56da6cc",
+      "dataset_claim_id": "5562",
+      "truth_label": "NEI",
+      "claim_text": "Rape would be designated a pre-existing condition under the American Health Care Act.",
+      "snopes_url": "https://www.snopes.com/fact-check/sexual-assault-pre-existing/",
+      "system_verdict": "NEI",
+      "correct": true,
+      "latency_seconds": 41.3,
+      "costs": {
+        "query_generation": 0.004897649999999999,
+        "post_judge": 0.0019420000000000001
+      },
+      "artifact": {
+        "post": {
+          "agent_start_time": 1773470234.864384,
+          "content": "Rape would be designated a pre-existing condition under the American Health Care Act.",
+          "costs_json": "{\"query_generation\": 0.004897649999999999, \"post_judge\": 0.0019420000000000001}",
+          "created_at": "2026-03-14T06:35:27Z",
+          "id": "3b528b1b-d5bf-484e-af04-1e6aa56da6cc",
+          "justification": "Reliable fact-checks (CBS News, PolitiFact, Snopes) show the AHCA did not explicitly list \u201crape\u201d or \u201csexual assault\u201d as a named pre\u2011existing condition; insurers assess specific diagnoses (e.g., PTSD, STIs) rather than causes. However, the bill\u2019s state\u2011waiver provisions and alternative coverage rules could weaken protections in some states, creating legitimate ambiguity about how conditions arising from assault might be treated. Because the law neither definitively designates nor excludes rape as a pre\u2011existing condition, the claim cannot be conclusively confirmed or refuted.",
+          "status": "NEI",
+          "title": "",
+          "updated_at": "2026-03-14T06:37:55Z",
+          "url": "https://www.snopes.com/fact-check/sexual-assault-pre-existing/",
+          "costs": {
+            "query_generation": 0.004897649999999999,
+            "post_judge": 0.0019420000000000001
+          }
+        },
+        "queries": [
+          {
+            "query_text": "Does the American Health Care Act (AHCA) designate \"rape\" or \"sexual assault\" as a pre-existing condition?",
+            "snippet": "Multiple reliable sources (CBS News, PolitiFact, Snopes, and a House GOP press release) indicate the AHCA does not explicitly designate \u201crape\u201d or \u201csexual assault\u201d as a named pre-existing condition. The bill doesn\u2019t list sexual assault or rape as a pre-existing condition; insurers consider medical diagnoses (e.g., PTSD, sexually transmitted infections) rather than the cause of those conditions, and those specific diagnoses \u2014 not the assault itself \u2014 could be treated as pre-existing in some circumstances. Critics noted the AHCA would weaken ACA protections by allowing state waivers (and creating alternative programs like high\u2011risk pools), which could make it possible for people with conditions arising from assault to face higher costs in states that seek waivers. Additionally, many states have laws prohibiting insurers from treating sexual assault as a pre-existing condition, which would remain relevant.",
+            "evidence": []
+          }
+        ],
+        "media": [
+          {
+            "ai_score": 0.0,
+            "created_at": "2026-03-14T06:35:28Z",
+            "id": "1d1adf20-4f93-46cc-a824-f86db0406681",
+            "is_ai_generated": false,
+            "status": "SUCCESS",
+            "storage_url": "http://minio:9000/media/media/1d1adf20-4f93-46cc-a824-f86db0406681/image.jpg",
+            "type": "IMAGE",
+            "updated_at": "2026-03-14T06:35:28Z",
+            "url": "http://minio:9000/media/mocheg/5562/05562-546363-06-doctor_patient_discussion_fb.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "post_id": "b771adcd-3120-42c6-9d3b-263266e61fa6",
+      "dataset_claim_id": "14886",
+      "truth_label": "supported",
+      "claim_text": "Kevin McCallister's airline ticket was thrown in the trash by accident in the 1990 film 'Home Alone.",
+      "snopes_url": "https://www.snopes.com/fact-check/home-alone-ticket-thrown-away/",
+      "system_verdict": "VERIFIED",
+      "correct": true,
+      "latency_seconds": 43.2,
+      "costs": {
+        "query_generation": 0.00459755,
+        "post_judge": 0.0037377499999999998
+      },
+      "artifact": {
+        "post": {
+          "agent_start_time": 1773470382.8801646,
+          "content": "Kevin McCallister's airline ticket was thrown in the trash by accident in the 1990 film 'Home Alone.",
+          "costs_json": "{\"query_generation\": 0.00459755, \"post_judge\": 0.0037377499999999998}",
+          "created_at": "2026-03-14T06:35:27Z",
+          "id": "b771adcd-3120-42c6-9d3b-263266e61fa6",
+          "justification": "According to fact-checking coverage (Snopes) and multiple video clips/screenshots of the film, during the pre-trip packing/cleanup scene Kevin\u2019s boarding pass/airline ticket is accidentally swept up/thrown toward the trash by his father. The post claims this specific moment occurs in the 1990 film Home Alone, and the available evidence confirms that exact scene exists. Therefore, the claim is VERIFIED.",
+          "status": "VERIFIED",
+          "title": "",
+          "updated_at": "2026-03-14T06:40:24Z",
+          "url": "https://www.snopes.com/fact-check/home-alone-ticket-thrown-away/",
+          "costs": {
+            "query_generation": 0.00459755,
+            "post_judge": 0.0037377499999999998
+          }
+        },
+        "queries": [
+          {
+            "query_text": "In the 1990 film \"Home Alone\", is there a scene where Kevin McCallister's airline ticket is accidentally thrown into the trash?",
+            "snippet": "Snopes fact-check: \"Kevin McCallister's airline ticket was thrown in the trash by accident in the 1990 film 'Home Alone.'\" (Rating: True). Other snippets (video clips and social posts) describe the same moment: during pre-trip packing/clean-up, Kevin's father wipes up a spilled drink and accidentally throws Kevin's plane ticket into the trash, corroborating the Snopes finding.",
+            "evidence": []
+          }
+        ],
+        "media": [
+          {
+            "ai_score": 0.0,
+            "created_at": "2026-03-14T06:35:28Z",
+            "id": "0aad2b00-b175-4161-8d8a-7e6caabbebf3",
+            "is_ai_generated": false,
+            "status": "SUCCESS",
+            "storage_url": "http://minio:9000/media/media/0aad2b00-b175-4161-8d8a-7e6caabbebf3/image.jpg",
+            "type": "IMAGE",
+            "updated_at": "2026-03-14T06:35:28Z",
+            "url": "http://minio:9000/media/mocheg/14886/14886-548712-02-tickets-dry-home-alone.jpg"
+          },
+          {
+            "ai_score": 0.0,
+            "created_at": "2026-03-14T06:35:28Z",
+            "id": "b795b432-48b2-4321-aff4-5c4b435f60e4",
+            "is_ai_generated": false,
+            "status": "SUCCESS",
+            "storage_url": "http://minio:9000/media/media/b795b432-48b2-4321-aff4-5c4b435f60e4/image.jpg",
+            "type": "IMAGE",
+            "updated_at": "2026-03-14T06:35:28Z",
+            "url": "http://minio:9000/media/mocheg/14886/14886-548713-03-ticket-cups-home-alone.jpg"
+          },
+          {
+            "ai_score": 0.0,
+            "created_at": "2026-03-14T06:35:28Z",
+            "id": "aeb6c351-9e3f-4c66-906c-56f853cc9fe4",
+            "is_ai_generated": false,
+            "status": "SUCCESS",
+            "storage_url": "http://minio:9000/media/media/aeb6c351-9e3f-4c66-906c-56f853cc9fe4/image.jpg",
+            "type": "IMAGE",
+            "updated_at": "2026-03-14T06:35:28Z",
+            "url": "http://minio:9000/media/mocheg/14886/14886-548714-05-GettyImages-150679405-scaled-e1608412263900.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "post_id": "1596111a-477b-41bb-996c-c6a617dfaff4",
+      "dataset_claim_id": "4326",
+      "truth_label": "supported",
+      "claim_text": "Following the Taliban takeover of Afghanistan in August 2021, Republican U.S. Representative for Colorado Lauren Boebert praised the extremist group for 'building back better.",
+      "snopes_url": "https://www.snopes.com/fact-check/boebert-taliban-building-back-better/",
+      "system_verdict": "VERIFIED",
+      "correct": true,
+      "latency_seconds": 55.2,
+      "costs": {
+        "post_judge": 0.0017894999999999999
+      },
+      "artifact": {
+        "post": {
+          "agent_start_time": 1773470295.9533312,
+          "content": "Following the Taliban takeover of Afghanistan in August 2021, Republican U.S. Representative for Colorado Lauren Boebert praised the extremist group for 'building back better.",
+          "costs_json": "{\"post_judge\": 0.0017894999999999999, \"query_generation\": 0.013892999999999999}",
+          "created_at": "2026-03-14T06:35:27Z",
+          "id": "1596111a-477b-41bb-996c-c6a617dfaff4",
+          "justification": "According to the search result provided, the Taliban rapidly seized provincial capitals in mid\u2011August 2021 and entered Kabul on August 15, 2021, after which President Ashraf Ghani fled and the group effectively gained control of Afghanistan. The post\u2019s central claim concerns the Taliban taking over in August 2021 (the tweet shown is dated Aug 16, 2021), and the evidence confirms that timeline and outcome. Therefore the claim is VERIFIED.",
+          "status": "VERIFIED",
+          "title": "",
+          "updated_at": "2026-03-14T06:39:09Z",
+          "url": "https://www.snopes.com/fact-check/boebert-taliban-building-back-better/",
+          "costs": {
+            "post_judge": 0.0017894999999999999,
+            "query_generation": 0.013892999999999999
+          }
+        },
+        "queries": [
+          {
+            "query_text": "Did Lauren Boebert praise the Taliban after their August 2021 takeover and say they were \"building back better\"?",
+            "snippet": "On Aug. 16, 2021 Rep. Lauren Boebert tweeted: \"The Taliban are the only people building back better,\" mocking President Biden\u2019s \"Build Back Better\" slogan after the Taliban seized Kabul. Multiple news outlets reported the tweet and the ensuing backlash; Snopes fact-checked the claim and rated the attribution correct.",
+            "evidence": []
+          },
+          {
+            "query_text": "Is Lauren Boebert a Republican U.S. Representative for Colorado?",
+            "snippet": "Multiple reputable news sources and reference entries identify Lauren Opal Boebert as a Republican U.S. Representative from Colorado. She was first elected in 2020 to represent Colorado's 3rd congressional district and, according to 2024 news reports, ran and won a seat representing Colorado's 4th congressional district after switching districts.",
+            "evidence": []
+          },
+          {
+            "query_text": "Did the Taliban take over Afghanistan in August 2021?",
+            "snippet": "Yes. In mid-August 2021 the Taliban rapidly seized provincial capitals and on August 15, 2021 fighters entered Kabul and took the presidential palace; President Ashraf Ghani fled the country. After the U.S. withdrawal and a swift Taliban offensive, the group effectively gained control of Afghanistan and the subsequent chaotic evacuation airlifted tens of thousands of people out of the country.",
+            "evidence": []
+          }
+        ],
+        "media": [
+          {
+            "ai_score": 0.0,
+            "created_at": "2026-03-14T06:35:28Z",
+            "id": "7334e986-ff35-459d-b1a7-e2ff8db399fe",
+            "is_ai_generated": false,
+            "status": "SUCCESS",
+            "storage_url": "http://minio:9000/media/media/7334e986-ff35-459d-b1a7-e2ff8db399fe/image.jpg",
+            "type": "IMAGE",
+            "updated_at": "2026-03-14T06:35:28Z",
+            "url": "http://minio:9000/media/mocheg/4326/04326-546273-03-boebert-taliban-build-back-better.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "post_id": "75f8597d-f3cf-453e-b384-966b00cdd3fe",
+      "dataset_claim_id": "8405",
+      "truth_label": "refuted",
+      "claim_text": "A photograph shows a bride and groom during a 'Handmaid's Tale'-themed wedding.",
+      "snopes_url": "https://www.snopes.com/fact-check/handmaid-tale-themed-wedding/",
+      "system_verdict": "REFUTED",
+      "correct": true,
+      "latency_seconds": 107.4,
+      "costs": {
+        "query_generation": 0.004978499999999999,
+        "post_judge": 0.00453675
+      },
+      "artifact": {
+        "post": {
+          "agent_start_time": 1773470261.078703,
+          "content": "A photograph shows a bride and groom during a 'Handmaid's Tale'-themed wedding.",
+          "costs_json": "{\"query_generation\": 0.004978499999999999, \"post_judge\": 0.00453675}",
+          "created_at": "2026-03-14T06:35:27Z",
+          "id": "75f8597d-f3cf-453e-b384-966b00cdd3fe",
+          "justification": "The photographers Van Daele & Russell themselves posted the image in October 2019 and the screenshot of their Facebook caption (included in the thread) reads in part: \"Praise be! Kendra & Torsten are married!... it only seemed fitting for there to be some Handmaids in K&T's wedding photos along the 'hanging wall' in Mill Race Park!\" That post and a Snopes fact\u2011check (published Oct 2019) confirm the red\u2011cloaked Handmaid figures were digitally composited into the wedding portrait and that the wedding was not actually Handmaid's Tale\u2013themed; the photographers\u2019 post identifies the couple as Kendra & Torsten (bride and groom). Because the image was edited after the fact and does not document a real Handmaid\u2019s Tale\u2011themed wedding, the claim is false \u2014 REFUTED.",
+          "status": "REFUTED",
+          "title": "",
+          "updated_at": "2026-03-14T06:39:26Z",
+          "url": "https://www.snopes.com/fact-check/handmaid-tale-themed-wedding/",
+          "costs": {
+            "query_generation": 0.004978499999999999,
+            "post_judge": 0.00453675
+          }
+        },
+        "queries": [
+          {
+            "query_text": "What is the original source and context of the photograph showing a couple wearing red cloaks and white bonnets that is claimed to depict a bride and groom at a \"Handmaid's Tale\"-themed wedding?",
+            "snippet": "The photo was posted in October 2019 by Van Daele & Russell (photographers Shawn Van Daele and Clint Russell). It\u2019s a wedding portrait of a same-sex couple taken at the Mill Race Park/\u2019hanging wall\u2019 location used in filming The Handmaid\u2019s Tale; the photographers digitally added (Photoshopped) women in red cloaks and white bonnets to the image. The couple\u2019s wedding was not Handmaid\u2019s Tale\u2013themed; the image was intended by the photographers to spark activism but drew backlash for being insensitive to the show\u2019s themes.",
+            "evidence": []
+          }
+        ],
+        "media": [
+          {
+            "ai_score": 0.0,
+            "created_at": "2026-03-14T06:35:28Z",
+            "id": "5b655b96-c1f1-4a80-b5c0-8082721607be",
+            "is_ai_generated": false,
+            "status": "SUCCESS",
+            "storage_url": "http://minio:9000/media/media/5b655b96-c1f1-4a80-b5c0-8082721607be/image.jpg",
+            "type": "IMAGE",
+            "updated_at": "2026-03-14T06:35:28Z",
+            "url": "http://minio:9000/media/mocheg/8405/08405-549710-01-handmaid-themed-wedding.jpg"
+          },
+          {
+            "ai_score": 0.0,
+            "created_at": "2026-03-14T06:35:28Z",
+            "id": "58807200-e90a-4591-a375-864b7866546f",
+            "is_ai_generated": false,
+            "status": "SUCCESS",
+            "storage_url": "http://minio:9000/media/media/58807200-e90a-4591-a375-864b7866546f/image.jpg",
+            "type": "IMAGE",
+            "updated_at": "2026-03-14T06:35:28Z",
+            "url": "http://minio:9000/media/mocheg/8405/08405-549711-03-handmaids-tale-wedding-snopes.jpg"
+          }
+        ]
+      }
+    }
+  ]
+}

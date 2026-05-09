@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+:root {
+  --cream: #fffefb;
+  --zapier-black: #201515;
+  --zapier-orange: #ff4f00;
+  --charcoal: #36342e;
+  --warm-gray: #939084;
+  --sand: #c5c0b1;
+  --light-sand: #eceae3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--cream);
+  color: var(--zapier-black);
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Tab active underline */
+.tab-active {
+  box-shadow: rgb(255, 79, 0) 0px -4px 0px 0px inset;
+}
+
+.tab-hover:hover {
+  box-shadow: rgb(197, 192, 177) 0px -4px 0px 0px inset;
+}
+
+/* Focus ring using orange */
+:focus-visible {
+  outline: 1px solid #ff4f00;
+  outline-offset: 2px;
+}
+
+/* Smooth transitions */
+button,
+a,
+input {
+  transition: all 0.15s ease;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.75); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

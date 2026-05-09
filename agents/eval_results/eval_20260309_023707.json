@@ -1,0 +1,122 @@
+{
+  "total_submitted": 10,
+  "completed": 10,
+  "correct": 4,
+  "accuracy": 0.4,
+  "per_label": {
+    "supported": {
+      "total": 5,
+      "correct": 3
+    },
+    "refuted": {
+      "total": 3,
+      "correct": 1
+    },
+    "NEI": {
+      "total": 2,
+      "correct": 0
+    }
+  },
+  "records": [
+    {
+      "post_id": "2db363b0-6e46-474e-b7fc-dc7122c82e9f",
+      "dataset_claim_id": "8033",
+      "truth_label": "supported",
+      "claim_text": "People without permanent homes who do not normally file taxes can submit information to the IRS in order to receive stimulus payments as part of the March 2021 COVID-19 relief bill.",
+      "snopes_url": "https://www.snopes.com/fact-check/homeless-stimulus-payment/",
+      "system_verdict": "NEI",
+      "correct": false,
+      "latency_seconds": 634.0
+    },
+    {
+      "post_id": "fc7f6ccb-0e52-4773-b682-a0a8c84056d9",
+      "dataset_claim_id": "104601",
+      "truth_label": "refuted",
+      "claim_text": "'A Black man invented the light bulb, not a white guy named Edison.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/sep/04/joe-biden/making-point-overlooked-black-history-biden-misses/",
+      "system_verdict": "REFUTED",
+      "correct": true,
+      "latency_seconds": 185.0
+    },
+    {
+      "post_id": "6f327cb3-e8ab-42af-9a44-83dfbae0d43e",
+      "dataset_claim_id": "107875",
+      "truth_label": "supported",
+      "claim_text": "Says gubernatorial candidate Rebecca Kleefisch 'worked with Scott Walker to sign five abortion restrictions into law that took away services and threatened doctors with prison time for providing safe and legal abortions.",
+      "snopes_url": "https://www.politifact.com/factchecks/2021/nov/02/kelda-helen-roys/yes-five-abortion-restrictions-took-away-services-/",
+      "system_verdict": "VERIFIED",
+      "correct": true,
+      "latency_seconds": 812.0
+    },
+    {
+      "post_id": "ecea2bea-5c58-459c-ae81-45042f7e53fe",
+      "dataset_claim_id": "9484",
+      "truth_label": "NEI",
+      "claim_text": "Congress voted to give Apache land to an environmentally exploitative foreign corporation.",
+      "snopes_url": "https://www.snopes.com/fact-check/congress-votes-to-sell-apache-land-to-foreign-corporation/",
+      "system_verdict": "VERIFIED",
+      "correct": false,
+      "latency_seconds": 204.0
+    },
+    {
+      "post_id": "09c9df3e-005f-4d0b-a60e-450bc95128e9",
+      "dataset_claim_id": "116234",
+      "truth_label": "refuted",
+      "claim_text": "No U.S. presidents elected before Donald Trump were racist.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/jul/27/joe-biden/long-history-racism-us-presidency/",
+      "system_verdict": "VERIFIED",
+      "correct": false,
+      "latency_seconds": 333.0
+    },
+    {
+      "post_id": "32535cbb-e775-47e5-8d5c-262bf46bb6c4",
+      "dataset_claim_id": "101932",
+      "truth_label": "supported",
+      "claim_text": "'Bill Gates told us about the coronavirus in 2015.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/mar/25/facebook-posts/bill-gates-warned-2015-we-were-unprepared-infectio/",
+      "system_verdict": "REFUTED",
+      "correct": false,
+      "latency_seconds": 371.0
+    },
+    {
+      "post_id": "3ecd8bb2-5025-4066-a69e-3c87151e8368",
+      "dataset_claim_id": "5562",
+      "truth_label": "NEI",
+      "claim_text": "Rape would be designated a pre-existing condition under the American Health Care Act.",
+      "snopes_url": "https://www.snopes.com/fact-check/sexual-assault-pre-existing/",
+      "system_verdict": "REFUTED",
+      "correct": false,
+      "latency_seconds": 302.0
+    },
+    {
+      "post_id": "8f2dc664-f8a3-451d-8d46-499bab5316ab",
+      "dataset_claim_id": "14886",
+      "truth_label": "supported",
+      "claim_text": "Kevin McCallister's airline ticket was thrown in the trash by accident in the 1990 film 'Home Alone.",
+      "snopes_url": "https://www.snopes.com/fact-check/home-alone-ticket-thrown-away/",
+      "system_verdict": "VERIFIED",
+      "correct": true,
+      "latency_seconds": 373.0
+    },
+    {
+      "post_id": "fc2c82d0-0d71-4fa1-854f-8ae1f7217e2b",
+      "dataset_claim_id": "4326",
+      "truth_label": "supported",
+      "claim_text": "Following the Taliban takeover of Afghanistan in August 2021, Republican U.S. Representative for Colorado Lauren Boebert praised the extremist group for 'building back better.",
+      "snopes_url": "https://www.snopes.com/fact-check/boebert-tali ban-building-back-better/",
+      "system_verdict": "VERIFIED",
+      "correct": true,
+      "latency_seconds": 442.0
+    },
+    {
+      "post_id": "47a0f6b7-d437-4611-9e19-71184b752ab4",
+      "dataset_claim_id": "8405",
+      "truth_label": "refuted",
+      "claim_text": "A photograph shows a bride and groom during a 'Handmaid's Tale'-themed wedding.",
+      "snopes_url": "https://www.snopes.com/fact-check/handmaid-tale-themed-wedding/",
+      "system_verdict": "NEI",
+      "correct": false,
+      "latency_seconds": 547.0
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+.venv
+.adk
+.DS_Store
+# Ignore Python bytecode directories
+__pycache__/
+# Optionally, also ignore .pyc files directly
+*.pyc
+.serena
+mocheg/
+opik/
+test_agent/
+opik_exports/
+RARR/
+.env
+.claude

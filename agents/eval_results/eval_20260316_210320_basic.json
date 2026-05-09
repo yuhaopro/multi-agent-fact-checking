@@ -1,0 +1,197 @@
+{
+  "mode": "basic",
+  "model": "anthropic/claude-3-haiku-20240307",
+  "total_submitted": 10,
+  "completed": 10,
+  "correct": 7,
+  "accuracy": 0.7,
+  "avg_latency_seconds": 14.969999999999999,
+  "avg_cost": 0.00044465,
+  "per_label": {
+    "supported": {
+      "total": 5,
+      "correct": 4
+    },
+    "refuted": {
+      "total": 3,
+      "correct": 3
+    },
+    "NEI": {
+      "total": 2,
+      "correct": 0
+    }
+  },
+  "records": [
+    {
+      "post_id": "1e408b4f-eacc-4bb0-934d-9016212e7af8",
+      "dataset_claim_id": "8033",
+      "claim_text": "People without permanent homes who do not normally file taxes can submit information to the IRS in order to receive stimulus payments as part of the March 2021 COVID-19 relief bill.",
+      "snopes_url": "https://www.snopes.com/fact-check/homeless-stimulus-payment/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "The search results confirm that people experiencing homelessness who did not normally file taxes were eligible for stimulus payments from the March 2021 bill and needed to submit information to the IRS, specifically by filing a basic 2020 tax return, to receive them.",
+      "correct": true,
+      "latency_seconds": 17.0,
+      "costs": {
+        "basic_agent": 0.00034725
+      },
+      "images_submitted": [
+        "08033-546600-03-6757835075_cf5e1c9b5a_b.jpg"
+      ]
+    },
+    {
+      "post_id": "fa5f8187-406f-4c2d-8cee-1676f9e2f1e9",
+      "dataset_claim_id": "104601",
+      "claim_text": "'A Black man invented the light bulb, not a white guy named Edison.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/sep/04/joe-biden/making-point-overlooked-black-history-biden-misses/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "While Lewis Latimer, a Black inventor, made crucial improvements to the light bulb by inventing a more durable carbon filament that made it practical and affordable, Thomas Edison did develop an early incandescent light bulb. Therefore, the claim that a Black man invented the light bulb *not* Edison is inaccurate, as it was a progression of inventions and improvements by both individuals.",
+      "correct": true,
+      "latency_seconds": 16.3,
+      "costs": {
+        "basic_agent": 0.00045224999999999996
+      },
+      "images_submitted": [
+        "104601-547194-33-dd744aab3e806c4891533c2cefd724c2.jpg"
+      ]
+    },
+    {
+      "post_id": "ce054bea-c9ec-455d-848e-5556d97631a7",
+      "dataset_claim_id": "107875",
+      "claim_text": "Says gubernatorial candidate Rebecca Kleefisch 'worked with Scott Walker to sign five abortion restrictions into law that took away services and threatened doctors with prison time for providing safe and legal abortions.",
+      "snopes_url": "https://www.politifact.com/factchecks/2021/nov/02/kelda-helen-roys/yes-five-abortion-restrictions-took-away-services-/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Rebecca Kleefisch, as Lieutenant Governor, supported and helped pass five abortion restrictions under Scott Walker, one of which banned abortions after 20 weeks and carried a potential punishment of up to 3.5 years in prison for providers. These restrictions limited services and threatened doctors with prison time for procedures that would have been legal prior to the ban.",
+      "correct": true,
+      "latency_seconds": 15.2,
+      "costs": {
+        "basic_agent": 0.000343
+      },
+      "images_submitted": [
+        "107875-547390-29-4f17be61a2774a0946faa84088b62182.jpg"
+      ]
+    },
+    {
+      "post_id": "88b45d38-3abb-4a04-aa31-53a97ca3874c",
+      "dataset_claim_id": "9484",
+      "claim_text": "Congress voted to give Apache land to an environmentally exploitative foreign corporation.",
+      "snopes_url": "https://www.snopes.com/fact-check/congress-votes-to-sell-apache-land-to-foreign-corporation/",
+      "truth_label": "NEI",
+      "system_verdict": "VERIFIED",
+      "justification": "Congress passed a provision in the 2014 NDAA to transfer over 2,400 acres of Tonto National Forest land, including a site sacred to the San Carlos Apache Tribe, to Resolution Copper. Resolution Copper is a joint venture of multinational mining companies (British-Australian) and its planned block-cave mining method is projected to cause significant environmental damage, including a two-mile wide crater and threats to water supplies.",
+      "correct": false,
+      "latency_seconds": 17.7,
+      "costs": {
+        "basic_agent": 0.00041424999999999996
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "79b3d6d0-f244-4c9a-b5bd-369370f0e246",
+      "dataset_claim_id": "116234",
+      "claim_text": "No U.S. presidents elected before Donald Trump were racist.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/jul/27/joe-biden/long-history-racism-us-presidency/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "The claim is false as numerous U.S. presidents before Donald Trump, such as Thomas Jefferson, Andrew Jackson, Woodrow Wilson, Richard Nixon, and many others, exhibited racist views, implemented racist policies, or owned slaves. For instance, Woodrow Wilson oversaw the re-segregation of the federal government and screened the racist film \"The Birth of a Nation\" at the White House, while Richard Nixon routinely used racist epithets.",
+      "correct": true,
+      "latency_seconds": 19.0,
+      "costs": {
+        "basic_agent": 0.00042875
+      },
+      "images_submitted": [
+        "116234-2298122-01-JQA-article-slave-jail_191231_153051.jpg",
+        "116234-2298177-42-tom-false.jpg",
+        "116234-548097-37-f08cd6f700bd1265dcee552b1d4cfa23.jpg"
+      ]
+    },
+    {
+      "post_id": "56dec02e-4d52-4f57-abea-4d9bb8a9a1fa",
+      "dataset_claim_id": "101932",
+      "claim_text": "'Bill Gates told us about the coronavirus in 2015.",
+      "snopes_url": "https://www.politifact.com/factchecks/2020/mar/25/facebook-posts/bill-gates-warned-2015-we-were-unprepared-infectio/",
+      "truth_label": "supported",
+      "system_verdict": "REFUTED",
+      "justification": "While Bill Gates warned in 2015 about a highly infectious virus causing a future global pandemic, he did not specifically name \"coronavirus\" or \"COVID-19\" in his talk. His warning was a general prediction about a major viral epidemic.",
+      "correct": false,
+      "latency_seconds": 10.4,
+      "costs": {
+        "basic_agent": 0.00058475
+      },
+      "images_submitted": []
+    },
+    {
+      "post_id": "b8f6dece-25c2-41f9-8da9-db050dcdf936",
+      "dataset_claim_id": "5562",
+      "claim_text": "Rape would be designated a pre-existing condition under the American Health Care Act.",
+      "snopes_url": "https://www.snopes.com/fact-check/sexual-assault-pre-existing/",
+      "truth_label": "NEI",
+      "system_verdict": "REFUTED",
+      "justification": "The American Health Care Act (AHCA) did not explicitly designate rape as a pre-existing condition. Fact-checking organizations deemed claims stating otherwise as misleading, as the bill did not list rape as a pre-existing condition.",
+      "correct": false,
+      "latency_seconds": 18.4,
+      "costs": {
+        "basic_agent": 0.00043675
+      },
+      "images_submitted": [
+        "05562-546363-06-doctor_patient_discussion_fb.jpg"
+      ]
+    },
+    {
+      "post_id": "cabd8b9d-5e48-4ccd-9034-ab46def82aed",
+      "dataset_claim_id": "14886",
+      "claim_text": "Kevin McCallister's airline ticket was thrown in the trash by accident in the 1990 film 'Home Alone.",
+      "snopes_url": "https://www.snopes.com/fact-check/home-alone-ticket-thrown-away/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "The search results confirm that Kevin McCallister's airline ticket was accidentally thrown in the trash in the 1990 film 'Home Alone'. His father inadvertently discarded the ticket with soiled napkins after a milk spill.",
+      "correct": true,
+      "latency_seconds": 9.5,
+      "costs": {
+        "basic_agent": 0.0005685
+      },
+      "images_submitted": [
+        "14886-548712-02-tickets-dry-home-alone.jpg",
+        "14886-548713-03-ticket-cups-home-alone.jpg",
+        "14886-548714-05-GettyImages-150679405-scaled-e1608412263900.jpg"
+      ]
+    },
+    {
+      "post_id": "1990602a-83f0-4163-ab7d-ce8b3018b952",
+      "dataset_claim_id": "4326",
+      "claim_text": "Following the Taliban takeover of Afghanistan in August 2021, Republican U.S. Representative for Colorado Lauren Boebert praised the extremist group for 'building back better.",
+      "snopes_url": "https://www.snopes.com/fact-check/boebert-taliban-building-back-better/",
+      "truth_label": "supported",
+      "system_verdict": "VERIFIED",
+      "justification": "Lauren Boebert tweeted, \"The Taliban are the only people building back better\", which was widely reported as appearing to praise the group, although it was also interpreted as sarcastic criticism of President Biden. The claim states she praised them, and the tweet did outwardly appear to do so.",
+      "correct": true,
+      "latency_seconds": 15.1,
+      "costs": {
+        "basic_agent": 0.00030674999999999995
+      },
+      "images_submitted": [
+        "04326-546273-03-boebert-taliban-build-back-better.jpg"
+      ]
+    },
+    {
+      "post_id": "064148d4-c473-4dee-abda-f885022d6a7c",
+      "dataset_claim_id": "8405",
+      "claim_text": "A photograph shows a bride and groom during a 'Handmaid's Tale'-themed wedding.",
+      "snopes_url": "https://www.snopes.com/fact-check/handmaid-tale-themed-wedding/",
+      "truth_label": "refuted",
+      "system_verdict": "REFUTED",
+      "justification": "The wedding itself was not 'Handmaid's Tale'-themed. The figures dressed as Handmaids in the photograph were digitally added by the photographers, not present at the actual event.",
+      "correct": true,
+      "latency_seconds": 11.1,
+      "costs": {
+        "basic_agent": 0.00056425
+      },
+      "images_submitted": [
+        "08405-549710-01-handmaid-themed-wedding.jpg",
+        "08405-549711-03-handmaids-tale-wedding-snopes.jpg"
+      ]
+    }
+  ]
+}
